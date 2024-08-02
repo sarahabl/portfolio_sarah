@@ -1,0 +1,22 @@
+.custom-button {
+    display: inline-flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    border-top: 1px solid var(--black, #312E28);
+    border-right: 1px solid var(--black, #312E28);
+    border-bottom: 5px solid var(--black, #312E28);
+    border-left: 1px solid var(--black, #312E28);
+    background: #FFF;
+    cursor: pointer;
+    transition: background 0.3s, border-bottom 0.3s;
+  }
+  
+  .custom-button:hover {
+    border-bottom: 1px solid var(--black, #312E28);
+    background: var(--jaune_rose, linear-gradient(270deg, #FDC251 0%, #F7B4F5 100%));
+  }
+  
