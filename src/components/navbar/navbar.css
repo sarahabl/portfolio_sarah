@@ -17,12 +17,12 @@
   }
   
   .navbar-logo img {
-    height: 50px; /* Ajuste la taille du logo selon tes besoins */
+    height: 45px; /* Ajuste la taille du logo selon tes besoins */
   }
   
   .navbar-links {
     display: flex;
-    gap: 20px;
+    gap: 40px;
   }
   
   .navbar-links a {
@@ -32,7 +32,7 @@
   }
   
   .navbar-links a:hover {
-    color: #5D97E6; /* Couleur au survol */
+    color: #F7B4F5; /* Couleur au survol */
   }
   
   .navbar-icon {
