@@ -1,0 +1,35 @@
+.bandeau-container {
+    overflow: hidden;
+    width: 100%; /* Ajuste la largeur si nécessaire */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 0;
+    transform: rotate(-2deg);
+  }
+  
+  .bandeau-content {
+    display: flex;
+    white-space: nowrap;
+    animation: defilement 20s linear infinite;
+  }
+  
+  .bandeau-text {
+    color: var(--white, #FFF);
+    font-family: "Roboto Serif";
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+    margin-right: 3.125rem; /* Espace entre les mots */
+  }
+  
+  @keyframes defilement {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
