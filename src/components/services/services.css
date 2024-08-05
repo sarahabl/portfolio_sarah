@@ -1,0 +1,65 @@
+.services-container {
+    display: flex;
+    width: 80rem;
+    padding: 2.5rem 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    width: 19.0625rem;
+    height: 11.25rem;
+    border-radius: 1.25rem;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 5px solid #000;
+    border-left: 1px solid #000;
+    background: #FFF;
+    overflow: hidden;
+  }
+  
+  .service-image {
+    width: 19.0625rem;
+    height: 10.9375rem;
+    background: lightgray 50% / cover no-repeat;
+  }
+  
+  .service-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1.125rem;
+    gap: 1.125rem;
+    height: calc(100% - 10.9375rem); /* Ajuste la hauteur si nécessaire */
+  }
+  
+  .service-title {
+    color: #312E28;
+    font-family: "Bricolage Grotesque";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .service-description {
+    color: #312E28;
+    font-family: "Bricolage Grotesque";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  /* Styles pour mobile */
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  
