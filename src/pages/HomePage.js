@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../components/navbar/navbar'; // Assure-toi que le chemin d'importation est correct
+import NavBar from '../components/navbar/navbar';
 import HeroAccueilServices from '../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../components/bandeau/bandeau';
 import Title from '../components/title/title';
@@ -11,8 +11,6 @@ import ProjectsSlider from '../components/projects-slider/projects-slider';
 const HomePage = () => {
   return (
     <div>
-      {/* NavBar */}
-      <NavBar />
       
       {/* Hero Section */}
       <HeroAccueilServices />
@@ -38,8 +36,6 @@ const HomePage = () => {
       {/* Contact Section */}
       <Contact />
       
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };
