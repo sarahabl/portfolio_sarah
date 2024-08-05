@@ -1,0 +1,58 @@
+.hero-projet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5rem 5rem 0rem 0rem;
+    background: #FFF;
+    padding: 2rem;
+  }
+  
+  .hero-projet__content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .hero-projet__title {
+    color: #210B00;
+    font-family: "Roboto Serif";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-projet__tags {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-projet__intro {
+    color: #210B00;
+    font-family: "Bricolage Grotesque";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-projet__image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  .hero-projet__image img {
+    max-width: 100%;
+    border-radius: 5rem 5rem 0rem 0rem;
+  }
+  
+  /* Styles pour mobile */
+  @media (max-width: 768px) {
+    .hero-projet {
+      flex-direction: column;
+      padding
+  
