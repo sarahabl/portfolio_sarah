@@ -1,0 +1,64 @@
+.slider-container {
+    display: flex;
+    width: 90rem;
+    padding-left: 5rem;
+    align-items: flex-start;
+    gap: 5rem;
+    overflow-x: auto; /* Permet le défilement horizontal */
+    scroll-snap-type: x mandatory; /* Pour un défilement fluide */
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none; /* Cache la barre de défilement sur les navigateurs Webkit */
+  }
+  
+  .project-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.125rem;
+    border-radius: 1.25rem;
+    width: 20rem; /* Ajuste la largeur des cartes si nécessaire */
+    flex-shrink: 0; /* Empêche les cartes de se réduire */
+  }
+  
+  .project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-title {
+    color: #00381A;
+    font-family: "Bricolage Grotesque";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .project-image {
+    width: 20rem; /* Ajuste la largeur de l'image si nécessaire */
+    height: 12rem; /* Ajuste la hauteur de l'image si nécessaire */
+    border-radius: 0.625rem;
+    border: 1px solid #000;
+    background: lightgray 50% / cover no-repeat;
+  }
+  
+  /* Styles pour mobile */
+  @media (max-width: 768px) {
+    .slider-container {
+      flex-direction: column;
+      padding-left: 0;
+      gap: 2rem;
+    }
+  
+    .project-card {
+      width: 100%; /* Occupe toute la largeur sur mobile */
+    }
+  
+    .project-image {
+      height: 15rem; /* Ajuste la hauteur de l'image sur mobile si nécessaire */
+    }
+  }
+  
