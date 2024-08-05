@@ -6,6 +6,8 @@
     gap: 5rem;
     overflow-x: auto; /* Permet le défilement horizontal */
     scroll-snap-type: x mandatory; /* Pour un défilement fluide */
+    scroll-behavior: smooth; /* Pour un défilement fluide */
+    position: relative; /* Position relative pour le positionnement de l'élément de contrôle */
   }
   
   .slider-container::-webkit-scrollbar {

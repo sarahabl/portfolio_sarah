@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './projects-slider.css';
 import Tag from '../tags/tags'; // Assure-toi que le chemin d'importation est correct
 
@@ -26,8 +26,26 @@ const projectsData = [
 ];
 
 const ProjectsSlider = () => {
+  const sliderRef = useRef(null);
+
+  const handleScroll = (event) => {
+    if (sliderRef.current) {
+      const scrollLeft = sliderRef.current.scrollLeft;
+      sliderRef.current.scrollLeft = scrollLeft + event.deltaY;
+      event.preventDefault(); // Empêche le défilement vertical de la page
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('wheel', handleScroll, { passive: false });
+
+    return () => {
+      window.removeEventListener('wheel', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="slider-container">
+    <div className="slider-container" ref={sliderRef}>
       {projectsData.map(project => (
         <div className="project-card" key={project.id}>
           <div className="project-tags">
