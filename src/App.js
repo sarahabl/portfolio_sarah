@@ -6,9 +6,9 @@ import Footer from './components/footer/footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
-// Importe les autres pages ici
+// Ajoute ici les nouvelles pages si nécessaire
+import ContactPage from './pages/ContactPage'; // Exemple
 
-// Mettre à jour le routeur
 function App() {
   return (
     <Router>
@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         {/* Ajoute d'autres routes ici */}
+        <Route path="/contact" element={<ContactPage />} /> {/* Exemple */}
       </Routes>
       <Footer />
     </Router>
