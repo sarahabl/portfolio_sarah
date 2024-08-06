@@ -3,10 +3,6 @@
   padding: 20px 0;
   color: #FFF;
   font-family: "Bricolage Grotesque";
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .footer-logo-img {
@@ -38,7 +34,7 @@
 .contact-button {
   color: var(--white, #FFF);
   font-family: "Bricolage Grotesque";
-  font-size: 1rem;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

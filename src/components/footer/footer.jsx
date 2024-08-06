@@ -32,7 +32,6 @@ const Footer = () => {
               <li><a href="https://tenors.app/speakers/AbsX2Ozr1afcBRYAEBz6XW1eXHq1" target="_blank" rel="noopener noreferrer">Tenors</a></li>
               <li><a href="https://www.malt.fr/profile/sarahablonet" target="_blank" rel="noopener noreferrer">Malt</a></li>
             </ul>
-            <Button className="contact-button d-block d-md-none">Contactez-moi !</Button>
           </Col>
         </Row>
       </Container>
