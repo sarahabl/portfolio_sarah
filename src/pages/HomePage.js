@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../components/navbar/navbar';
 import HeroAccueilServices from '../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../components/bandeau/bandeau';
 import Title from '../components/title/title';
