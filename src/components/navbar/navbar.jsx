@@ -7,6 +7,7 @@ import './navbar.css';
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,13 +24,30 @@ const NavBar = () => {
     };
   }, []);
 
+  const toggleServicesDropdown = () => {
+    setServicesDropdownOpen(!servicesDropdownOpen);
+  };
+
   return (
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-logo">
         <img src={logo} alt="Logo" />
       </div>
       <div className="navbar-links">
-        <Link to="/services">Services</Link>
+        <div className="dropdown">
+          <button className="dropdown-toggle" onClick={toggleServicesDropdown}>
+            Services
+          </button>
+          {servicesDropdownOpen && (
+            <div className="dropdown-menu">
+              <Link to="/services/branding" className="dropdown-item">Branding</Link>
+              <Link to="/services/design-system" className="dropdown-item">Design System</Link>
+              <Link to="/services/facilitation" className="dropdown-item">Facilitation</Link>
+              <Link to="/services/product-design" className="dropdown-item">Product Design</Link>
+              <Link to="/services/site-internet" className="dropdown-item">Site Internet</Link>
+            </div>
+          )}
+        </div>
         <Link to="/portfolio">Portfolio</Link>
         <Link to="/about">À propos</Link>
         <a href="https://www.linkedin.com/in/sarah-ablonet/" target="_blank" rel="noopener noreferrer">

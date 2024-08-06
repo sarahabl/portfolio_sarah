@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.css';
-import logo from '../../assets/logo.svg'; // Assure-toi que le chemin est correct
+import logo from '../../assets/logo.svg';
 
 const Footer = () => {
   return (
@@ -12,10 +12,10 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <div className="footer-column">
-          <Link to="/services/product-design" className="footer-link">Product design</Link>
-          <Link to="/services/design-system" className="footer-link">Design system</Link>
+          <Link to="/services/product-design" className="footer-link">Product Design</Link>
+          <Link to="/services/design-system" className="footer-link">Design System</Link>
           <Link to="/services/facilitation" className="footer-link">Facilitation</Link>
-          <Link to="/services/creation-site-internet" className="footer-link">Création de site internet</Link>
+          <Link to="/services/site-internet" className="footer-link">Site Internet</Link>
           <Link to="/services/branding" className="footer-link">Branding</Link>
         </div>
         <div className="footer-column">
