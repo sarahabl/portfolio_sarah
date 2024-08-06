@@ -54,7 +54,7 @@ const NavBar = () => {
           <img src={linkedinIcon} alt="LinkedIn" className="navbar-icon" />
         </a>
       </div>
-      <Button text="Contact" className="navbar-button" onClick={() => alert('Contactez-moi!')} />
+      <Button text="Contactez-moi !" className="navbar-button" onClick={() => alert('Contactez-moi!')} />
     </nav>
   );
 };
