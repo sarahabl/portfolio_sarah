@@ -7,9 +7,9 @@ const DesignSystem = () => {
   return (
     <div>
       <HeroAccueilServices 
-        primaryText="Vous avez envie de donner une structure harmonieuse à"
-        secondaryText="votre produit ?"
-        description="Vous cherchez à garantir une cohérence visuelle et fonctionnelle à travers tous vos supports ? Bienvenue dans l’univers du Design System ! En tant que designer freelance, je vous aide à créer un système de design sur-mesure qui simplifie et unifie vos interfaces, tout en renforçant votre identité."
+        primaryText="Envie d'un produit"
+        secondaryText="harmonieux & cohérent ?"
+        description="Découvrez le Design System ! En tant que designer freelance, je crée un système sur-mesure pour simplifier et unifier vos interfaces, tout en renforçant votre identité."
         buttonText="Voir mon portfolio"
       />
       <Bandeau />

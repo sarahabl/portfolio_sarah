@@ -7,9 +7,9 @@ const Facilitation = () => {
   return (
     <div>
       <HeroAccueilServices 
-        primaryText="Vous avez un projet, une idée,"
-        secondaryText="un défi à relever ?"
-        description="Et si on faisait éclore tout ça ensemble ? En tant que facilitateur freelance, j'accompagne vos équipes à travers des sessions de travail dynamiques et productives. Design sprint, ateliers d’idéation, focus group… je suis là pour vous guider pas à pas."
+        primaryText="Un projet, une idée,"
+        secondaryText="un défi ?"
+        description="Faisons-les éclore ensemble ! En tant que facilitateur freelance, j'accompagne vos équipes avec des sessions de travail dynamiques et productives : design sprint, ateliers d’idéation, focus groups. Je vous guide pas à pas."
         buttonText="Voir mon portfolio"
       />
       <Bandeau />

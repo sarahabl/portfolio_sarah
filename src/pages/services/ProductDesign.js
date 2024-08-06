@@ -7,9 +7,9 @@ const ProductDesign = () => {
   return (
     <div>
       <HeroAccueilServices 
-        primaryText="Parlez-moi de votre projet et ensemble, "
-        secondaryText="donnons vie à vos idées !"
-        description="La conception de produits n’est pas seulement une question d’esthétique, mais aussi de stratégie, de recherche approfondie et de compréhension des besoins réels des utilisateurs. En tant que Product Designer freelance, je mets à votre disposition mon expertise pour transformer vos idées en solutions design élégantes, fonctionnelles et centrées sur l'utilisateur. Parlez-moi de votre projet et découvrons ensemble comment donner vie à vos ambitions."
+        primaryText="Parlez-moi de votre projet et donnons"
+        secondaryText="vie à vos idées !"
+        description="Le product design allie esthétique, stratégie et compréhension des utilisateurs. En tant que Product Designer freelance, je transforme vos idées en solutions design élégantes et fonctionnelles. Discutons de votre projet pour concrétiser vos ambitions."
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
