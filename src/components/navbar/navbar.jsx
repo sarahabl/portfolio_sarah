@@ -1,62 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Button from '../buttons/buttons';
-import logo from '../../assets/logo.svg';
-import linkedinIcon from '../../assets/linkedin.svg';
+import React, { useState } from 'react';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './navbar.css';
+import logo from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/logo.svg';
+import linkedinIcon from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/linkedin.svg';
+import barsIcon from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/bars.svg';
+import Buttons from 'C:/Users/Utilisateur/Simplon/portfolio/src/components/buttons/buttons.jsx';
 
-const NavBar = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const toggleServicesDropdown = () => {
-    setServicesDropdownOpen(!servicesDropdownOpen);
-  };
+const CustomNavbar = () => {
+  const [expanded, setExpanded] = useState(false);
 
   return (
-    <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
-      <div className="navbar-logo">
-        <img src={logo} alt="Logo" />
-      </div>
-      <div className="navbar-links">
-        <div className="dropdown">
-          <button className="dropdown-toggle" onClick={toggleServicesDropdown}>
-            Services
-          </button>
-          {servicesDropdownOpen && (
-            <div className="dropdown-menu">
-              <Link to="/services/branding" className="dropdown-item">Branding</Link>
-              <Link to="/services/design-system" className="dropdown-item">Design System</Link>
-              <Link to="/services/facilitation" className="dropdown-item">Facilitation</Link>
-              <Link to="/services/product-design" className="dropdown-item">Product Design</Link>
-              <Link to="/services/site-internet" className="dropdown-item">Site Internet</Link>
-            </div>
-          )}
-        </div>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/about">À propos</Link>
-        <a href="https://www.linkedin.com/in/sarah-ablonet/" target="_blank" rel="noopener noreferrer">
-          <img src={linkedinIcon} alt="LinkedIn" className="navbar-icon" />
-        </a>
-      </div>
-      <Button text="Contactez-moi !" className="navbar-button" onClick={() => alert('Contactez-moi!')} />
-    </nav>
+    <Navbar expanded={expanded} expand="lg" className="custom-navbar">
+      <Navbar.Brand href="#home">
+        <img src={logo} alt="Logo" className="navbar-logo" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : 'expanded')}>
+        <img src={barsIcon} alt="Menu" className="navbar-burger-icon" />
+      </Navbar.Toggle>
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto navbar-links">
+          <NavDropdown title="Services" id="basic-nav-dropdown">
+            <NavDropdown.Item href="/services/branding">Branding</NavDropdown.Item>
+            <NavDropdown.Item href="/services/designsystem">Design System</NavDropdown.Item>
+            <NavDropdown.Item href="/services/facilitation">Facilitation</NavDropdown.Item>
+            <NavDropdown.Item href="/services/productdesign">Product Design</NavDropdown.Item>
+            <NavDropdown.Item href="/services/siteinternet">Site Internet</NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+          <Nav.Link href="/about">À propos</Nav.Link>
+          <Nav.Link href="https://www.linkedin.com">
+            <img src={linkedinIcon} alt="LinkedIn" className="navbar-linkedin-icon" />
+          </Nav.Link>
+          <Buttons text="Contactez-moi !" />
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
-export default NavBar;
+export default CustomNavbar;

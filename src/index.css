@@ -1,1 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400&display=swap');
+
+/* Définition des styles globaux */
+body {
+  background-color: #F9F6EB;
+  margin: 0;
+  font-family: 'Bricolage Grotesque', 'Roboto Serif', sans-serif;
+}
+
+/* Styles spécifiques */
+.navbar,
+.footer,
+.dropdown-item,
+.navbar-links a,
+.dropdown-toggle {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.bandeau-text {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Vous pouvez également inclure d'autres styles globaux ici */

@@ -5,6 +5,8 @@
   padding: 20px;
   background-color: #2F5641; /* Couleur de fond correspondant à l'image */
   color: white;
+  overflow: hidden;
+  width: 100%;
 }
 
 .footer-left {
