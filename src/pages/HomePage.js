@@ -13,7 +13,6 @@ const HomePage = () => {
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
-      <Footer />
     </div>
   );
 };
