@@ -1,55 +1,34 @@
-/* src/components/hero__accueil_services/hero__accueil_services.css */
-.hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    overflow: hidden;
+.hero-left {
+  text-align: left;
+}
+
+.hero-right {
+  text-align: right;
+}
+
+.hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 1.25rem;
+}
+
+.hero-paragraph {
+  font-family: "Bricolage Grotesque";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .hero-left,
+  .hero-right {
+    text-align: center;
   }
-  
-  .hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .hero-text {
-    margin-top: 20px;
-    color: var(--black, #312E28);
-    font-family: "Bricolage Grotesque";
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  
-  .hero-right img {
-    max-width: 100%;
+
+  .hero-image {
     height: auto;
   }
-  
-  @media (max-width: 768px) {
-    .hero-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .hero-left {
-      align-items: center;
-    }
-  
-    .hero-right {
-      margin-top: 20px;
-    }
-  
-    .hero-right img {
-      width: 100%;
-    }
-  
-    .hero-left button {
-      width: 100%;
-    }
-  }
-  
+}

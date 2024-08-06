@@ -1,4 +1,3 @@
-// src/components/title/title.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import './title.css';
