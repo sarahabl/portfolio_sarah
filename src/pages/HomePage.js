@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroAccueilServices from '../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../components/bandeau/bandeau';
+import Intro from '../components/intro/intro';
 import Footer from '../components/footer/footer';
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
+      <Intro />
     </div>
   );
 };

@@ -1,0 +1,45 @@
+.intro {
+    display: flex;
+    align-items: center;
+    color: var(--black, #312E28);
+    margin: 5rem;
+    gap: 40px;
+    width:100%
+  }
+  
+  .intro .intro-left {
+    flex: 1 1 20%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .intro .intro-left img {
+    width: 90px;
+    height: auto;
+  }
+
+  .intro .intro-left img:hover {
+    transform: rotate(-18deg);
+  }
+  
+  .intro .intro-left .name {
+    font-family: "Bricolage Grotesque";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+  }
+  
+  .intro .intro-right {
+    flex: 1 1 80%;
+  }
+  
+  .intro .intro-right .description {
+    font-family: "Roboto Serif";
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+  }
+  
