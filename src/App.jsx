@@ -39,8 +39,6 @@ function App() {
         <Route path="/portfolio/methode-e2r" element={<MethodeE2R />} />
         <Route path="/portfolio/talia" element={<Talia />} />
         <Route path="/portfolio/wenabi" element={<Wenabi />} />
-        {/* Supprimer la ligne suivante qui référence ContactPage */}
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
       </Routes>
       <Footer />
     </Router>

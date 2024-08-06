@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import './footer.css';
 import logo from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/logo.svg';
 
@@ -13,17 +14,31 @@ const Footer = () => {
           </Col>
           <Col md={3} className="footer-col footer-services d-none d-md-block">
             <ul>
-              <li><a href="/services/branding">Branding</a></li>
-              <li><a href="/services/designsystem">Design System</a></li>
-              <li><a href="/services/facilitation">Facilitation</a></li>
-              <li><a href="/services/productdesign">Product Design</a></li>
-              <li><a href="/services/siteinternet">Site Internet</a></li>
+              <LinkContainer to="/services/branding">
+                <li><a>Branding</a></li>
+              </LinkContainer>
+              <LinkContainer to="/services/design-system">
+                <li><a>Design System</a></li>
+              </LinkContainer>
+              <LinkContainer to="/services/facilitation">
+                <li><a>Facilitation</a></li>
+              </LinkContainer>
+              <LinkContainer to="/services/product-design">
+                <li><a>Product Design</a></li>
+              </LinkContainer>
+              <LinkContainer to="/services/site-internet">
+                <li><a>Site Internet</a></li>
+              </LinkContainer>
             </ul>
           </Col>
           <Col md={3} className="footer-col footer-pages d-none d-md-block">
             <ul>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/about">À propos</a></li>
+              <LinkContainer to="/portfolio">
+                <li><a>Portfolio</a></li>
+              </LinkContainer>
+              <LinkContainer to="/about">
+                <li><a>À propos</a></li>
+              </LinkContainer>
             </ul>
           </Col>
           <Col md={3} className="footer-col footer-links">
