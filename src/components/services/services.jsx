@@ -12,26 +12,31 @@ const services = [
     title: 'Product design',
     image: productDesignImg,
     description: 'Gérer la discovery et la delivery pour un produit réussi',
+    link: '/services/product-design'  // Mise à jour du lien
   },
   {
     title: 'Design system',
     image: designSystemImg,
     description: 'Construire des systèmes de design cohérents et modulables',
+    link: '/services/design-system'  // Mise à jour du lien
   },
   {
     title: 'Facilitation',
     image: facilitationImg,
     description: 'Faciliter les processus pour une collaboration efficace',
+    link: '/services/facilitation'  // Mise à jour du lien
   },
   {
     title: 'Branding',
     image: brandingImg,
     description: 'Construire une identité visuelle forte et mémorable',
+    link: '/services/branding'  // Mise à jour du lien
   },
   {
     title: 'Site internet',
     image: siteInternetImg,
     description: 'Imaginer et développer des sites web sur mesure et performants',
+    link: '/services/site-internet'  // Mise à jour du lien
   },
 ];
 
@@ -46,7 +51,7 @@ const Services = () => {
             <div className="service-content">
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>
-              <a href="#" className="service-link">Voir</a>
+              <a href={service.link} className="service-link">Voir</a> {/* Mise à jour du lien */}
             </div>
           </div>
         ))}
