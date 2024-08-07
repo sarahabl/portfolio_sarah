@@ -1,4 +1,3 @@
-/* src/components/title/title.css */
 .title-container {
     display: flex;
     align-items: flex-start;
@@ -9,16 +8,16 @@
   .title-text {
     display: flex;
     flex-direction: column;
+    margin: 4%;
   }
   
   .title-primary {
     color: var(--black, #312E28);
     font-family: "Roboto Serif";
-    font-size: 3.75rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin: 0;
   }
   
   .title-secondary {
@@ -37,7 +36,7 @@
   }
   
   .title-highlight img {
-    max-width: 100px; /* Ajuste la taille de l'image si nécessaire */
+    max-width: 100px;
   }
   
   @media (max-width: 768px) {
@@ -49,6 +48,7 @@
   
     .title-text {
       align-items: center;
+      margin : 0%;
     }
   
     .title-highlight {
@@ -56,7 +56,7 @@
     }
   
     .title-description {
-      display: none; /* Cache la description sur mobile */
+      display: none;
     }
   }
   

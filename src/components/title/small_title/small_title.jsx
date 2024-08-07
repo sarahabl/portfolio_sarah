@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './small_title.css';
-import highlightImg from '../../assets/Highlight.svg';
+import highlightImg from '../../../assets/Highlight.svg';
 
 const SmallTitle = ({ primaryText, secondaryText }) => {
   return (

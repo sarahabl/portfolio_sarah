@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import SmallTitle from '../title/small_title';
+import SmallTitle from '../title/small_title/small_title';
 import './expertises.css';
 import uxDesignImg from '../../assets/UX_design.svg';
 import uiDesignImg from '../../assets/UI_design.svg';
