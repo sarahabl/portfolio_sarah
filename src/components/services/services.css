@@ -17,18 +17,10 @@
   display: flex;
   flex-direction: column;
   width: 19.0625rem;
-  border-radius: 1.25rem;
-  border: 1px solid #000;
-  border-bottom: 5px solid #000;
-  background: #FFF;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-  align-items: stretch; /* Align items to stretch */
 }
 
 .service-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
 }
 
 .service-image {
@@ -40,9 +32,20 @@
 .service-info {
   display: flex;
   flex-direction: column;
-  padding: 1.125rem;
-  gap: 1.125rem;
-  background: #FFF;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.service-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  border: 1px solid #000;
+  border-bottom: 5px solid #000;
+}
+
+.service-info:hover {
+  border-bottom: 1px solid #000;
 }
 
 .service-title {
@@ -50,7 +53,7 @@
   font-family: "Bricolage Grotesque";
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 0;
+  margin-bottom: 8px;
 }
 
 .service-description {
@@ -68,7 +71,7 @@
   font-weight: 200;
   text-decoration: none;
   color: #000;
-  text-align: center;
+  text-align: left;
   display: none; /* Masquer le bouton par défaut */
   margin-top: auto;
 }
