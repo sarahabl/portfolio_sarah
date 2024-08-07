@@ -1,5 +1,6 @@
 .services-section {
   padding: 2.5rem 0;
+  width:100%;
 }
 
 .services-container {
@@ -36,12 +37,14 @@
   align-items: stretch;
 }
 
-.service-content {
+.service-info {
   background-color: white;
   padding: 2rem;
   border-radius: 1.25rem;
   border: 1px solid #000;
   border-bottom: 5px solid #000;
+  gap:18px;
+  height: 200px;
 }
 
 .service-info:hover {
@@ -53,6 +56,7 @@
   font-family: "Bricolage Grotesque";
   font-size: 1.5rem;
   font-weight: 400;
+
   margin-bottom: 8px;
 }
 
@@ -80,10 +84,14 @@
   display: block; /* Afficher le bouton au survol */
 }
 
-/* Styles pour mobile */
 @media (max-width: 768px) {
   .services-container {
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: column; /* Afficher les cartes en colonne sur les petits écrans */
+    gap: 2rem; /* Espacement réduit entre les cartes */
+    width: 100%;
+  }
+
+  .service-card {
+    max-width: 100%; /* Assurer que les cartes n'excèdent pas la largeur disponible */
   }
 }
