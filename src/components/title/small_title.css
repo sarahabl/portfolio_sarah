@@ -1,8 +1,9 @@
 .title-container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    width: auto;
+    justify-content: flex-start;
+    width: 100%;
+    margin:4rem;
   }
   
   .title-text {
@@ -57,5 +58,9 @@
     .title-description {
       display: none; /* Cache la description sur mobile */
     }
+
+    .title-primary {
+        font-size: 2.75rem;
+      }
   }
   
