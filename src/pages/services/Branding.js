@@ -8,7 +8,7 @@ const Branding = () => {
     <div>
       <HeroAccueilServices 
         primaryText="Donnez vie à"
-        secondaryText="votre histoire ?"
+        secondaryText="votre histoire"
         description="Mon approche bienveillante et personnalisée garantit que chaque aspect de votre identité visuelle est soigneusement pensé et exécuté. Parlez-moi de votre projet et ensemble, faisons éclore une identité qui vous ressemble."
         buttonText="Voir mon portfolio"
       />

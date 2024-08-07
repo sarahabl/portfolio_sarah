@@ -1,11 +1,14 @@
 .custom-navbar {
   display: flex;
+  justify-content: space-between; /* Espace entre le logo et les éléments alignés à droite */
+  align-items: center;
   margin: 2% 4%;
   font-family: "Bricolage Grotesque";
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: relative; /* Position relative pour le gestion de l'overlay */
 }
 
 .navbar-logo {
@@ -30,7 +33,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
+  padding: 40px;
+  margin:40px;
 }
 
 .navbar-overlay.show {
