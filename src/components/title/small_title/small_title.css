@@ -11,7 +11,7 @@
     flex-direction: column;
   }
   
-  .title-primary {
+  .title-primary-small {
     color: var(--black, #312E28);
     font-family: "Roboto Serif";
     font-size: 2.75rem;
