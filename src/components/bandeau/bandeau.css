@@ -12,7 +12,7 @@
 .bandeau-content {
   display: flex;
   white-space: nowrap;
-  animation: defilement 100s linear infinite; /* Adjust duration for speed */
+  animation: defilement 250s linear infinite; /* Adjust duration for speed */
 }
 
 .bandeau-text {
