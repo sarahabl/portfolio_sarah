@@ -19,7 +19,6 @@ const HomePage = () => {
       <Intro />
       <Expertises />
       <Services />
-      <Footer />
     </div>
   );
 };
