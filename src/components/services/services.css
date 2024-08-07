@@ -49,6 +49,7 @@
 
 .service-info:hover {
   border-bottom: 1px solid #000;
+  height: auto;
 }
 
 .service-title {

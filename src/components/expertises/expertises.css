@@ -1,5 +1,6 @@
 .expertises-container {
   margin: 2rem 0;
+  gap:2rem;
 }
 
 .expertise-item {
@@ -12,6 +13,7 @@
   padding: 10rem 2.5rem 2.5rem 2.5rem;
   background: white;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   border-radius: 1.25rem;
 }
 
