@@ -3,6 +3,7 @@ import HeroAccueilServices from '../components/hero__accueil_services/hero__accu
 import Bandeau from '../components/bandeau/bandeau';
 import Intro from '../components/intro/intro';
 import Expertises from '../components/expertises/expertises';
+import Services from '../components/services/services';  // Importer le composant Services
 import Footer from '../components/footer/footer';
 
 const HomePage = () => {
@@ -17,6 +18,8 @@ const HomePage = () => {
       <Bandeau />
       <Intro />
       <Expertises />
+      <Services />
+      <Footer />
     </div>
   );
 };

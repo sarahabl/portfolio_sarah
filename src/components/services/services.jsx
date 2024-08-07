@@ -1,53 +1,57 @@
 import React from 'react';
 import './services.css';
+import SmallTitle from '../title/small_title/small_title';
+import productDesignImg from '../../assets/product_design.png';
+import designSystemImg from '../../assets/design_system.png';
+import facilitationImg from '../../assets/facilitation.png';
+import brandingImg from '../../assets/branding.png';
+import siteInternetImg from '../../assets/site_internet.png';
 
-// Exemple de données pour les services
-const servicesData = [
+const services = [
   {
-    id: 1,
-    title: "Service 1",
-    description: "Description du service 1.",
-    image: "/path/to/image1.jpg"
+    title: 'Product design',
+    image: productDesignImg,
+    description: 'Gérer la discovery et la delivery pour un produit réussi',
   },
   {
-    id: 2,
-    title: "Service 2",
-    description: "Description du service 2.",
-    image: "/path/to/image2.jpg"
+    title: 'Design system',
+    image: designSystemImg,
+    description: 'Construire des systèmes de design cohérents et modulables',
   },
   {
-    id: 3,
-    title: "Service 3",
-    description: "Description du service 3.",
-    image: "/path/to/image3.jpg"
+    title: 'Facilitation',
+    image: facilitationImg,
+    description: 'Faciliter les processus pour une collaboration efficace',
   },
   {
-    id: 4,
-    title: "Service 4",
-    description: "Description du service 4.",
-    image: "/path/to/image4.jpg"
+    title: 'Branding',
+    image: brandingImg,
+    description: 'Construire une identité visuelle forte et mémorable',
   },
   {
-    id: 5,
-    title: "Service 5",
-    description: "Description du service 5.",
-    image: "/path/to/image5.jpg"
+    title: 'Site internet',
+    image: siteInternetImg,
+    description: 'Imaginer et développer des sites web sur mesure et performants',
   },
 ];
 
 const Services = () => {
   return (
-    <div className="services-container">
-      {servicesData.map(service => (
-        <div className="service-card" key={service.id}>
-          <div className="service-image" style={{ backgroundImage: `url(${service.image})` }}></div>
-          <div className="service-info">
-            <h3 className="service-title">{service.title}</h3>
-            <p className="service-description">{service.description}</p>
+    <section className="services-section">
+      <SmallTitle primaryText="Mes" secondaryText="services" />
+      <div className="services-container">
+        {services.map((service, index) => (
+          <div key={index} className="service-card">
+            <img src={service.image} alt={service.title} className="service-image" />
+            <div className="service-content">
+              <h3 className="service-title">{service.title}</h3>
+              <p className="service-description">{service.description}</p>
+              <a href="#" className="service-link">Voir</a>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

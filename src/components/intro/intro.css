@@ -1,69 +1,81 @@
-.intro {
-    display: flex;
+.services-section {
+  padding: 2.5rem 0;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card {
+  width: 19.0625rem;
+  height: 10.9375rem;
+  border-radius: 1.25rem;
+  border: 1px solid #000;
+  border-bottom: 5px solid #000;
+  background: #FFF;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.service-title {
+  font-family: "Bricolage Grotesque";
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.service-description {
+  font-family: "Bricolage Grotesque";
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.service-link {
+  font-family: "Roboto Serif";
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 200;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  margin-top: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
     align-items: center;
-    color: var(--black, #312E28);
-    margin: 5rem;
-    gap: 40px;
-    width:100%;
-    flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne sur les petits écrans */
-  }
-  
-  .intro .intro-left {
-    flex: 1 1 20%;
-    display: flex;
-    align-items: left;
-    gap: 2px;
-  }
-  
-  .intro .intro-left img {
-    width: 90px;
-    height: auto;
   }
 
-  .intro .intro-left img:hover {
-    transform: rotate(-18deg);
+  .service-card {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 2rem;
   }
-  
-  .intro .intro-left .name {
-    font-family: "Bricolage Grotesque";
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-left: 10px;
-  }
-  
-  .intro .intro-right {
-    flex: 1 1 80%;
-  }
-  
-  .intro .intro-right .description {
-    font-family: "Roboto Serif";
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 200;
-    line-height: normal;
-  }
-
-  @media (max-width: 768px) {
-    .intro {
-      flex-direction: column; /* Sur les petits écrans, les colonnes passent l'une au-dessus de l'autre */
-      align-items: center; /* Centre les colonnes horizontalement */
-      gap: 20px; /* Réduit l'espace entre les colonnes */
-      margin: 2rem; /* Réduit la marge sur les petits écrans */
-    }
-  
-    .intro .intro-left, .intro .intro-right {
-      flex: 1 1 100%; /* Les colonnes prennent la pleine largeur de l'écran */
-      text-align: center; /* Centre le texte dans les colonnes */
-    }
-  
-    .intro .intro-left img {
-      width: 70px; /* Réduit la taille de l'image pour les petits écrans */
-    }
-  
-    .intro .intro-right .description {
-      font-size: 1.25rem; /* Réduit la taille de la police pour les petits écrans */
-    }
-  }
-  
+}
