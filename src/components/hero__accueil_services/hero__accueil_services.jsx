@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './hero__accueil_services.css';
 import Title from '../title/big_title/big_title';
 import Buttons from '../buttons/buttons';
-import heroImage from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/hero__projet.png';
+import heroImage from '../../assets/hero__projet.png'; // Utilisez un chemin relatif ici
 
 const HeroAccueilServices = ({ primaryText, secondaryText, description, paragraphText, buttonText }) => {
   return (
