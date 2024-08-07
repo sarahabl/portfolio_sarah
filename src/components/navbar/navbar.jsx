@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './navbar.css';
-import logo from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/logo.svg';
-import linkedinIcon from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/linkedin.svg';
-import barsIcon from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/bars.svg';
-import Buttons from 'C:/Users/Utilisateur/Simplon/portfolio/src/components/buttons/buttons.jsx';
+import logo from '../../assets/logo.svg';
+import linkedinIcon from '../../assets/linkedin.svg';
+import barsIcon from '../../assets/bars.svg';
+import Buttons from '../buttons/buttons.jsx';
 
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
     <Navbar expanded={expanded} expand="lg" className="custom-navbar">
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
         <img src={logo} alt="Logo" className="navbar-logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : 'expanded')}>
@@ -43,7 +43,7 @@ const CustomNavbar = () => {
           <LinkContainer to="/about">
             <Nav.Link>À propos</Nav.Link>
           </LinkContainer>
-          <Nav.Link href="https://www.linkedin.com/in/sarah-ablonet/">
+          <Nav.Link href="https://www.linkedin.com/in/sarah-ablonet/" target="_blank">
             <img src={linkedinIcon} alt="LinkedIn" className="navbar-linkedin-icon" />
           </Nav.Link>
           <Buttons text="Contactez-moi !" />

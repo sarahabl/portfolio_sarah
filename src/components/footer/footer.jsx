@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './footer.css';
-import logo from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/logo.svg';
+import logo from '../../assets/logo.svg'; // Chemin relatif
 
 const Footer = () => {
   return (
