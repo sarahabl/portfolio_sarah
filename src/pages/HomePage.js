@@ -2,6 +2,7 @@ import React from 'react';
 import HeroAccueilServices from '../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../components/bandeau/bandeau';
 import Intro from '../components/intro/intro';
+import Expertises from '../components/expertises/expertises';
 import Footer from '../components/footer/footer';
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
       />
       <Bandeau />
       <Intro />
+      <Expertises />
     </div>
   );
 };
