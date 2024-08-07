@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './title.css';
-import highlightImg from '../../assets/Highlight.svg'; // Assure-toi que le chemin est correct
+import './big_title.css';
+import highlightImg from '../../../assets/Highlight.svg'; // Assure-toi que le chemin est correct
 
-const Title = ({ primaryText, secondaryText, description }) => {
+const BigTitle = ({ primaryText, secondaryText, description }) => {
   return (
     <div className="title-container">
       <div className="title-text">
@@ -19,10 +19,10 @@ const Title = ({ primaryText, secondaryText, description }) => {
   );
 };
 
-Title.propTypes = {
+BigTitle.propTypes = {
   primaryText: PropTypes.string.isRequired,
   secondaryText: PropTypes.string.isRequired,
   description: PropTypes.string,
 };
 
-export default Title;
+export default BigTitle;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './hero__accueil_services.css';
-import Title from '../title/title';
+import Title from '../title/big_title/big_title';
 import Buttons from '../buttons/buttons';
 import heroImage from 'C:/Users/Utilisateur/Simplon/portfolio/src/assets/hero__projet.png';
 
