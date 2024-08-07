@@ -4,7 +4,8 @@
     color: var(--black, #312E28);
     margin: 5rem;
     gap: 40px;
-    width:100%
+    width:100%;
+    flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne sur les petits écrans */
   }
   
   .intro .intro-left {
@@ -42,5 +43,27 @@
     font-style: italic;
     font-weight: 200;
     line-height: normal;
+  }
+
+  @media (max-width: 768px) {
+    .intro {
+      flex-direction: column; /* Sur les petits écrans, les colonnes passent l'une au-dessus de l'autre */
+      align-items: center; /* Centre les colonnes horizontalement */
+      gap: 20px; /* Réduit l'espace entre les colonnes */
+      margin: 2rem; /* Réduit la marge sur les petits écrans */
+    }
+  
+    .intro .intro-left, .intro .intro-right {
+      flex: 1 1 100%; /* Les colonnes prennent la pleine largeur de l'écran */
+      text-align: center; /* Centre le texte dans les colonnes */
+    }
+  
+    .intro .intro-left img {
+      width: 70px; /* Réduit la taille de l'image pour les petits écrans */
+    }
+  
+    .intro .intro-right .description {
+      font-size: 1.25rem; /* Réduit la taille de la police pour les petits écrans */
+    }
   }
   
