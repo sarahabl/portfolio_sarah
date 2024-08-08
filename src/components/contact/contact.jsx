@@ -13,7 +13,10 @@ const Contact = () => {
       <SmallTitle primaryText="Contactez" secondaryText="Moi" />
       <div className='info'>
         <p className="contact-text">
-        Vous avez une idée ou une question ? Je serais ravie de discuter avec vous pour explorer comment nous pouvons collaborer et donner vie à vos projets.
+        Vous avez une idée ou une question ?
+        </p>
+        <p className="contact-text">
+        Je serais ravie de discuter avec vous pour explorer comment nous pouvons collaborer et donner vie à vos projets.
         </p>
         <Button text="Contactez-moi" onClick={handleButtonClick} className="contact-button" />
       </div>
