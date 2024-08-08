@@ -1,25 +1,32 @@
-/* src/components/contact/contact.css */
 .contact-container {
-    padding: 20px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 8px;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  background-color: white;
+  padding : 4%;
+  width: 100%;
+  gap:40px;
+}
+
+.info {
+  align-items: left;
+  margin: 0% 4%;
+}
+
+.contact-button {
+  text-align: left;
+  font-size: 1.2em;
+  color: #312E28;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 2%;
   }
-  
+
   .contact-text {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #312E28;
+    font-size: 1em;
   }
-  
-  @media (max-width: 768px) {
-    .contact-container {
-      padding: 15px;
-    }
-    
-    .contact-text {
-      font-size: 1rem;
-    }
-  }
-  
+}
