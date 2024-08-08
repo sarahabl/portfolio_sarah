@@ -16,7 +16,7 @@
   .title-primary-small {
     color: var(--black, #312E28);
     font-family: "Roboto Serif";
-    font-size: 2.75rem;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -31,7 +31,7 @@
   .title-description {
     color: var(--black, #312E28);
     font-family: "Bricolage Grotesque";
-    font-size: 1.125rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -62,7 +62,7 @@
     }
 
     .title-primary {
-        font-size: 2.75rem;
+        font-size: 20px;
       }
   }
   
