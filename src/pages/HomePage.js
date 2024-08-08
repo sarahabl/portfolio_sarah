@@ -5,7 +5,6 @@ import Intro from '../components/intro/intro';
 import Expertises from '../components/expertises/expertises';
 import Services from '../components/services/services';
 import Contact from '../components/contact/contact';
-import Footer from '../components/footer/footer';
 
 const HomePage = () => {
   return (
