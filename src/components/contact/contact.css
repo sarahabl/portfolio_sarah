@@ -6,12 +6,12 @@
   background-color: white;
   padding : 4%;
   width: 100%;
-  gap:40px;
 }
 
 .info {
   align-items: left;
   margin: 0% 4%;
+  gap: 20px;
 }
 
 .contact-button {
