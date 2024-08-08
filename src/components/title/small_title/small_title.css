@@ -4,6 +4,8 @@
     justify-content: flex-start;
     width: 100%;
     margin:4%;
+    gap:20px;
+    align-items: center;
   }
   
   .title-text {
