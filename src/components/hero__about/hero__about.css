@@ -15,8 +15,8 @@
   
   .inline-avatar {
     margin-left: 10px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%; /* Si votre avatar est rond */
     vertical-align: middle;
   }
