@@ -1,16 +1,20 @@
 .custom-footer {
+  display: flex; /* Utilise Flexbox */
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: center; /* Centre les éléments horizontalement (optionnel) */
   background-color: #2C6545;
   padding: 20px 0;
   color: #FFF;
   font-family: "Bricolage Grotesque";
 }
 
-.footer-logo-img {
-  width: 4rem;
+.footer-col {
+  margin-top: 0; /* Supprimez la marge supplémentaire si nécessaire */
+  padding: 0 20px; /* Ajoutez du padding pour l'espacement */
 }
 
-.footer-col {
-  margin-top: 40px;
+.footer-logo-img {
+  width: 4rem;
 }
 
 .footer-col ul {
