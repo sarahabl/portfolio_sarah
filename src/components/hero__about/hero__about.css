@@ -1,0 +1,33 @@
+.hero-about-container {
+    padding: 40px 0;
+  }
+  
+  .hero-about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-about-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .inline-avatar {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Si votre avatar est rond */
+    vertical-align: middle;
+  }
+  
+  .hero-about-paragraph {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+  
+  .hero-about-button {
+    display: inline-block;
+  }
+  
