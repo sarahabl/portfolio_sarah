@@ -3,7 +3,7 @@
   align-items: center; /* Centre les éléments verticalement */
   justify-content: center; /* Centre les éléments horizontalement (optionnel) */
   background-color: #2C6545;
-  padding: 20px 0;
+  padding: 20px;
   color: #FFF;
   font-family: "Bricolage Grotesque";
 }
