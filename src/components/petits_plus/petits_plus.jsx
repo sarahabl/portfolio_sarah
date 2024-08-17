@@ -1,17 +1,20 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './petits_plus.css';
 import SmallTitle from '../title/small_title/small_title';
+import Slider from "react-slick";
 import figmaLogo from '../../assets/figma_logo.png';
 import frenchProduitLogo from '../../assets/frenchproduit_logo.png';
 import theDesignCrewLogo from '../../assets/thedesigncrew_logo.png';
 import simplonLogo from '../../assets/simplon_logo.png';
 import designSprintChallengeLogo from '../../assets/designsprintchallenge_logo.png';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const cardData = [
   {
     img: figmaLogo,
     title: "Figma lover",
-    description: "- Utilisation quotidienne de Figma pour la création de variables, propriétés et mode développeur.\n- Expertise dans la flexibilité et les capacités de Figma pour le design collaboratif."
+    description: "Je maîtrise Figma pour créer des variables, des propriétés et collaborer efficacement en mode développeur, afin de vous offrir un design souple et adapté à vos besoins."
   },
   {
     img: frenchProduitLogo,
@@ -41,7 +44,8 @@ const PetitsPlus = () => {
   useEffect(() => {
     const handleScroll = (event) => {
       if (sliderRef.current) {
-        sliderRef.current.scrollLeft += event.deltaY;
+        const slider = sliderRef.current.innerSlider.list; // Accéder directement à l'élément DOM du slider
+        slider.scrollLeft += event.deltaY;
       }
     };
 
@@ -52,10 +56,34 @@ const PetitsPlus = () => {
     };
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
+
   return (
     <div className="petits-plus-container">
-      <SmallTitle primaryText="Mes" secondaryText="Petits Plus" />
-      <div className="petits-plus-slider" ref={sliderRef}>
+      <SmallTitle primaryText="Mes" secondaryText="petits +" />
+      <Slider {...settings} ref={sliderRef} className="petits-plus-slider">
         {cardData.map((card, index) => (
           <div key={index} className="petits-plus-card">
             <img src={card.img} alt={card.title} />
@@ -63,7 +91,7 @@ const PetitsPlus = () => {
             <p>{card.description}</p>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };
