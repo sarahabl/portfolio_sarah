@@ -1,0 +1,48 @@
+.petits-plus-container {
+    padding: 40px 0;
+    overflow: hidden; /* Cache la barre de défilement verticale si nécessaire */
+  }
+  
+  .petits-plus-slider {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    overflow-x: hidden; /* Masquer la barre de défilement horizontale */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; /* Ajoute un défilement fluide */
+  }
+  
+  .petits-plus-card {
+    flex: 0 0 auto;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background: #FFF;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    scroll-snap-align: start;
+  }
+  
+  .petits-plus-card img {
+    width: auto;
+    height: 2.1875rem;
+  }
+  
+  .petits-plus-card h3 {
+    color: #1C1F23;
+    font-family: "Bricolage Grotesque";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .petits-plus-card p {
+    color: #312E28;
+    font-family: "Bricolage Grotesque";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
