@@ -8,10 +8,10 @@ const HeroPortfolio = () => {
   return (
     <Container className="hero-portfolio-container">
       <Row className="hero-portfolio-content">
-        <Col xs={12} className="d-flex flex-column align-items-center text-center">
+        <Col xs={8} className="d-flex flex-column align-items-center text-center">
           <BigTitle 
-            primaryText="Bienvenue dans mon" 
-            secondaryText={<span>portfolio <Avatar className="inline-avatar" /></span>} 
+            primaryText="Bienvenue dans" 
+            secondaryText={<span>mon portfolio <Avatar className="inline-avatar" /></span>} 
             showHighlight={false} 
           />
         </Col>
