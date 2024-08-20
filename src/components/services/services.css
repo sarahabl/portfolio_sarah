@@ -43,7 +43,7 @@
   border-radius: 1.25rem;
   border: 1px solid #000;
   border-bottom: 6px solid #000;
-  gap:18px;
+  gap: 20px;
   height: 200px;
 }
 
@@ -55,7 +55,7 @@
 .service-title {
   color: #312E28;
   font-family: "Bricolage Grotesque";
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
 
   margin-bottom: 8px;
