@@ -1,24 +1,22 @@
 .title-container {
   display: flex;
-  flex-direction: row; /* Assure un alignement vertical par défaut */
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 100%;
   margin: 4%;
-  text-align: center; /* Centre le texte horizontalement */
   gap: 20px;
+  align-items: center;
 }
 
 .title-text {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre le texte horizontalement */
 }
 
 .title-primary-small {
   color: var(--black, #312E28);
-  font-family: "Roboto Serif";
-  font-size: 40px; /* Taille de la police pour les grands écrans */
+  font-family: "Roboto Serif", serif;
+  font-size: 40px; /* Taille de la police sur desktop */
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -26,9 +24,9 @@
 }
 
 .title-secondary {
-  font-family: "Roboto Serif", serif;
+  font-family: "Roboto Serif", serif; /* Assurez-vous que cette police est correctement importée */
   font-style: italic;
-  font-weight: 300; /* Utilisation de la version légère italique */
+  font-weight: 200; /* Correspond à "Extra Light" */
 }
 
 .title-highlight img {
@@ -36,7 +34,21 @@
 }
 
 @media (max-width: 768px) {
+  .title-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .title-text {
+      align-items: center;
+  }
+
+  .title-highlight {
+      margin-top: 10px;
+  }
+
   .title-primary-small {
-      font-size: 30px; /* Taille de la police pour les petits écrans */
+      font-size: 30px; /* Taille de la police sur mobile */
   }
 }
