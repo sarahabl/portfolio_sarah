@@ -4,6 +4,7 @@ import Bandeau from '../components/bandeau/bandeau';
 import Intro from '../components/intro/intro';
 import Expertises from '../components/expertises/expertises';
 import Services from '../components/services/services';
+import Realisations from '../components/realisations/realisations';
 import Contact from '../components/contact/contact';
 
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Intro />
       <Expertises />
       <Services />
+      <Realisations />
       <Contact />
     </div>
   );

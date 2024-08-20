@@ -3,6 +3,7 @@ import HeroAccueilServices from '../../components/hero__accueil_services/hero__a
 import Bandeau from '../../components/bandeau/bandeau';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
+import Realisations from '../../components/realisations/realisations';
 
 const Branding = () => {
   return (
@@ -14,6 +15,7 @@ const Branding = () => {
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
+      <Realisations />
       <Services />
       <Contact />
     </div>
