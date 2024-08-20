@@ -23,7 +23,7 @@
   margin: 0;
 }
 
-.title-secondary {
+.title-secondary-small {
   font-family: "Roboto Serif", serif; /* Assurez-vous que cette police est correctement importée */
   font-style: italic;
   font-weight: 200; /* Correspond à "Extra Light" */

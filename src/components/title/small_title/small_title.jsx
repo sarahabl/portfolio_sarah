@@ -8,7 +8,7 @@ const SmallTitle = ({ primaryText, secondaryText }) => {
     <div className="title-container">
       <div className="title-text">
         <h2 className="title-primary-small">
-          {primaryText} <span className="title-secondary">{secondaryText}</span>
+          {primaryText} <span className="title-secondary-small">{secondaryText}</span>
         </h2>
       </div>
       <div className="title-highlight">

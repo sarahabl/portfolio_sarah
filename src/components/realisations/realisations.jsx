@@ -59,8 +59,8 @@ const Realisations = () => {
 
   const settings = {
     dots: true,
-    infinite: false,
-    speed: 100,
+    infinite: true,
+    speed: 200,
     slidesToShow: 2.5,
     slidesToScroll: 1,
     responsive: [

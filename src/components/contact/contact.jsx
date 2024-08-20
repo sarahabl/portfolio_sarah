@@ -10,11 +10,10 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <SmallTitle primaryText="Contactez" secondaryText="Moi" />
+      <SmallTitle primaryText="Contactez" secondaryText="moi" />
       <div className='info'>
         <p className="contact-text">
-        Vous avez une idée ou une question ? <br/>
-        Je serais ravie de discuter avec vous pour explorer comment nous pouvons collaborer et donner vie à vos projets.
+        Vous avez une idée ou une question ? Je serais ravie de discuter avec vous pour explorer comment nous pouvons collaborer et donner vie à vos projets.
         </p>
         <Button text="Contactez-moi" onClick={handleButtonClick} className="contact-button" />
       </div>
