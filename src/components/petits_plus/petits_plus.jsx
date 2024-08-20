@@ -58,22 +58,22 @@ const PetitsPlus = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
+    infinite: false, // Désactive le défilement en boucle
+    speed: 200,
+    slidesToShow: 4, // Affiche 3 cartes à la fois par défaut
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // Pour les écrans moyens
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 600, // Pour les petits écrans
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // Affiche une carte par colonne
           slidesToScroll: 1,
         }
       }
@@ -85,10 +85,12 @@ const PetitsPlus = () => {
       <SmallTitle primaryText="Mes" secondaryText="petits +" />
       <Slider {...settings} ref={sliderRef} className="petits-plus-slider">
         {cardData.map((card, index) => (
-          <div key={index} className="petits-plus-card">
-            <img src={card.img} alt={card.title} />
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
+          <div key={index} className="petits-plus-card-wrapper">
+            <div className="petits-plus-card">
+              <img src={card.img} alt={card.title} />
+              <h3>{card.title}</h3>
+              <p>{card.description}</p>
+            </div>
           </div>
         ))}
       </Slider>

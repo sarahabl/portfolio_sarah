@@ -1,41 +1,46 @@
 .petits-plus-container {
     overflow: hidden; /* Cache la barre de défilement si nécessaire */
-  }
-  
-  .petits-plus-slider {
-    margin : 4% 0 4% 4%;
+    gap:40px;
+}
+
+.petits-plus-slider {
+    margin: 4% 0 4% 4%;
     padding-bottom: 20px;
-  }
-  
-  .petits-plus-card {
-    width: 100%;
+}
+
+.petits-plus-card-wrapper {
+    padding: 0 10px; /* Ajoute un espace de 20px à gauche et à droite de chaque carte */
+    box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur totale de l'élément */
+}
+
+.petits-plus-card {
     border-radius: 0.5rem;
     background: #FFF;
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-  }
-  
-  .petits-plus-card img {
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.petits-plus-card img {
     width: auto;
-    height: 2.1875rem;
-  }
-  
-  .petits-plus-card h3 {
+    height: 2rem; /* Taille de l'image */
+}
+
+.petits-plus-card h3 {
     color: #1C1F23;
     font-family: "Bricolage Grotesque";
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: normal;
-  }
-  
-  .petits-plus-card p {
+}
+
+.petits-plus-card p {
     color: #312E28;
     font-family: "Bricolage Grotesque";
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: normal;
-  }
-  
+}
