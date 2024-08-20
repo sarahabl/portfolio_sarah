@@ -1,68 +1,42 @@
 .title-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 4%;
-    gap:20px;
-    align-items: center;
-  }
-  
-  .title-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .title-primary-small {
-    color: var(--black, #312E28);
-    font-family: "Roboto Serif";
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 0;
-  }
-  
-  .title-secondary {
-    font-style: italic;
-    font-weight: 300;
-  }
-  
-  .title-description {
-    color: var(--black, #312E28);
-    font-family: "Bricolage Grotesque";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-top: 10px;
-  }
-  
-  .title-highlight img {
-    max-width: 100px; /* Ajuste la taille de l'image si nécessaire */
-  }
-  
-  @media (max-width: 768px) {
-    .title-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .title-text {
-      align-items: center;
-    }
-  
-    .title-highlight {
-      margin-top: 10px;
-    }
-  
-    .title-description {
-      display: none; /* Cache la description sur mobile */
-    }
+  display: flex;
+  flex-direction: row; /* Assure un alignement vertical par défaut */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 4%;
+  text-align: center; /* Centre le texte horizontalement */
+  gap: 20px;
+}
 
-    .title-primary {
-        font-size: 20px;
-      }
+.title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre le texte horizontalement */
+}
+
+.title-primary-small {
+  color: var(--black, #312E28);
+  font-family: "Roboto Serif";
+  font-size: 40px; /* Taille de la police pour les grands écrans */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.title-secondary {
+  font-family: "Roboto Serif", serif;
+  font-style: italic;
+  font-weight: 300; /* Utilisation de la version légère italique */
+}
+
+.title-highlight img {
+  max-width: 100px; /* Ajuste la taille de l'image si nécessaire */
+}
+
+@media (max-width: 768px) {
+  .title-primary-small {
+      font-size: 30px; /* Taille de la police pour les petits écrans */
   }
-  
+}
