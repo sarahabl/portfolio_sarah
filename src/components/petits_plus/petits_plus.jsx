@@ -60,7 +60,7 @@ const PetitsPlus = () => {
     dots: true,
     infinite: false, // Désactive le défilement en boucle
     speed: 200,
-    slidesToShow: 4, // Affiche 3 cartes à la fois par défaut
+    slidesToShow: 3.5, // Affiche 3 cartes à la fois par défaut
     slidesToScroll: 1,
     responsive: [
       {

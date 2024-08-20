@@ -1,16 +1,22 @@
 .petits-plus-container {
     overflow: hidden; /* Cache la barre de défilement si nécessaire */
-    gap:40px;
+    gap: 40px;
+    margi-top:8%;
 }
 
 .petits-plus-slider {
     margin: 4% 0 4% 4%;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: row; /* Affiche les cartes en ligne par défaut */
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante si nécessaire */
+    gap: 20px;
 }
 
 .petits-plus-card-wrapper {
-    padding: 0 10px; /* Ajoute un espace de 20px à gauche et à droite de chaque carte */
+    padding: 0 10px; /* Ajoute un espace de 10px à gauche et à droite de chaque carte */
     box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur totale de l'élément */
+    flex: 1 1 calc(33.333% - 20px); /* Par défaut, chaque carte occupe 1/3 de la largeur */
 }
 
 .petits-plus-card {
@@ -21,7 +27,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.625rem;
-    align-self: stretch;
+    width: 100%; /* S'assure que les cartes prennent toute la largeur disponible */
 }
 
 .petits-plus-card img {
@@ -43,4 +49,30 @@
     font-size: 14px;
     font-weight: 300;
     line-height: normal;
+}
+
+/* Media Query pour les tablettes */
+@media (max-width: 1024px) {
+    .petits-plus-card-wrapper {
+        flex: 1 1 100%; /* Chaque carte occupe 100% de la largeur */
+        max-width: 100%; /* Empêche les cartes de déborder */
+    }
+
+    .petits-plus-slider {
+        flex-direction: column; /* Passe les cartes en colonne */
+        gap: 20px; /* Espace entre les cartes en colonne */
+    }
+}
+
+/* Media Query pour les mobiles */
+@media (max-width: 600px) {
+    .petits-plus-card-wrapper {
+        flex: 1 1 100%; /* Chaque carte occupe 100% de la largeur */
+        max-width: 100%; /* Empêche les cartes de déborder */
+    }
+
+    .petits-plus-slider {
+        flex-direction: column; /* Assure que les cartes sont en colonne */
+        gap: 20px; /* Espace entre les cartes en colonne */
+    }
 }
