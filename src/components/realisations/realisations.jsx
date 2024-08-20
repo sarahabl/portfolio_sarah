@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './realisations.css';
 import SmallTitle from '../title/small_title/small_title';
 import Slider from "react-slick";
-import Tag from '../tags/tags'; // Import du composant Tag
+import Tag from '../tags/tags';
 import { useNavigate } from 'react-router-dom';
 
 // Import des images des projets
@@ -16,7 +16,7 @@ const projectData = [
     tags: ["Product Design", "Design system"],
     title: "Redéfinir l'engagement collaborateur de wenabi",
     img: projetWenabi,
-    link: "/portfolio/Wenabi" // Utilisation des routes pour la navigation
+    link: "/portfolio/Wenabi"
   },
   {
     tags: ["Création de site internet", "Branding"],
@@ -59,7 +59,7 @@ const Realisations = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: true, // Cette propriété permet de faire tourner les cartes en boucle
     speed: 200,
     slidesToShow: 2.5,
     slidesToScroll: 1,

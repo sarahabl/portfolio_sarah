@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './big_title.css';
-import highlightImg from '../../../assets/Highlight.svg';
 
 const BigTitle = ({ primaryText, secondaryText, description, showHighlight = true }) => {
   return (
@@ -12,11 +11,6 @@ const BigTitle = ({ primaryText, secondaryText, description, showHighlight = tru
         </h1>
         {description && <p className="title-description">{description}</p>}
       </div>
-      {showHighlight && (
-        <div className="title-highlight">
-          <img src={highlightImg} alt="Highlight" />
-        </div>
-      )}
     </div>
   );
 };
