@@ -58,7 +58,7 @@ const Realisations = () => {
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true, // Cette propriété permet de faire tourner les cartes en boucle
     speed: 200,
     slidesToShow: 2.5,

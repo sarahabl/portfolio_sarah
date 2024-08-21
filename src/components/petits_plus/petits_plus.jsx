@@ -57,10 +57,10 @@ const PetitsPlus = () => {
   }, []);
 
   const settings = {
-    dots: true,
-    infinite: false, // Désactive le défilement en boucle
+    dots: false,
+    infinite: true, // Pour gérer le défilement en boucle
     speed: 200,
-    slidesToShow: 3.5, // Affiche 3 cartes à la fois par défaut
+    slidesToShow: 4, // Affiche le nombre de cartes à la fois par défaut
     slidesToScroll: 1,
     responsive: [
       {

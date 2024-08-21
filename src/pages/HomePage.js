@@ -11,9 +11,9 @@ const HomePage = () => {
   return (
     <div>
       <HeroAccueilServices 
-        primaryText="Hello, I'm"
-        secondaryText="Sarah Ablonet"
-        description="Product Designer & Web Designer à Rennes"
+        primaryText="Degemer"
+        secondaryText="mat deoc'h!"
+        description="Je suis Sarah Ablonet et j'aide les équipes à concevoir et à lancer des produits numériques. Parfois, je crée les miens."
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
