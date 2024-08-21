@@ -1,0 +1,83 @@
+.process-design-container {
+    margin: 40px 0;
+  }
+  
+  .process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px; /* Espace entre chaque bloc */
+  }
+  
+  .process-step {
+    display: flex;
+    padding: 1.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+    flex: 1 0 0;
+    color: var(--black, #312E28);
+  }
+  
+  /* Style spécifique pour chaque étape */
+  .step-1 {
+    background: var(--jaune, #FDC251);
+    border-radius: 1.25rem 0rem 0rem 1.25rem;
+  }
+  
+  .step-2 {
+    background: linear-gradient(270deg, #F7B4F5 0%, #FDC251 100%);
+    border-radius: 0; /* Pas de border-radius pour ce bloc */
+  }
+  
+  .step-3 {
+    background: var(--rose, #F7B4F5);
+    border-radius: 0; /* Pas de border-radius pour ce bloc */
+  }
+  
+  .step-4 {
+    background: linear-gradient(270deg, #5D97E6 0%, #F7B4F5 100%);
+    border-radius: 0; /* Pas de border-radius pour ce bloc */
+  }
+  
+  .step-5 {
+    background: var(--bleu, #5D97E6);
+    border-radius: 0rem 1.25rem 1.25rem 0rem;
+  }
+  
+  h3 {
+    font-family: "Bricolage Grotesque";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .description,
+  .duration {
+    font-family: "Bricolage Grotesque";
+    font-size: 12px; /* Mise à jour de la taille de la police pour la description */
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .process-steps {
+      flex-direction: column;
+    }
+  
+    .step-1 {
+      border-radius: 1.25rem 1.25rem 0rem 0rem; /* Ajustement du border-radius pour mobile */
+    }
+  
+    .step-2,
+    .step-3,
+    .step-4 {
+      border-radius: 0; /* Pas de border-radius pour les blocs centraux */
+    }
+  
+    .step-5 {
+      border-radius: 0rem 0rem 1.25rem 1.25rem; /* Ajustement du border-radius pour mobile */
+    }
+  }
+  
