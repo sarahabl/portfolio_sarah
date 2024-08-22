@@ -2,6 +2,7 @@ import React from 'react';
 import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
+import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
@@ -35,6 +36,26 @@ const SiteInternet = () => {
     },
   ];
 
+  const inclusItems = [
+    {
+      title: "Design visuel",
+      description: "Maquettes de pages principales & design responsive pour une expérience optimale sur tous les appareils."
+    },
+    {
+      title: "SEO & référencement",
+      description: "Optimisation des balises HTML, du contenu pour le référencement naturel & mise en place des outils de suivi SEO."
+    },
+    {
+      title: "Sécurité",
+      description: "Protection contre les attaques courantes & configuration des sauvegardes automatiques."
+    },
+    {
+      title: "Formation & support",
+      description: "Des ajustements minutieux pour une satisfaction totale."
+    },
+  ];
+
+
   return (
     <div>
       <HeroAccueilServices 
@@ -45,6 +66,7 @@ const SiteInternet = () => {
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />
+      <Inclus items={inclusItems} />
       <Realisations />
       <Services />
       <Contact />
