@@ -2,6 +2,7 @@ import React from 'react';
 import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
+import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
@@ -35,6 +36,29 @@ const ProductDesign = () => {
     },
   ];
 
+  const inclusItems = [
+    {
+      title: "Résultat de la discovery",
+      description: "Résultats détaillés de l'analyse des besoins et des insights utilisateurs."
+    },
+    {
+      title: "Wireframes & maquettes",
+      description: "Maquettes basse fidélité pour visualiser les concepts sur Figma."
+    },
+    {
+      title: "Maquettes hautes fidélité & documentation",
+      description: "Designs finaux, détaillés et prêts pour le développement."
+    },
+    {
+      title: "Prototypes interactifs",
+      description: "Versions fonctionnelles pour tests et validation."
+    },
+    {
+      title: "Rapport de tests utilisateurs",
+      description: "Analyse des retours et recommandations sous la forme d'empathy map, de userflows..."
+    }
+  ];
+
   return (
     <div>
       <HeroAccueilServices 
@@ -45,6 +69,7 @@ const ProductDesign = () => {
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />
+      <Inclus items={inclusItems} />
       <Realisations />
       <Services />
       <Contact />

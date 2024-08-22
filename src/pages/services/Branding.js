@@ -51,7 +51,7 @@ const Branding = () => {
     },
     {
       title: "1 proposition de concept",
-      description: "Composé de : un logo principal, secondaire & icône, une palette de couleurs, les typographies"
+      description: "Composé de : un logo principal, secondaire & icône, une palette de couleurs, les typographies."
     },
     {
       title: "2 séries d’affinements",
