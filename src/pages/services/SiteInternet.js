@@ -1,11 +1,40 @@
 import React from 'react';
 import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../../components/bandeau/bandeau';
+import ProcessDesign from '../../components/process-design/process-design';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 
 const SiteInternet = () => {
+  const processSteps = [
+    {
+      title: "Consultation initiale ",
+      description: "Je vous accompagne pour cerner vos attentes lors d'un échange personnalisé, où nous définissons ensemble les grandes lignes de votre projet.",
+      duration: "1 heure",
+    },
+    {
+      title: "Recherche & planification",
+      description: "J'analyse votre marché en profondeur et planifie la structure du site en étudiant les tendances web, la concurrence, et en définissant l’arborescence et les fonctionnalités clés.",
+      duration: "1 semaine",
+    },
+    {
+      title: "Design & maquettage",
+      description: "C'est le moment où je crée la maquette et l'identité graphique de votre site. Je vous propose plusieurs versions de wireframes, ainsi que des options concrètes pour les couleurs, les typographies et les éléments graphiques.",
+      duration: "1-2 semaines",
+    },
+    {
+      title: "Développement & intégration",
+      description: "Je transforme la maquette en un site web fonctionnel en développant en HTML, CSS, React, JavaScript, et PHP, et en intégrant le tout sur WordPress avec une optimisation SEO.",
+      duration: "2-3 semaines",
+    },
+    {
+      title: "Tests & lancement",
+      description: "Je m'assure que votre site est performant et sécurisé grâce à des tests rigoureux, incluant la vérification de la compatibilité mobile et le renforcement de la sécurité, avant de procéder à la mise en ligne.",
+      duration: "1 semaine",
+    },
+  ];
+
   return (
     <div>
       <HeroAccueilServices 
@@ -15,6 +44,7 @@ const SiteInternet = () => {
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
+      <ProcessDesign steps={processSteps} />
       <Realisations />
       <Services />
       <Contact />
