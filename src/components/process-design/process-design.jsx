@@ -14,7 +14,7 @@ const ProcessDesign = ({ steps }) => {
             <p className="duration">{step.duration}</p>
           </div>
         ))}
-      </div>
+      </div
     </div>
   );
 };
