@@ -11,6 +11,7 @@ import projetBodachella from '../../assets/projet_bodachella.png';
 import projetGraies from '../../assets/projet_graies.png';
 import projetE2R from '../../assets/projet_e2R.png';
 
+// Données des projets
 const projectData = [
   {
     tags: ["Product Design", "Design system"],
@@ -38,9 +39,17 @@ const projectData = [
   }
 ];
 
+// Fonction pour mélanger un tableau
+const shuffleArray = (array) => {
+  return array.sort(() => Math.random() - 0.5);
+};
+
 const Realisations = () => {
   const sliderRef = useRef(null);
   const navigate = useNavigate();
+
+  // Mélanger les projets avant de les afficher
+  const shuffledProjects = shuffleArray([...projectData]);
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -85,7 +94,7 @@ const Realisations = () => {
     <div className="realisations-container">
       <SmallTitle primaryText="Mes" secondaryText="réalisations" />
       <Slider {...settings} ref={sliderRef} className="realisations-slider">
-        {projectData.map((project, index) => (
+        {shuffledProjects.map((project, index) => (
           <div key={index} className="realisations-card-wrapper" onClick={() => navigate(project.link)}>
             <div className="realisations-card">
               <div className="realisations-tags">

@@ -52,10 +52,10 @@
     line-height: normal;
   }
   
-  .description,
+  .process-description,
   .duration {
     font-family: "Bricolage Grotesque";
-    font-size: 12px; /* Mise à jour de la taille de la police pour la description */
+    font-size: 14px; /* Mise à jour de la taille de la police pour la description */
     font-weight: 300;
     line-height: normal;
   }
