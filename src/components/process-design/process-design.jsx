@@ -10,11 +10,11 @@ const ProcessDesign = ({ steps }) => {
         {steps.map((step, index) => (
           <div key={index} className={`process-step step-${index + 1}`}>
             <h3>{step.title}</h3>
-            <p className="process-description">{step.description}</p>
+            <p className="description">{step.description}</p>
             <p className="duration">{step.duration}</p>
           </div>
         ))}
-      </div
+      </div>
     </div>
   );
 };
