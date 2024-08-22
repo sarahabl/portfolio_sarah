@@ -1,11 +1,41 @@
 import React from 'react';
 import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../../components/bandeau/bandeau';
+import ProcessDesign from '../../components/process-design/process-design'; // Import du composant ProcessDesign
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 
 const DesignSystem = () => {
+    // Définir les étapes du processus pour le design system
+    const processSteps = [
+      {
+        title: "Découverte & audit",
+        description: "J’analyse en profondeur vos besoins, objectifs, et défis, en réalisant un audit complet des systèmes existants et une étude de votre identité de marque et de vos utilisateurs pour établir une base solide pour votre design system.",
+        duration: "2 semaines",
+      },
+      {
+        title: "Définition des fondations",
+        description: "Ensemble, nous établissons les principes fondamentaux de votre design system, incluant la palette de couleurs, les typographies, les règles de mise en page, et les guides d'accessibilité, pour une cohérence visuelle et fonctionnelle.",
+        duration: "2 semaines",
+      },
+      {
+        title: "Création des composants",
+        description: "Je développe et documente des composants essentiels, tels que boutons et formulaires, en assurant leur adaptabilité, réutilisabilité, et robustesse à travers divers scénarios de test.",
+        duration: "2 semaines",
+      },
+      {
+        title: "Intégration & tests",
+        description: "J'intègre les composants dans un prototype interactif, effectue des tests rigoureux pour garantir leur fonctionnalité et esthétique, et ajuste selon les retours pour optimiser les performances.",
+        duration: "2 semaines",
+      },
+      {
+        title: "Documentation & formation ",
+        description: "Je rédige une documentation claire et complète pour l’utilisation des composants, tout en formant vos équipes pour assurer une adoption fluide et efficace du design system.",
+        duration: "2 semaines",
+      },
+    ];
+  
   return (
     <div>
       <HeroAccueilServices 
@@ -15,6 +45,7 @@ const DesignSystem = () => {
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
+      <ProcessDesign steps={processSteps} />
       <Realisations />
       <Services />
       <Contact />

@@ -45,7 +45,7 @@ const Branding = () => {
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
-      <ProcessDesign steps={processSteps} /> {/* Ajout du composant ProcessDesign */}
+      <ProcessDesign steps={processSteps} />
       <Realisations />
       <Services />
       <Contact />

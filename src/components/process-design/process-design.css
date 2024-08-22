@@ -24,19 +24,27 @@
 
 h3 {
   font-family: "Bricolage Grotesque";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: normal;
   text-align: left; /* Assure que le texte est aligné à gauche */
 }
 
-.process-description,
-.duration {
+.process-description{
   font-family: "Bricolage Grotesque";
-  font-size: 14px; /* Mise à jour de la taille de la police pour la description */
+  font-size: 14px;
   font-weight: 300;
   line-height: normal;
-  text-align: left; /* Assure que le texte est aligné à gauche */
+  text-align: left;
+}
+
+.duration {
+  font-family: "Roboto Serif";
+  font-size: 18px;
+  font-weight: 200;
+  line-height: normal;
+  text-align: left; 
+  font-style: italic;
 }
 
 /* Style spécifique pour chaque étape */
