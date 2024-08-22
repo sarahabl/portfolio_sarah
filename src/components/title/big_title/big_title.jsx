@@ -4,7 +4,7 @@ import './big_title.css';
 
 const BigTitle = ({ primaryText, secondaryText, description, showHighlight = true }) => {
   return (
-    <div className="title-container">
+    <div className="big-title-container">
       <div className="title-text">
         <h1 className="title-primary">
           {primaryText} <span className="title-secondary">{secondaryText}</span>

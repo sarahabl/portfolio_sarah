@@ -1,9 +1,10 @@
-.title-container {
+.big-title-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: auto;
     align-items: center;
+    margin: 0;
   }
   
   .title-text {
