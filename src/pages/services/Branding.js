@@ -39,7 +39,7 @@ const Branding = () => {
   const inclusItems = [
     {
       title: "Guide stratégique",
-      description: "Une exploration complète de votre marque : mission, vision, valeurs. \nUn positionnement clair et des messages clés pour votre communication."
+      description: "Une exploration complète de votre marque : mission, vision, valeurs. \n\nUn positionnement clair et des messages clés pour votre communication."
     },
     {
       title: "Charte graphique",

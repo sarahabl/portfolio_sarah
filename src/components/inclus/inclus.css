@@ -18,7 +18,7 @@
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%; /* Assure que tous les blocs ont la même hauteur */
     box-sizing: border-box;
   }
@@ -48,7 +48,8 @@
     font-weight: 300;
     line-height: normal;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 16px;
+    /* white-space: pre-line; */
   }
   
   @media (max-width: 768px) {
