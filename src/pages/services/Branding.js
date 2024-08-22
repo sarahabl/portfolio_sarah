@@ -4,10 +4,9 @@ import Bandeau from '../../components/bandeau/bandeau';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import Realisations from '../../components/realisations/realisations';
-import ProcessDesign from '../../components/process-design/process-design'; // Import du composant ProcessDesign
+import ProcessDesign from '../../components/process-design/process-design';
 
 const Branding = () => {
-  // Définir les étapes du processus pour le branding
   const processSteps = [
     {
       title: "Consultation initiale",

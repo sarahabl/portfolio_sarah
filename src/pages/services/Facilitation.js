@@ -1,11 +1,35 @@
 import React from 'react';
 import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../../components/bandeau/bandeau';
+import ProcessDesign from '../../components/process-design/process-design';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 
 const Facilitation = () => {
+  const processSteps = [
+    {
+      title: "Préparation & planification",
+      description: "Je prends le temps de comprendre en profondeur votre contexte et vos besoins spécifiques, incluant des entretiens avec les parties prenantes clés pour préparer un agenda personnalisé.",
+    },
+    {
+      title: "Animation d'ateliers",
+      description: "J’organise et anime des ateliers créatifs et collaboratifs, en utilisant des techniques variées pour stimuler l'engagement et la co-création.",
+    },
+    {
+      title: "Modération des discussions",
+      description: "Je facilite les discussions, encourage l'expression de toutes les voix, résous les conflits et assure que chaque perspective soit prise en compte pour des résultats constructifs.",
+    },
+    {
+      title: "Suivi",
+      description: "Après chaque atelier, je vous fournis des rapports détaillés et organise des réunions de débriefing pour maximiser les apprentissages et ajuster les actions futures.",
+    },
+    {
+      title: "Évaluation & feedback",
+      description: "Je sollicite activement vos retours et ceux des participants pour évaluer l’efficacité de l’atelier, célébrer les succès et identifier les opportunités d'amélioration continue.",
+    },
+  ];
+
   return (
     <div>
       <HeroAccueilServices 
@@ -15,6 +39,7 @@ const Facilitation = () => {
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
+      <ProcessDesign steps={processSteps} />
       <Realisations />
       <Services />
       <Contact />
