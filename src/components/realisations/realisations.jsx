@@ -4,14 +4,11 @@ import SmallTitle from '../title/small_title/small_title';
 import Slider from "react-slick";
 import Tag from '../tags/tags';
 import { useNavigate } from 'react-router-dom';
-
-// Import des images des projets
 import projetWenabi from '../../assets/projet_wenabi.png';
 import projetBodachella from '../../assets/projet_bodachella.png';
 import projetGraies from '../../assets/projet_graies.png';
 import projetE2R from '../../assets/projet_e2R.png';
 
-// Données des projets
 const projectData = [
   {
     tags: ["Product Design", "Design system"],
@@ -39,7 +36,6 @@ const projectData = [
   }
 ];
 
-// Fonction pour mélanger un tableau
 const shuffleArray = (array) => {
   return array.sort(() => Math.random() - 0.5);
 };
@@ -48,7 +44,6 @@ const Realisations = () => {
   const sliderRef = useRef(null);
   const navigate = useNavigate();
 
-  // Mélanger les projets avant de les afficher
   const shuffledProjects = shuffleArray([...projectData]);
 
   useEffect(() => {
