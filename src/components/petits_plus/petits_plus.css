@@ -1,7 +1,7 @@
 .petits-plus-container {
     overflow: hidden; /* Cache la barre de défilement si nécessaire */
     gap: 40px;
-    margi-top:8%;
+    margin-top:8%;
 }
 
 .petits-plus-slider {
@@ -11,6 +11,7 @@
     flex-direction: row; /* Affiche les cartes en ligne par défaut */
     flex-wrap: wrap; /* Permet de passer à la ligne suivante si nécessaire */
     gap: 20px;
+    overflow: hidden;
 }
 
 .petits-plus-card-wrapper {

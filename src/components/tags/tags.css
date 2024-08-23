@@ -6,8 +6,10 @@
     gap: 0.625rem;
     border-radius: 1.875rem;
     background: var(--black, #312E28);
-    color: white; /* Ajoute cette ligne pour s'assurer que le texte est visible sur le fond noir */
-    font-family: "Roboto", sans-serif; /* Ou une autre police de caractères de ton choix */
-    font-size: 1rem; /* Ajuste la taille de la police selon tes besoins */
-  }
+    color: white;
+    font-family: "Roboto Serif";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 100;
+}
   
