@@ -17,25 +17,25 @@ const projectData = [
     tags: ["Product Design", "Design system"],
     title: "Redéfinir l'engagement collaborateur de wenabi",
     img: projetWenabi,
-    link: "/portfolio/Wenabi"
+    link: "/portfolio/wenabi"
   },
   {
     tags: ["Création de site internet", "Branding"],
     title: "Créer une identité visuelle et un site internet pour Bodachella",
     img: projetBodachella,
-    link: "/portfolio/Bodachella"
+    link: "/portfolio/bodachella"
   },
   {
     tags: ["Product Design", "Branding"],
     title: "Concevoir le MVP de Graines Sauvages",
     img: projetGraies,
-    link: "/portfolio/Talia"
+    link: "/portfolio/talia"
   },
   {
     tags: ["Branding"],
     title: "Imaginer le logo de la méthode E2R",
     img: projetE2R,
-    link: "/portfolio/MethodeE2R"
+    link: "/portfolio/methode-e2r"
   }
 ];
 
