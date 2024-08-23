@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap');
 
-/* Définition des styles globaux */
-#root {
-  background-color: #F9F6EB;
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+#root {
+  max-width: 100%; /* Assure que le conteneur principal ne dépasse pas 100% de la largeur */
+  margin: 0 auto;
+  background-color: #F9F6EB;
   font-family: 'Bricolage Grotesque', sans-serif;
 }
