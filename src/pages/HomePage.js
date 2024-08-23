@@ -1,21 +1,25 @@
 import React from 'react';
-import HeroAccueilServices from '../components/hero__accueil_services/hero__accueil_services';
-import Bandeau from '../components/bandeau/bandeau';
-import Intro from '../components/intro/intro';
-import Expertises from '../components/expertises/expertises';
-import Services from '../components/services/services';
-import Realisations from '../components/realisations/realisations';
-import Contact from '../components/contact/contact';
+import {
+  HeroAccueilServices,
+  Bandeau,
+  Intro,
+  Expertises,
+  Services,
+  Realisations,
+  Contact,
+} from '../components';
 
 const HomePage = () => {
+  const heroProps = {
+    primaryText: "Hello, je suis",
+    secondaryText: "Sarah Ablonet",
+    description: "J'aide les équipes à concevoir et à lancer des produits numériques. Parfois, je crée les miens.",
+    buttonText: "Voir mon portfolio",
+  };
+
   return (
     <div>
-      <HeroAccueilServices 
-        primaryText="Hello, je suis"
-        secondaryText="Sarah Ablonet"
-        description="J'aide les équipes à concevoir et à lancer des produits numériques. Parfois, je crée les miens."
-        buttonText="Voir mon portfolio"
-      />
+      <HeroAccueilServices {...heroProps} />
       <Bandeau />
       <Intro />
       <Expertises />

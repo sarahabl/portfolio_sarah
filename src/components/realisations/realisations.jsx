@@ -47,6 +47,12 @@ const Realisations = () => {
   const shuffledProjects = shuffleArray([...projectData]);
 
   useEffect(() => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(0); // Réinitialise le slider à la première slide
+    }
+  }, []);
+
+  useEffect(() => {
     const handleScroll = (event) => {
       if (sliderRef.current) {
         const slider = sliderRef.current.innerSlider.list;
