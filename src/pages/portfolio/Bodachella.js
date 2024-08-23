@@ -14,7 +14,7 @@ const Bodachella = () => {
         description="Pour Bodachella, j'ai eu le plaisir de créer une identité visuelle vibrante et un site web entièrement personnalisable. Bodachella Box, une marque innovante spécialisée dans les coffrets pour enterrements de vie de jeune fille (EVJF), cherchait à se démarquer avec un style dynamique, coloré et moderne. Voici comment j'ai contribué à donner vie à leur vision."
         tags={["Branding", "Création de site internet"]}
         buttonText="Discutons ensemble de votre projet !"
-        imageSrc={bodachellaHeroImage} // Assurez-vous que l'image est correctement référencée
+        imageSrc={bodachellaHeroImage}
       />
       <Realisations />
       <Services />
