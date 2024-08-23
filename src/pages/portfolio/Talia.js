@@ -9,8 +9,8 @@ const Talia = () => {
   return (
     <div>
       <HeroProjet
-        titlePrimary="L’application"
-        titleSecondary="Talia"
+        titlePrimary="L’app de"
+        titleSecondary="Graines sauvages"
         description="Talia est une plateforme innovante dédiée aux passionnés de jardinage et aux maraîchers professionnels. Développée pour répondre aux défis du changement climatique, Talia permet aux utilisateurs de partager des calendriers de semis et des observations, tout en offrant un accès à des informations locales et actualisées.
 Mon rôle dans ce projet a été de créer le branding de Talia et de concevoir le design du produit MVP, afin de donner vie à une plateforme à la fois pratique et attrayante."
         tags={["Branding", "Product Design"]}
