@@ -1,9 +1,10 @@
 import React from 'react';
-import HeroProjet from '../../components/hero__projet/hero__projet'; // Import du composant HeroProjet
+import HeroProjet from '../../components/hero__projet/hero__projet';
+import DesignChallenge from '../../components/design__challenge/design__challenge';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import e2rHeroImage from '../../assets/E2R__hero.png'; // Import de l'image associée (assurez-vous que l'image existe)
+import e2rHeroImage from '../../assets/E2R__hero.png';
 
 const E2R = () => {
   return (
@@ -15,6 +16,10 @@ const E2R = () => {
         tags={["Branding"]}
         buttonText="Discutons ensemble de votre projet !"
         imageSrc={e2rHeroImage} // Assurez-vous que l'image est correctement référencée
+      />
+      <DesignChallenge 
+        title="Créer un logo qui équilibre rigueur scientifique et douceur empathique"
+        description="L’objectif ? Concevoir une identité visuelle qui reflète l’essence de la méthode E2R avec innovation, élégance et proximité. Il fallait que la marque se démarque dans l'univers des thérapies tout en respirant professionnalisme et bienveillance. J’ai cherché à créer un design qui parle autant aux professionnels de santé qu’aux patients, en incarnant ce parfait équilibre entre science et empathie."
       />
       <Realisations />
       <Services />

@@ -1,10 +1,10 @@
 import React from 'react';
-import HeroProjet from '../../components/hero__projet/hero__projet'; // Import du composant HeroProjet
+import HeroProjet from '../../components/hero__projet/hero__projet';
 import DesignChallenge from '../../components/design__challenge/design__challenge';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import wenabiHeroImage from '../../assets/wenabi__hero.png'; // Import de l'image associée
+import wenabiHeroImage from '../../assets/wenabi__hero.png';
 
 const Wenabi = () => {
   return (
