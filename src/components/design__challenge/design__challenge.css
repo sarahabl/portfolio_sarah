@@ -1,0 +1,25 @@
+.design-challenge-container {
+    text-align: center;
+    padding: 4%;
+    background-color: white;
+  }
+  
+  .design-challenge-title {
+    font-family: "Roboto Serif";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .design-challenge-description {
+    color: #312E28;
+    font-family: "Bricolage Grotesque";
+    font-size: 16px;
+    font-weight: 300;
+    margin: 1rem auto;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
