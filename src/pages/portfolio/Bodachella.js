@@ -1,5 +1,6 @@
 import React from 'react';
-import HeroProjet from '../../components/hero__projet/hero__projet'; // Import du composant HeroProjet
+import HeroProjet from '../../components/hero__projet/hero__projet';
+import DesignChallenge from '../../components/design__challenge/design__challenge';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import Realisations from '../../components/realisations/realisations';
@@ -15,6 +16,10 @@ const Bodachella = () => {
         tags={["Branding", "Création de site internet"]}
         buttonText="Discutons ensemble de votre projet !"
         imageSrc={bodachellaHeroImage}
+      />
+      <DesignChallenge 
+        title="Ma mission ? Créer une Identité Visuelle Unique et un Site Web Sur-Mesure"
+        description="Mon défi était de concevoir un branding percutant et développer un site web flexible, reflétant l’esprit festif et la diversité des expériences proposées par Bodachella Box, tout en offrant une solution clé en main aux organisateurs d’EVJF."
       />
       <Realisations />
       <Services />
