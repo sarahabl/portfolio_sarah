@@ -1,9 +1,10 @@
 import React from 'react';
-import HeroProjet from '../../components/hero__projet/hero__projet'; // Import du composant HeroProjet
+import HeroProjet from '../../components/hero__projet/hero__projet';
+import DesignChallenge from '../../components/design__challenge/design__challenge';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import taliaHeroImage from '../../assets/talia__hero.png'; // Import de l'image associée (assurez-vous que l'image existe)
+import taliaHeroImage from '../../assets/talia__hero.png';
 
 const Talia = () => {
   return (
@@ -15,7 +16,11 @@ const Talia = () => {
 Mon rôle dans ce projet a été de créer le branding de Talia et de concevoir le design du produit MVP, afin de donner vie à une plateforme à la fois pratique et attrayante."
         tags={["Branding", "Product Design"]}
         buttonText="Discutons ensemble de votre projet !"
-        imageSrc={taliaHeroImage} // Assurez-vous que l'image est correctement référencée
+        imageSrc={taliaHeroImage}
+      />
+      <DesignChallenge 
+        title="Faciliter le partage d’informations avec une interface durable et engageante"
+        description="Il s'agissait de créer un produit numérique parfaitement adapté aux besoins des jardiniers, qu'ils soient amateurs ou professionnels, face aux défis d’un climat changeant. L’objectif ? Développer un branding cohérent et un design fonctionnel qui incarnent l’authenticité, la collaboration et l’innovation, au service d’un jardinage durable."
       />
       <Realisations />
       <Services />
