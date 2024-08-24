@@ -1,0 +1,34 @@
+.section-img-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+    gap: 40px;
+    background-color: white;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    border-radius: 0.625rem;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .section-text {
+    margin-top: 1rem;
+    font-family: "Bricolage Grotesque";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  h3 {
+    color: #00381A;
+    font-family: "Bricolage Grotesque";
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  
