@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width:75%;
   max-width: 38.75rem;
   padding: 10rem 2.5rem 2.5rem 2.5rem;
   background: white;
@@ -27,7 +27,7 @@
 
 .expertise-title {
   color: var(--black, #312E28);
-  text-align: center;
+  text-align: left;
   font-family: "Bricolage Grotesque";
   font-size: 24px;
   font-style: normal;
@@ -38,7 +38,7 @@
 
 .expertise-text {
   color: var(--black, #312E28);
-  text-align: center;
+  text-align: left;
   font-family: "Bricolage Grotesque";
   font-size: 16px;
   font-style: normal;
