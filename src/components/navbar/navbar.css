@@ -72,6 +72,15 @@
   gap: 20px;
 }
 
+.navbar-links a {
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  font-weight: 700;
+  color: #000000;
+}
+
 .navbar-linkedin-icon {
   width: 24px;
   height: 24px;
