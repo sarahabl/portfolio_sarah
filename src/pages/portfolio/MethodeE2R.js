@@ -2,6 +2,7 @@ import React from 'react';
 import HeroProjet from '../../components/hero__projet/hero__projet';
 import methodeE2RHeroImage from '../../assets/E2R__hero.png';
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
+import SectionLast from '../../components/section__projet/section__last/section__last';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import methodeE2RSectionImage from '../../assets/E2R__section1.png';

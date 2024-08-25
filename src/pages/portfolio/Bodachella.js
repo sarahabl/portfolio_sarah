@@ -3,6 +3,7 @@ import HeroProjet from '../../components/hero__projet/hero__projet';
 import bodachellaHeroImage from '../../assets/bodachella__hero.png';
 import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
+import SectionLast from '../../components/section__projet/section__last/section__last';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import bodachellaSection1Image from '../../assets/bodachella__section1.png';
