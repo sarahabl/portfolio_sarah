@@ -26,8 +26,8 @@ const HeroAbout = () => {
           Passionnée par la technologie, l’art et les expériences utilisateur fluides, je combine créativité et compétences techniques pour donner vie à vos idées en produits numériques. Mon parcours est varié : après des études en marketing digital, j’ai travaillé à l’étranger pendant 3 ans au Myanmar et presque 1 an à Madagascar. De retour en France, je me suis lancée dans le design UX/UI en 2019, et j’ai décroché mon premier poste en 2020. Aujourd’hui, je suis product designer, toujours prête pour de nouveaux défis !
           </p>
           <Button
-            text="Voir mon portfolio"
-            onClick={() => window.location.href = '/portfolio'}
+            text="Voir mon CV"
+            onClick={() => window.open('https://drive.google.com/file/d/1ZvszHYzZYqVLJc34NE5wzNQib1wooVoN/view?usp=sharing', '_blank')}
             className="hero-about-button"
           />
         </Col>

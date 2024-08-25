@@ -86,7 +86,7 @@ const Realisations = () => {
   };
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 250,
     slidesToShow: 2.5,
