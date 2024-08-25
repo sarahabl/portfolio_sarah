@@ -59,7 +59,7 @@ const CustomNavbar = () => {
           <Nav.Link href="https://www.linkedin.com/in/sarah-ablonet/" target="_blank" onClick={handleNavClick}>
             <img src={linkedinIcon} alt="LinkedIn" className="navbar-linkedin-icon" />
           </Nav.Link>
-          <Buttons text="Contactez-moi !" onClick={handleNavClick} />
+          <Buttons text="Un besoin design ?" onClick={handleNavClick} />
         </Nav>
       </Navbar.Collapse>
     </Navbar>
