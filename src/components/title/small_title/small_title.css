@@ -6,6 +6,8 @@
   margin: 4%;
   gap: 20px;
   align-items: center;
+  transform: translateY(0); /* Définir la position initiale */
+  transition: transform 0.2s ease-out; /* Transition douce pour la parallaxe */
 }
 
 .title-text {
