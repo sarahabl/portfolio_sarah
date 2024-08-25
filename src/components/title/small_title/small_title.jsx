@@ -12,7 +12,7 @@ const SmallTitle = ({ primaryText, secondaryText }) => {
         const scrollPosition = window.scrollY;
         const titlePosition = titleRef.current.offsetTop;
         const windowHeight = window.innerHeight;
-        const offset = (scrollPosition - titlePosition + windowHeight) * 0.1;
+        const offset = (scrollPosition - titlePosition + windowHeight) * 0.025;
 
         titleRef.current.style.transform = `translateY(${offset}px)`;
       }

@@ -1,13 +1,12 @@
 .title-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   width: 100%;
   margin: 4%;
   gap: 20px;
-  align-items: center;
-  transform: translateY(0); /* Définir la position initiale */
-  transition: transform 0.2s ease-out; /* Transition douce pour la parallaxe */
+  transform: translateY(0);
+  transition: transform 0.025s ease-out; /* Transition douce pour la parallaxe */
 }
 
 .title-text {
@@ -19,38 +18,40 @@
   color: var(--black, #312E28);
   font-family: "Roboto Serif", serif;
   font-size: 40px; /* Taille de la police sur desktop */
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   margin: 0;
 }
 
 .title-secondary-small {
-  font-family: "Roboto Serif", serif; /* Assurez-vous que cette police est correctement importée */
+  font-family: "Roboto Serif", serif;
   font-style: italic;
-  font-weight: 200; /* Correspond à "Extra Light" */
+  font-weight: 200;
 }
 
 .title-highlight img {
-  max-width: 100px; /* Ajuste la taille de l'image si nécessaire */
+  max-width: 100px; /* Taille de l'image sur desktop */
+  transition: transform 0.3s ease; /* Ajout d'une transition pour une rotation fluide */
 }
 
 @media (max-width: 768px) {
   .title-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    flex-direction: row; /* Alignement en ligne pour mobile */
+    align-items: center;
+    text-align: center;
+    gap: 16px;
   }
 
   .title-text {
-      align-items: center;
-  }
-
-  .title-highlight {
-      margin-top: 10px;
+    align-items: center;
   }
 
   .title-primary-small {
-      font-size: 30px; /* Taille de la police sur mobile */
+    font-size: 30px; /* Taille de la police sur mobile */
+  }
+
+  .title-highlight img {
+    max-width: 40px; /* Réduction de la taille de l'image sur mobile */
+    transform: rotate(20deg); /* Rotation de l'image pour un effet stylisé */
   }
 }
