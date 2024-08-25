@@ -15,14 +15,14 @@ const HeroAccueilServices = ({ primaryText, secondaryText, description, paragrap
 
   return (
     <div className="hero-container">
-      <Container>
+      <Container fluid>
         <Row className="hero-content">
-          <Col lg={6} className="hero-left">
+          <Col lg={6} md={12} className="hero-left">
             <Title primaryText={primaryText} secondaryText={secondaryText} description={description} />
             <p className="hero-paragraph">{paragraphText}</p>
             <Buttons text={buttonText} onClick={handleButtonClick} />
           </Col>
-          <Col lg={5} className="hero-right">
+          <Col lg={6} md={12} className="hero-right">
             {/* L'image sera utilisée comme arrière-plan via le CSS */}
           </Col>
         </Row>
