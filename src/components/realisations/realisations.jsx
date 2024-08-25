@@ -48,7 +48,7 @@ const Realisations = () => {
 
   useEffect(() => {
     if (sliderRef.current) {
-      sliderRef.current.slickGoTo(0); // Réinitialise le slider à la première slide
+      sliderRef.current.slickGoTo(0);
     }
   }, []);
 
@@ -66,6 +66,11 @@ const Realisations = () => {
       window.removeEventListener('wheel', handleScroll);
     };
   }, []);
+
+  const handleProjectClick = (link) => {
+    navigate(link);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const settings = {
     dots: false,
@@ -96,7 +101,7 @@ const Realisations = () => {
       <SmallTitle primaryText="Mes" secondaryText="réalisations" />
       <Slider {...settings} ref={sliderRef} className="realisations-slider">
         {shuffledProjects.map((project, index) => (
-          <div key={index} className="realisations-card-wrapper" onClick={() => navigate(project.link)}>
+          <div key={index} className="realisations-card-wrapper" onClick={() => handleProjectClick(project.link)}>
             <div className="realisations-card">
               <div className="realisations-tags">
                 {project.tags.map((tag, index) => (
