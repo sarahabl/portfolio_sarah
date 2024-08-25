@@ -10,16 +10,16 @@ import Buttons from '../buttons/buttons.jsx';
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
 
-  // Fonction pour gérer la fermeture du menu après avoir cliqué sur un lien
   const handleNavClick = () => {
-    if (window.innerWidth < 992) { // Seulement pour les écrans de petite taille
+    if (window.innerWidth < 992) {
       setExpanded(false);
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <Navbar expanded={expanded} expand="lg" className="custom-navbar">
-      <Navbar.Brand href="/">
+      <Navbar.Brand href="/" onClick={handleNavClick}>
         <img src={logo} alt="Logo" className="navbar-logo" />
       </Navbar.Brand>
       <Navbar.Toggle 
@@ -59,7 +59,7 @@ const CustomNavbar = () => {
           <Nav.Link href="https://www.linkedin.com/in/sarah-ablonet/" target="_blank" onClick={handleNavClick}>
             <img src={linkedinIcon} alt="LinkedIn" className="navbar-linkedin-icon" />
           </Nav.Link>
-          <Buttons text="Contactez-moi !" />
+          <Buttons text="Contactez-moi !" onClick={handleNavClick} />
         </Nav>
       </Navbar.Collapse>
     </Navbar>

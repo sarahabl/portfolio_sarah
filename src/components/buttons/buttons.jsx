@@ -1,9 +1,16 @@
 import React from 'react';
-import './buttons.css'; // Import du fichier CSS pour les styles
+import './buttons.css';
 
 const Button = ({ text, onClick, className }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <button className={`custom-button ${className}`} onClick={onClick}>
+    <button className={`custom-button ${className}`} onClick={handleClick}>
       {text}
     </button>
   );

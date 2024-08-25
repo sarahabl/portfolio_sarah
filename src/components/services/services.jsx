@@ -41,12 +41,17 @@ const services = [
 ];
 
 const Services = () => {
+  const handleServiceClick = (link) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.location.href = link;
+  };
+
   return (
     <section className="services-section">
       <SmallTitle primaryText="Mes" secondaryText="services" />
       <div className="services-container">
         {services.map((service, index) => (
-          <div key={index} className="service-card">
+          <div key={index} className="service-card" onClick={() => handleServiceClick(service.link)}>
             <img src={service.image} alt={service.title} className="service-image" />
             <div className="service-info">
               <h3 className="service-title">{service.title}</h3>
