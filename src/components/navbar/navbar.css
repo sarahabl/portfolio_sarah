@@ -40,7 +40,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
-  margin:40px;
+  margin: 40px;
 }
 
 .navbar-overlay.show {
@@ -79,6 +79,25 @@
 .navbar-links a:hover {
   font-weight: 700;
   color: #000000;
+}
+
+/* Style spécifique pour le dropdown "Services" */
+.navbar-nav .dropdown-menu .dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:active,
+.navbar-nav .dropdown-menu .dropdown-item:focus {
+  background-color: #FDC251;
+  color: #000000;
+}
+
+/* Couleur de l'onglet actif */
+.navbar-nav .dropdown-menu .dropdown-item.active {
+  background-color: #F7B4F5;
+  color: #000000;
+  font-weight: 700;
 }
 
 .navbar-linkedin-icon {
