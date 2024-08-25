@@ -2,7 +2,6 @@ import React from 'react';
 import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
-import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 
@@ -40,7 +39,6 @@ const Facilitation = () => {
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />
-      <Realisations />
       <Services />
       <Contact />
     </div>

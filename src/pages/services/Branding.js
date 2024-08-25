@@ -5,7 +5,6 @@ import ProcessDesign from '../../components/process-design/process-design';
 import Inclus from '../../components/inclus/inclus';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import Realisations from '../../components/realisations/realisations';
 
 const Branding = () => {
   const processSteps = [
@@ -70,7 +69,6 @@ const Branding = () => {
       <Bandeau />
       <ProcessDesign steps={processSteps} />
       <Inclus items={inclusItems} />
-      <Realisations />
       <Services />
       <Contact />
     </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './realisations.css';
 import SmallTitle from '../title/small_title/small_title';
 import Slider from "react-slick";
@@ -8,6 +8,7 @@ import projetWenabi from '../../assets/projet_wenabi.png';
 import projetBodachella from '../../assets/projet_bodachella.png';
 import projetGraies from '../../assets/projet_graies.png';
 import projetE2R from '../../assets/projet_e2R.png';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const projectData = [
   {
@@ -43,8 +44,20 @@ const shuffleArray = (array) => {
 const Realisations = () => {
   const sliderRef = useRef(null);
   const navigate = useNavigate();
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1100);
 
   const shuffledProjects = shuffleArray([...projectData]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 1100);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -54,7 +67,7 @@ const Realisations = () => {
 
   useEffect(() => {
     const handleScroll = (event) => {
-      if (sliderRef.current) {
+      if (sliderRef.current && !isMobileView) {
         const slider = sliderRef.current.innerSlider.list;
         slider.scrollLeft += event.deltaY;
       }
@@ -65,7 +78,7 @@ const Realisations = () => {
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
-  }, []);
+  }, [isMobileView]);
 
   const handleProjectClick = (link) => {
     navigate(link);
@@ -80,14 +93,7 @@ const Realisations = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -99,24 +105,47 @@ const Realisations = () => {
   return (
     <div className="realisations-container">
       <SmallTitle primaryText="Mes" secondaryText="réalisations" />
-      <Slider {...settings} ref={sliderRef} className="realisations-slider">
-        {shuffledProjects.map((project, index) => (
-          <div key={index} className="realisations-card-wrapper" onClick={() => handleProjectClick(project.link)}>
-            <div className="realisations-card">
-              <div className="realisations-tags">
-                {project.tags.map((tag, index) => (
-                  <Tag key={index} content={tag} />
-                ))}
+      {isMobileView ? (
+        <Container>
+          <Row>
+            {shuffledProjects.map((project, index) => (
+              <Col xs={12} key={index} className="realisations-card-wrapper" onClick={() => handleProjectClick(project.link)}>
+                <div className="realisations-card">
+                  <div className="realisations-tags">
+                    {project.tags.map((tag, index) => (
+                      <Tag key={index} content={tag} />
+                    ))}
+                  </div>
+                  <h3>{project.title}</h3>
+                  <div
+                    className="realisations-image"
+                    style={{ backgroundImage: `url(${project.img})` }}
+                  />
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      ) : (
+        <Slider {...settings} ref={sliderRef} className="realisations-slider">
+          {shuffledProjects.map((project, index) => (
+            <div key={index} className="realisations-card-wrapper" onClick={() => handleProjectClick(project.link)}>
+              <div className="realisations-card">
+                <div className="realisations-tags">
+                  {project.tags.map((tag, index) => (
+                    <Tag key={index} content={tag} />
+                  ))}
+                </div>
+                <h3>{project.title}</h3>
+                <div
+                  className="realisations-image"
+                  style={{ backgroundImage: `url(${project.img})` }}
+                />
               </div>
-              <h3>{project.title}</h3>
-              <div
-                className="realisations-image"
-                style={{ backgroundImage: `url(${project.img})` }}
-              />
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      )}
     </div>
   );
 };

@@ -3,7 +3,6 @@ import HeroProjet from '../../components/hero__projet/hero__projet';
 import DesignChallenge from '../../components/design__challenge/design__challenge';
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
 import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
-import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import taliaHeroImage from '../../assets/talia__hero.png';
@@ -66,8 +65,7 @@ Mon rôle dans ce projet a été de créer le branding de Talia et de concevoir 
         text={brandingText}
         imageSrc={taliaSection2Image}
       />
-      <SectionLast imageSrc={wenabiFocusImage} />
-      <Realisations />
+      <SectionLast imageSrc={taliaFocusImage} />
       <Services />
       <Contact />
     </div>
