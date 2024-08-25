@@ -12,6 +12,7 @@
   align-items: left;
   margin: 0% 4%;
   gap: 20px;
+  max-width: 800px;
 }
 
 .contact-button {

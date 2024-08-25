@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   margin: 0 4%;
-  padding-top: 10px; 
+  padding-top: 10px;
+  padding-bottom: 40px; 
   font-family: "Bricolage Grotesque";
   font-size: 16px;
   font-style: normal;

@@ -42,6 +42,7 @@
   font-style: italic;
   font-weight: 200;
   line-height: normal;
+  max-width: 800px;
 }
 
 /* Responsive Styles */
