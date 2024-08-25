@@ -3,6 +3,7 @@ import HeroAccueilServices from '../../components/hero__accueil_services/hero__a
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
 import Inclus from '../../components/inclus/inclus';
+import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 
@@ -69,6 +70,7 @@ const Branding = () => {
       <Bandeau />
       <ProcessDesign steps={processSteps} />
       <Inclus items={inclusItems} />
+      <Realisations />
       <Services />
       <Contact />
     </div>

@@ -5,6 +5,7 @@ import DesignChallenge from '../../components/design__challenge/design__challeng
 import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
 import SectionLast from '../../components/section__projet/section__last/section__last';
+import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import wenabiSection1Image from '../../assets/wenabi__section1.png';
@@ -58,6 +59,7 @@ const Wenabi = () => {
         imageSrc={wenabiSection1Image}
       />
       <SectionLast imageSrc={wenabiFocusImage} />
+      <Realisations />
       <Services />
       <Contact />
     </div>

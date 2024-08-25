@@ -5,6 +5,7 @@ import {
   Intro,
   Expertises,
   Services,
+  Realisations,
   Contact,
 } from '../components';
 
@@ -23,6 +24,7 @@ const HomePage = () => {
       <Intro />
       <Expertises />
       <Services />
+      <Realisations />
       <Contact />
     </div>
   );
