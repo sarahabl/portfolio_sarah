@@ -9,6 +9,7 @@ import Contact from '../../components/contact/contact';
 import taliaHeroImage from '../../assets/talia__hero.png';
 import taliaSection1Image from '../../assets/talia__section1.png';
 import taliaSection2Image from '../../assets/talia__section2.png';
+import taliaFocusImage from '../../assets/talia__focus.png';
 
 const Talia = () => {
   const productDesignText = `
@@ -65,6 +66,7 @@ Mon rôle dans ce projet a été de créer le branding de Talia et de concevoir 
         text={brandingText}
         imageSrc={taliaSection2Image}
       />
+      <SectionLast imageSrc={wenabiFocusImage} />
       <Realisations />
       <Services />
       <Contact />

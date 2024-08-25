@@ -6,6 +6,7 @@ import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import methodeE2RSectionImage from '../../assets/E2R__section1.png';
+import E2RFocusImage from '../../assets/E2R__focus.png';
 
 const MethodeE2R = () => {
   const brandingText = `
@@ -37,6 +38,7 @@ const MethodeE2R = () => {
         text={brandingText}
         imageSrc={methodeE2RSectionImage}
       />
+      <SectionLast imageSrc={E2RFocusImage} />
       <Realisations />
       <Services />
       <Contact />

@@ -8,6 +8,7 @@ import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import bodachellaSection1Image from '../../assets/bodachella__section1.png';
 import bodachellaSection2Image from '../../assets/bodachella__section2.png';
+import bodachellaFocusImage from '../../assets/bodachella__focus.png';
 
 const Bodachella = () => {
   const brandingText = `
@@ -54,6 +55,7 @@ const Bodachella = () => {
         text={webDevelopmentText}
         imageSrc={bodachellaSection2Image}
       />
+      <SectionLast imageSrc={bodachellaFocusImage} />
       <Realisations />
       <Services />
       <Contact />

@@ -1,0 +1,15 @@
+.section-last {
+    padding: 4%;
+    background: linear-gradient(180deg, #FFF 0%, #F9F6EB 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-last-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.625rem;
+  }
+  
