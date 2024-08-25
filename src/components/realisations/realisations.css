@@ -67,13 +67,15 @@
 @media (max-width: 1100px) {
     .realisations-container {
         padding: 0 4%;
-        gap:40px;
     }
 
     .realisations-slider {
         margin: 4% 0;
         flex-direction: column;
-        gap: 40px;
+    }
+
+    .realisations-card {
+        margin:18px;
     }
 
     .realisations-card-wrapper {
