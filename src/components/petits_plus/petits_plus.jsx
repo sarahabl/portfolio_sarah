@@ -23,7 +23,7 @@ const cardData = [
   },
   {
     img: theDesignCrewLogo,
-    title: "Advanced Product Discovery",
+    title: "Advanced Product Discovery Batch #2",
     description: "J'ai appris à structurer et exécuter la Product Discovery pour démontrer sa valeur ajoutée, identifier les problèmes prioritaires, mener des recherches utilisateurs, développer des solutions et systématiser ces processus."
   },
   {

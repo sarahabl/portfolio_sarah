@@ -23,8 +23,7 @@ const HeroAbout = () => {
         {/* Colonne de droite */}
         <Col md={6}>
           <p className="hero-about-paragraph">
-            Passionnée par la technologie, l’art et les expériences utilisateur simplifiées, je combine créativité et compétences techniques pour transformer vos idées en produits numériques réussis.
-            J'ai un parcours riche et varié, initialement formée en marketing digital. Mon aventure professionnelle m'a menée à l’étranger : 3 ans au Myanmar, presque 1 an à Madagascar, avant de revenir en France et me reconvertir en UX/UI design en 2019. Depuis, je me suis plongée dans le monde du produit, décrochant mon premier poste en 2020. Aujourd’hui, je suis une product designer, toujours prête à relever de nouveaux défis !
+          Passionnée par la technologie, l’art et les expériences utilisateur fluides, je combine créativité et compétences techniques pour donner vie à vos idées en produits numériques. Mon parcours est varié : après des études en marketing digital, j’ai travaillé à l’étranger pendant 3 ans au Myanmar et presque 1 an à Madagascar. De retour en France, je me suis lancée dans le design UX/UI en 2019, et j’ai décroché mon premier poste en 2020. Aujourd’hui, je suis product designer, toujours prête pour de nouveaux défis !
           </p>
           <Button
             text="Voir mon portfolio"
