@@ -43,8 +43,10 @@ const shuffleArray = (array) => {
 
 const Realisations = () => {
   const sliderRef = useRef(null);
+  const sectionRef = useRef(null);
   const navigate = useNavigate();
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1100);
+  const [isScrollActive, setIsScrollActive] = useState(false);
 
   const shuffledProjects = shuffleArray([...projectData]);
 
@@ -66,8 +68,35 @@ const Realisations = () => {
   }, []);
 
   useEffect(() => {
+    if (!isMobileView) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setIsScrollActive(true);
+            } else {
+              setIsScrollActive(false);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      if (sectionRef.current) {
+        observer.observe(sectionRef.current);
+      }
+
+      return () => {
+        if (sectionRef.current) {
+          observer.unobserve(sectionRef.current);
+        }
+      };
+    }
+  }, [isMobileView]);
+
+  useEffect(() => {
     const handleScroll = (event) => {
-      if (sliderRef.current && !isMobileView) {
+      if (sliderRef.current && !isMobileView && isScrollActive) {
         const slider = sliderRef.current.innerSlider.list;
         slider.scrollLeft += event.deltaY;
       }
@@ -78,7 +107,7 @@ const Realisations = () => {
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
-  }, [isMobileView]);
+  }, [isMobileView, isScrollActive]);
 
   const handleProjectClick = (link) => {
     navigate(link);
@@ -103,7 +132,7 @@ const Realisations = () => {
   };
 
   return (
-    <div className="realisations-container">
+    <div className="realisations-container" ref={sectionRef}>
       <SmallTitle primaryText="Mes" secondaryText="réalisations" />
       {isMobileView ? (
         <Container>
