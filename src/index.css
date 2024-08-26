@@ -1,17 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap');
-
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Empêche le défilement horizontal */
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #F9F6EB; /* Couleur de fond */
 }
 
 #root {
-  max-width: 100%; /* Assure que le conteneur principal ne dépasse pas 100% de la largeur */
-  margin: 0 auto;
-  background-color: #F9F6EB;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  background-color: #F9F6EB; /* Assure que le conteneur principal ait la bonne couleur de fond */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 1500px;
+  height: 1684px;
+  background: url('./assets/Gradients.svg') no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
+  z-index: -1;
+  opacity: 0.7;
+  pointer-events: none;
 }
