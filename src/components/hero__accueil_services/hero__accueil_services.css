@@ -1,57 +1,45 @@
-.hero-container {
-  overflow: hidden;
-  padding: 20px 0;
-  width: 100%;
-}
-
+/* Styles généraux pour hero-content */
 .hero-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; /* Assure l'alignement vertical des éléments */
   justify-content: space-between;
-  width: 100%;
-  padding: 4%; /* Ajout du padding de 4% */
-  gap:40px;
+  width: calc(100% - 8%); /* Calcule la largeur en déduisant le padding des deux côtés */
 }
 
+/* Styles pour la colonne de gauche */
 .hero-left {
+  padding-left: 4%;
   text-align: left;
+  justify-content: center; /* Centre verticalement le contenu de la colonne gauche */
   gap: 20px;
   width: 50%; /* Colonne gauche prend 50% de la largeur */
 }
 
+/* Styles pour rendre le conteneur de l'image carré et ajustements pour la colonne de droite */
 .hero-right {
   position: relative;
   background-image: url('../../assets/hero__projet.png');
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  border-radius: 1.25rem;
-  width: 50%; /* Colonne droite prend 50% de la largeur */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vw; /* Hauteur basée sur la largeur du viewport pour maintenir un aspect carré */
+  width: 50%; /* La largeur prend 50% de hero-content */
 }
 
-.hero-paragraph {
-  font-family: "Bricolage Grotesque";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 20px;
-}
-
+/* Responsive adjustments */
 @media (max-width: 992px) {
   .hero-content {
-    flex-direction: column; /* Empile les éléments en colonne sur les petits écrans */
+    flex-direction: column;
     text-align: center;
     gap: 20px;
+    padding: 4% 4% 4% 4%; /* Ajoute un padding uniforme autour sur petits écrans */
   }
 
-  .hero-left,
-  .hero-right {
-    width: 100%; /* Chaque colonne prend toute la largeur sur mobile/tablette */
+  .hero-left, .hero-right {
+    width: 100%; /* Fait en sorte que chaque colonne prenne toute la largeur sur mobile/tablette */
   }
 
   .hero-right {
-    height: 300px; /* Ajuste la hauteur pour les petits écrans */
+    height: 80vw; /* Ajuste la hauteur pour les petits écrans pour maintenir un aspect carré */
   }
 }

@@ -23,7 +23,7 @@ const HeroAccueilServices = ({ primaryText, secondaryText, description, paragrap
             <Buttons text={buttonText} onClick={handleButtonClick} />
           </Col>
           <Col lg={6} md={12} className="hero-right">
-            {/* L'image sera utilisée comme arrière-plan via le CSS */}
+            {/* L'image est utilisée comme arrière-plan via le CSS */}
           </Col>
         </Row>
       </Container>
