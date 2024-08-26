@@ -11,6 +11,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 4%; /* Ajout du padding de 4% */
+  gap:40px;
 }
 
 .hero-left {
