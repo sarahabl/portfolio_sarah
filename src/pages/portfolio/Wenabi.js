@@ -39,7 +39,6 @@ const Wenabi = () => {
         titleSecondary=""
         description="Wenabi est une plateforme SaaS innovante destinée à faciliter l'engagement collaborateur et les dons associatifs. Mon rôle en tant que Product Designer a été d'optimiser l'expérience utilisateur tout au long du parcours de la plateforme, en intégrant des solutions centrées sur les besoins des utilisateurs et en contribuant à la mise en place d'un design system cohérent."
         tags={["Product Design", "Design System"]}
-        buttonText="Discutons ensemble de votre projet !"
         imageSrc={wenabiHeroImage}
       />
       <DesignChallenge 
