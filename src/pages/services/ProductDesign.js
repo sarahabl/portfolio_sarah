@@ -6,6 +6,7 @@ import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
+import bgImage from '../../assets/hero__product-design.png';
 
 const ProductDesign = () => {
   const processSteps = [
@@ -66,6 +67,7 @@ const ProductDesign = () => {
         secondaryText="vie à vos idées !"
         description="Le product design allie esthétique, stratégie et compréhension des utilisateurs. En tant que Product Designer freelance, je transforme vos idées en solutions design élégantes et fonctionnelles. Discutons de votre projet pour concrétiser vos ambitions."
         buttonText="Voir mon portfolio"
+        bgImage={bgImage}
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />

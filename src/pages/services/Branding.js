@@ -6,6 +6,7 @@ import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
+import bgImage from '../../assets/hero__branding.png';
 
 const Branding = () => {
   const processSteps = [
@@ -66,6 +67,7 @@ const Branding = () => {
         secondaryText="votre histoire"
         description="Mon approche bienveillante et personnalisée garantit que chaque aspect de votre identité visuelle est soigneusement pensé et exécuté. Parlez-moi de votre projet et ensemble, faisons éclore une identité qui vous ressemble."
         buttonText="Voir mon portfolio"
+        bgImage={bgImage}
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />

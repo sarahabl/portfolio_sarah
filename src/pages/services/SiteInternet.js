@@ -6,6 +6,7 @@ import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
+import bgImage from '../../assets/hero__site-internet.png';
 
 const SiteInternet = () => {
   const processSteps = [
@@ -63,6 +64,7 @@ const SiteInternet = () => {
         secondaryText="votre image !"
         description="Je développe des sites WordPress 100% personnalisés, sécurisés et performants, optimisés pour une visibilité maximale. Discutons de votre projet !"
         buttonText="Voir mon portfolio"
+        bgImage={bgImage}
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />

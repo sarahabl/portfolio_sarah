@@ -6,6 +6,7 @@ import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
+import bgImage from '../../assets/hero__design-system.png';
 
 const DesignSystem = () => {
     const processSteps = [
@@ -66,6 +67,7 @@ const DesignSystem = () => {
         secondaryText="harmonieux & cohérent ?"
         description="Découvrez le Design System ! En tant que designer freelance, je crée un système sur-mesure pour simplifier et unifier vos interfaces, tout en renforçant votre identité."
         buttonText="Voir mon portfolio"
+        bgImage={bgImage}
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />
