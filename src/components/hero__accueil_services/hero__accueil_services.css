@@ -19,7 +19,6 @@
 /* Styles pour rendre le conteneur de l'image carré et ajustements pour la colonne de droite */
 .hero-right {
   position: relative;
-  background-image: url('../../assets/hero__projet.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 50vw; /* Hauteur basée sur la largeur du viewport pour maintenir un aspect carré */

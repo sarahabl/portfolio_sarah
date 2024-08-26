@@ -5,7 +5,14 @@ import Title from '../title/big_title/big_title';
 import Buttons from '../buttons/buttons';
 import { useNavigate } from 'react-router-dom';
 
-const HeroAccueilServices = ({ primaryText, secondaryText, description, paragraphText, buttonText }) => {
+const HeroAccueilServices = ({
+  primaryText,
+  secondaryText,
+  description,
+  paragraphText,
+  buttonText,
+  bgImage  // Add bgImage prop to pass background image URL
+}) => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
@@ -22,8 +29,8 @@ const HeroAccueilServices = ({ primaryText, secondaryText, description, paragrap
             <p className="hero-paragraph">{paragraphText}</p>
             <Buttons text={buttonText} onClick={handleButtonClick} />
           </Col>
-          <Col lg={6} md={12} className="hero-right">
-            {/* L'image est utilisée comme arrière-plan via le CSS */}
+          <Col lg={6} md={12} className="hero-right" style={{ backgroundImage: `url(${bgImage})` }}>
+            {/* Background image set dynamically */}
           </Col>
         </Row>
       </Container>

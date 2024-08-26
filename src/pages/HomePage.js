@@ -8,6 +8,7 @@ import {
   Realisations,
   Contact,
 } from '../components';
+import bgImage from '../assets/hero__homepage.png'; // Import de l'image
 
 const HomePage = () => {
   const heroProps = {
@@ -15,6 +16,7 @@ const HomePage = () => {
     secondaryText: "Sarah Ablonet",
     description: "J'aide les équipes à concevoir et à lancer des produits numériques. Parfois, je crée les miens.",
     buttonText: "Voir mon portfolio",
+    bgImage, // Passe l'image importée ici
   };
 
   return (

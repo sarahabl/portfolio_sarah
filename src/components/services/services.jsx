@@ -1,11 +1,11 @@
 import React from 'react';
 import './services.css';
 import SmallTitle from '../title/small_title/small_title';
-import productDesignImg from '../../assets/product_design.png';
-import designSystemImg from '../../assets/design_system.png';
-import facilitationImg from '../../assets/facilitation.png';
-import brandingImg from '../../assets/branding.png';
-import siteInternetImg from '../../assets/site_internet.png';
+import productDesignImg from '../../assets/services__product_design.png';
+import designSystemImg from '../../assets/services__design_system.png';
+import facilitationImg from '../../assets/services__facilitation.png';
+import brandingImg from '../../assets/services__branding.png';
+import siteInternetImg from '../../assets/services__site_internet.png';
 
 const services = [
   {
