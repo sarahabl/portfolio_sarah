@@ -40,6 +40,7 @@
     align-items: center;
     text-align: center;
     gap: 16px;
+    padding:4%;
   }
 
   .title-text {
@@ -51,7 +52,6 @@
   }
 
   .title-highlight img {
-    max-width: 40px; /* Réduction de la taille de l'image sur mobile */
-    transform: rotate(20deg); /* Rotation de l'image pour un effet stylisé */
+    display:none;
   }
 }
