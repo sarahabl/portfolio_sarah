@@ -1,33 +1,42 @@
 .hero-about-container {
-    padding: 40px 0;
+  padding: 40px 0;
+}
+
+.hero-about-content {
+  display: flex;
+  align-items: center;
+}
+
+.hero-about-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inline-avatar {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Si votre avatar est rond */
+  vertical-align: middle;
+}
+
+.hero-about-paragraph {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.hero-about-button {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .hero-about-container {
+    padding: 40px 10px; /* Ajoute un léger padding de 10px sur les côtés sur mobile */
   }
-  
-  .hero-about-content {
-    display: flex;
-    align-items: center;
+
+  .hero-about-title, .hero-about-paragraph, .hero-about-button {
+    padding: 0 10px; /* Ajoute un léger padding de 10px autour des éléments pour les écrans mobiles */
   }
-  
-  .hero-about-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .inline-avatar {
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%; /* Si votre avatar est rond */
-    vertical-align: middle;
-  }
-  
-  .hero-about-paragraph {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-    line-height: 1.6em;
-  }
-  
-  .hero-about-button {
-    display: inline-block;
-  }
-  
+}

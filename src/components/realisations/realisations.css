@@ -74,12 +74,14 @@
         flex-direction: column;
     }
 
-    .realisations-card {
-        margin:18px;
-    }
-
     .realisations-card-wrapper {
         flex: 1 1 100%;
-        max-width: 100%;
+        max-width: calc(100% - 20px); /* Pour s'assurer que les cartes prennent presque toute la largeur */
+        margin: 0 auto 18px; /* Centrer les cartes avec une marge auto et un léger espacement en bas */
+    }
+
+    .realisations-card {
+        margin: 0 10px; /* Ajouter un léger padding autour des cartes */
+        width: calc(100% - 20px); /* S'assurer que les cartes ne dépassent pas le conteneur */
     }
 }

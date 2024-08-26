@@ -1,5 +1,5 @@
 .services-section {
-  padding : 4% 0%;
+  padding: 4% 0%;
   width: 100%;
 }
 
@@ -20,10 +20,6 @@
   width: 19.0625rem;
 }
 
-.service-card:hover {
-  transform: scale(1);
-}
-
 .service-image {
   width: 100%;
   height: 10.9375rem; /* Ajustez la hauteur pour l'image */
@@ -35,9 +31,6 @@
   flex-direction: column;
   overflow: hidden;
   align-items: stretch;
-}
-
-.service-info {
   background-color: white;
   padding: 2rem;
   border-radius: 1.25rem;
@@ -57,7 +50,6 @@
   font-family: "Bricolage Grotesque";
   font-size: 24px;
   font-weight: 400;
-
   margin-bottom: 8px;
 }
 
@@ -77,14 +69,15 @@
   text-decoration: none;
   color: #000;
   text-align: left;
-  display: none; /* Masquer le bouton par défaut */
+  display: none; /* Masquer le lien par défaut */
   margin-top: auto;
 }
 
 .service-card:hover .service-link {
-  display: block; /* Afficher le bouton au survol */
+  display: block; /* Afficher le lien au survol */
 }
 
+/* Ne pas afficher le lien sur mobile */
 @media (max-width: 768px) {
   .services-container {
     flex-direction: column; /* Afficher les cartes en colonne sur les petits écrans */
@@ -94,5 +87,9 @@
 
   .service-card {
     max-width: 100%; /* Assurer que les cartes n'excèdent pas la largeur disponible */
+  }
+
+  .service-link {
+    display: none !important; /* Toujours masquer le lien sur mobile */
   }
 }
