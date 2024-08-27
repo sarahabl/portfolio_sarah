@@ -1,0 +1,67 @@
+/* Style général pour le container du hero */
+.hero-container-service {
+  padding: 4%; /* Padding autour de la section */
+  background-color: #f9f6eb; /* Couleur de fond pour le hero */
+}
+
+/* Style pour le contenu du hero */
+.hero-content-service {
+  display: flex;
+  align-items: flex-start; /* Aligne les éléments en haut de la section */
+  justify-content: space-between;
+}
+
+/* Style pour la colonne de gauche */
+.hero-left-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-right: 2%; /* Espace entre les colonnes */
+}
+
+/* Rotation pour le tag */
+.hero-tag {
+  transform: rotate(-7deg); /* Légère rotation du tag */
+  margin-bottom: 20px; /* Espacement sous le tag */
+}
+
+/* Style pour la colonne de droite */
+.hero-right-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 2%; /* Espace entre les colonnes */
+}
+
+/* Style pour le paragraphe */
+.hero-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Espacement sous le paragraphe */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-content-service {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right-service {
+    width: 100%; /* Colonne prend 100% de la largeur sur mobile */
+    padding-right: 0; /* Supprime le padding sur mobile */
+    padding-left: 0; /* Supprime le padding sur mobile */
+  }
+
+  .hero-right-service {
+    margin-top: 20px; /* Ajoute de l'espacement entre les sections sur mobile */
+  }
+
+  .hero-paragraph {
+    font-size: 1rem; /* Taille de police réduite sur mobile */
+  }
+}

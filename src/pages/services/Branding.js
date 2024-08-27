@@ -1,12 +1,11 @@
 import React from 'react';
-import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
+import HeroService from '../../components/hero-service/hero-service'; // Remplacez l'ancien composant par le nouveau
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
 import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import bgImage from '../../assets/hero__branding.png';
 
 const Branding = () => {
   const processSteps = [
@@ -62,12 +61,12 @@ const Branding = () => {
 
   return (
     <div>
-      <HeroAccueilServices 
+      <HeroService 
+        tagText="Branding" // Ajoutez le tag correspondant
         primaryText="Donnez vie à"
         secondaryText="votre histoire"
-        description="Mon approche bienveillante et personnalisée garantit que chaque aspect de votre identité visuelle est soigneusement pensé et exécuté. Parlez-moi de votre projet et ensemble, faisons éclore une identité qui vous ressemble."
+        paragraphText="Mon approche bienveillante et personnalisée garantit que chaque aspect de votre identité visuelle est soigneusement pensé et exécuté. Parlez-moi de votre projet et ensemble, faisons éclore une identité qui vous ressemble."
         buttonText="Voir mon portfolio"
-        bgImage={bgImage}
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />
