@@ -18,11 +18,12 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding-right: 2%; /* Espace entre les colonnes */
+  gap:40;
 }
 
 /* Rotation pour le tag */
 .hero-tag {
-  transform: rotate(-7deg); /* Légère rotation du tag */
+  transform: rotate(-70deg); /* Légère rotation du tag */
   margin-bottom: 20px; /* Espacement sous le tag */
 }
 
