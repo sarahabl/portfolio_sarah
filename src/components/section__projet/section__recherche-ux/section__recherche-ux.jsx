@@ -42,7 +42,7 @@ const SectionRechercheUX = ({ textContent, enseignements, methode, questions, pr
       </div>
       
       <div className="row section-footer" style={{ gap: '40px', marginTop: '40px' }}>
-        <Tag content="Définition de la problématique" />
+        <Tag content="Définition de la problématique"/>
         <div className="col-md-6 section-block-container">
           <div className="section-block green-background">
             <p className="section-text white-text">{problematique}</p>
