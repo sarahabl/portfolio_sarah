@@ -1,34 +1,52 @@
 .section-img-left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4%;
-    gap: 40px;
-    background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  gap: 40px;
+  background-color: white;
+}
+
+.image-content img {
+  max-width: 100%;
+  border-radius: 0.625rem;
+}
+
+.text-content {
+  max-width: 50%;
+  gap: 20px;
+}
+
+.section-text {
+  margin-top: 1rem;
+  font-family: "Bricolage Grotesque";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+h3 {
+  color: #00381A;
+  font-family: "Bricolage Grotesque";
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-img-left {
+    flex-direction: column-reverse; /* La colonne de gauche passe en dessous de la colonne de droite */
+    gap: 20px; /* Réduit l'écart entre les colonnes */
+    padding: 2%; /* Réduit le padding pour les petits écrans */
+  }
+
+  .text-content {
+    max-width: 100%; /* Les colonnes prennent toute la largeur */
   }
   
   .image-content img {
     max-width: 100%;
     border-radius: 0.625rem;
   }
-  
-  .text-content {
-    max-width: 50%;
-  }
-  
-  .section-text {
-    margin-top: 1rem;
-    font-family: "Bricolage Grotesque";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.6;
-  }
-  
-  h3 {
-    color: #00381A;
-    font-family: "Bricolage Grotesque";
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 1rem;
-  }
-  
+}

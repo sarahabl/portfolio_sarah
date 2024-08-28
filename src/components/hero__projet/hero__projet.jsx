@@ -2,23 +2,24 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './hero__projet.css';
 import BigTitle from '../title/big_title/big_title';
-import Tag from '../tags/tags';
 
-const HeroProjet = ({ titlePrimary, titleSecondary, description, tags, buttonText, imageSrc }) => {
+const HeroProjet = ({ titlePrimary, titleSecondary, description, buttonText, buttonLink, imageSrc, leftImageSrc }) => {
+  const handleButtonClick = () => {
+    window.location.href = buttonLink;
+  };
+
   return (
     <Container fluid className="hero-projet-container">
       <Row className="align-items-center">
         <Col lg={6} className="hero-projet-left">
+          {leftImageSrc && (
+            <img src={leftImageSrc} alt="Logo du projet" className="hero-projet-left-image" />
+          )}
           <BigTitle 
             primaryText={titlePrimary} 
             secondaryText={titleSecondary} 
             description={null} /* Suppression de la description ici */
           />
-          <div className="hero-projet-tags">
-            {tags.map((tag, index) => (
-              <Tag key={index} content={tag} />
-            ))}
-          </div>
           <p className="hero-projet-description">{description}</p>
         </Col>
         <Col lg={6} className="hero-projet-right">
