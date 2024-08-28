@@ -1,11 +1,10 @@
 import React from 'react';
-import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
+import HeroService from '../../components/hero-service/hero-service';
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import bgImage from '../../assets/hero__facilitation.png';
 
 const Facilitation = () => {
   const processSteps = [
@@ -33,12 +32,12 @@ const Facilitation = () => {
 
   return (
     <div>
-      <HeroAccueilServices 
+      <HeroService 
+        tagText="Facilitation"
         primaryText="Un projet, une idée,"
         secondaryText="un défi ?"
-        description="Faisons-les éclore ensemble ! En tant que facilitateur freelance, j'accompagne vos équipes avec des sessions de travail dynamiques et productives : design sprint, ateliers d’idéation, focus groups. Je vous guide pas à pas."
+        paragraphText="Faisons-les éclore ensemble ! En tant que facilitateur freelance, j'accompagne vos équipes avec des sessions de travail dynamiques et productives : design sprint, ateliers d’idéation, focus groups. Je vous guide pas à pas."
         buttonText="Voir mon portfolio"
-        bgImage={bgImage}
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />

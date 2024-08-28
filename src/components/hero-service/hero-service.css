@@ -21,10 +21,11 @@
   gap:40;
 }
 
-/* Rotation pour le tag */
-.hero-tag {
-  transform: rotate(-70deg); /* Légère rotation du tag */
-  margin-bottom: 20px; /* Espacement sous le tag */
+/* Style du tag */
+.hero-tag-service {
+  transform: rotate(-4deg);
+  font-size: 24px;
+  margin-bottom: 40px;
 }
 
 /* Style pour la colonne de droite */
@@ -32,13 +33,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 2%; /* Espace entre les colonnes */
+  padding: 0 2% 4% 2%;
+  justify-content: center;
 }
 
 /* Style pour le paragraphe */
 .hero-paragraph {
-  font-size: 1.2rem;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px; /* Espacement sous le paragraphe */
 }
@@ -47,8 +48,6 @@
 @media (max-width: 992px) {
   .hero-content-service {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
   .hero-left,

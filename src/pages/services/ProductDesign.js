@@ -1,12 +1,11 @@
 import React from 'react';
-import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
+import HeroService from '../../components/hero-service/hero-service';
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
 import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import bgImage from '../../assets/hero__product-design.png';
 
 const ProductDesign = () => {
   const processSteps = [
@@ -62,10 +61,11 @@ const ProductDesign = () => {
 
   return (
     <div>
-      <HeroAccueilServices 
+      <HeroService 
+        tagText="Product Design"
         primaryText="Parlez-moi de votre projet et donnons"
         secondaryText="vie à vos idées !"
-        description="Le product design allie esthétique, stratégie et compréhension des utilisateurs. En tant que Product Designer freelance, je transforme vos idées en solutions design élégantes et fonctionnelles. Discutons de votre projet pour concrétiser vos ambitions."
+        paragraphText="Le product design allie esthétique, stratégie et compréhension des utilisateurs. En tant que Product Designer freelance, je transforme vos idées en solutions design élégantes et fonctionnelles. Discutons de votre projet pour concrétiser vos ambitions."
         buttonText="Voir mon portfolio"
         bgImage={bgImage}
       />

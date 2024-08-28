@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroService from '../../components/hero-service/hero-service'; // Remplacez l'ancien composant par le nouveau
+import HeroService from '../../components/hero-service/hero-service';
 import Bandeau from '../../components/bandeau/bandeau';
-import ProcessDesign from '../../components/process-design/process-design';
+import ProcessDesign from <'../../components/process-design/process-design';
 import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
@@ -62,7 +62,7 @@ const Branding = () => {
   return (
     <div>
       <HeroService 
-        tagText="Branding" // Ajoutez le tag correspondant
+        tagText="Branding"
         primaryText="Donnez vie à"
         secondaryText="votre histoire"
         paragraphText="Mon approche bienveillante et personnalisée garantit que chaque aspect de votre identité visuelle est soigneusement pensé et exécuté. Parlez-moi de votre projet et ensemble, faisons éclore une identité qui vous ressemble."

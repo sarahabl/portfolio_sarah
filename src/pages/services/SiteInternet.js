@@ -1,12 +1,11 @@
 import React from 'react';
-import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
+import HeroService from '../../components/hero-service/hero-service';
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
 import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import bgImage from '../../assets/hero__site-internet.png';
 
 const SiteInternet = () => {
   const processSteps = [
@@ -59,12 +58,12 @@ const SiteInternet = () => {
 
   return (
     <div>
-      <HeroAccueilServices 
-        primaryText="Créez un site internet à "
+      <HeroService 
+        tagText="Création de site internet"
+        primaryText="Un site internet à "
         secondaryText="votre image !"
-        description="Je développe des sites WordPress 100% personnalisés, sécurisés et performants, optimisés pour une visibilité maximale. Discutons de votre projet !"
+        paragraphText="Je développe des sites WordPress 100% personnalisés, sécurisés et performants, optimisés pour une visibilité maximale. Discutons de votre projet !"
         buttonText="Voir mon portfolio"
-        bgImage={bgImage}
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />

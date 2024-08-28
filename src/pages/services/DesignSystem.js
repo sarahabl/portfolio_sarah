@@ -1,12 +1,11 @@
 import React from 'react';
-import HeroAccueilServices from '../../components/hero__accueil_services/hero__accueil_services';
+import HeroService from '../../components/hero-service/hero-service';
 import Bandeau from '../../components/bandeau/bandeau';
 import ProcessDesign from '../../components/process-design/process-design';
 import Inclus from '../../components/inclus/inclus';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
-import bgImage from '../../assets/hero__design-system.png';
 
 const DesignSystem = () => {
     const processSteps = [
@@ -62,12 +61,12 @@ const DesignSystem = () => {
   
   return (
     <div>
-      <HeroAccueilServices 
+      <HeroService  
+        tagText="Design System"
         primaryText="Envie d'un produit"
         secondaryText="harmonieux & cohérent ?"
-        description="Découvrez le Design System ! En tant que designer freelance, je crée un système sur-mesure pour simplifier et unifier vos interfaces, tout en renforçant votre identité."
+        paragraphText="Découvrez le Design System ! En tant que designer freelance, je crée un système sur-mesure pour simplifier et unifier vos interfaces, tout en renforçant votre identité, en partant de zéro ou avec une base existante."
         buttonText="Voir mon portfolio"
-        bgImage={bgImage}
       />
       <Bandeau />
       <ProcessDesign steps={processSteps} />
