@@ -3,6 +3,7 @@ import HeroProjet from '../../components/hero__projet/hero__projet';
 import wenabiHeroImage from '../../assets/wenabi__hero.png';
 import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
+import SectionRechercheUX from '../../components/section__projet/section__recherche-ux/section__recherche-ux';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
@@ -11,15 +12,49 @@ import wenabiSection2Image from '../../assets/wenabi__section2.png';
 import wenabiSection3Image from '../../assets/wenabi__section3.png';
 
 const Wenabi = () => {
-  const acquisitionText = `
-    <strong>Acquisition</strong><br/>
-    J'ai transformé l’expérience de l’utilisateur pour la rendre plus inspirante. En analysant les interactions et les taux de conversion, j'ai identifié les points de friction et amélioré le parcours utilisateur, entraînant une interface plus intuitive et une satisfaction accrue.
-    <br/><br/>
-    <strong>Activation</strong><br/>
-    J'ai développé un module d'abondement qui permet aux entreprises de convertir l’engagement de leurs collaborateurs en dons aux associations. Cette solution simplifie le processus de don et augmente son impact, valorisant l’engagement sociétal des entreprises partenaires.
-    <br/><br/>
-    <strong>Rétention</strong><br/>
-    J’ai optimisé la rétention en créant des notifications personnalisées qui maintiennent les utilisateurs engagés. Les nouvelles notifications améliorent la visibilité des programmes et renforcent la participation, transformant les utilisateurs en ambassadeurs actifs.
+  const textContent = "Wenabi est une plateforme de bénévolat visant à faciliter la mise en relation entre entreprises et associations. L'objectif principal est d'augmenter l'engagement des employés dans des actions bénévoles en rendant la plateforme plus inspirante et accessible.";
+
+  const enseignements = `
+    <ul>
+      <li>Guidage vers les éléments-clés : Les éléments tels que le calendrier, le fil d’actualité et le compteur temps ne sont pas utilisés de manière optimale.</li>
+      <li>Recherches de missions : 54% des collaborateurs veulent retrouver les missions par thématique, 25% veulent des missions correspondant à leurs compétences, et 15% veulent des défis ponctuels réalisables en équipe.</li>
+      <li>Complexité de l’offre : L’offre de missions est trop dense et les options de recherche trop détaillées, rendant la plateforme complexe.</li>
+      <li>Benchmark : La plateforme est pratique mais manque d’effet "wahou". Les emails automatiques sont incohérents et pas adaptés au mobile.</li>
+      <li>Témoignages : 60% des collaborateurs veulent des témoignages de personnes engagées sur les réseaux qu'ils utilisent tous les jours.</li>
+      <li>Pages de connexion : Les clients sans page vitrine et sans SSO ont un écran de connexion peu engageant.</li>
+      <li>Documents et ressources légales : Peu visibles ou inaccessibles.</li>
+      <li>Fonctionnalité "collection" : Doit être dupliquée pour chaque client et chaque langue.</li>
+    </ul>
+  `;
+
+  const methode = `
+    <ul>
+      <li>10 entretiens avec des collaborateurs volontaires.</li>
+      <li>6 entretiens avec des administrateurs entreprises.</li>
+      <li>54 réponses au questionnaire semi-directif partagé à tous les clients.</li>
+    </ul>
+  `;
+
+  const questions = `
+    <ul>
+      <li>Comment améliorer le guidage vers les éléments-clés du programme ?</li>
+      <li>Comment rendre les fonctionnalités plus compréhensibles et utilisées ?</li>
+      <li>Comment rendre les formats de missions plus inspirants ?</li>
+      <li>Comment rendre le contenu plus accessible et engageant ?</li>
+      <li>Comment moderniser l’interface et valoriser les témoignages ?</li>
+      <li>Comment rendre les pages de connexion plus engageantes ?</li>
+      <li>Comment rendre la fonctionnalité "collection" scalable ?</li>
+    </ul>
+  `;
+
+  const problematique = "Comment rendre la plateforme Wenabi plus inspirante et accessible, tout en simplifiant la navigation et en augmentant l'engagement des utilisateurs ?";
+
+  const metriques = `
+    <ul>
+      <li>Taux d'engagement des utilisateurs.</li>
+      <li>Nombre d'inscriptions aux missions.</li>
+      <li>Taux de satisfaction des utilisateurs.</li>
+    </ul>
   `;
 
   const section1 = `
@@ -58,9 +93,17 @@ Mes contributions principales ont inclus :
         tags={["Product Design", "Design System"]}
         imageSrc={wenabiHeroImage}
       />
+      <SectionRechercheUX
+        textContent={textContent}
+        enseignements={enseignements}
+        methode={methode}
+        questions={questions}
+        problematique={problematique}
+        metriques={metriques}
+      />
       <SectionImgRight 
         tag="Prototypage"
-        title="Proposer des moyens pour optimiser la pertinence des recommandations et améliorer la navigation sur la plateforme."
+        title="Proposer des moyens pour optimiser la pertinence des recommandations"
         text={section1}
         imageSrc={wenabiSection1Image}
       />

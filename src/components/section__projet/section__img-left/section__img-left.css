@@ -7,14 +7,14 @@
   background-color: white;
 }
 
+.image-content,
+.text-content {
+  width: 50%; /* Les deux colonnes prennent chacune 50% de la largeur */
+}
+
 .image-content img {
   max-width: 100%;
   border-radius: 0.625rem;
-}
-
-.text-content {
-  max-width: 50%;
-  gap: 20px;
 }
 
 .section-text {
@@ -41,10 +41,11 @@ h3 {
     padding: 2%; /* Réduit le padding pour les petits écrans */
   }
 
-  .text-content {
-    max-width: 100%; /* Les colonnes prennent toute la largeur */
+  .text-content,
+  .image-content {
+    width: 100%; /* Les colonnes prennent toute la largeur sur les petits écrans */
   }
-  
+
   .image-content img {
     max-width: 100%;
     border-radius: 0.625rem;

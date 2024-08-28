@@ -18,14 +18,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding-right: 2%; /* Espace entre les colonnes */
-  gap:40;
-}
-
-/* Style du tag */
-.hero-tag-service {
-  transform: rotate(-4deg);
-  font-size: 24px;
-  margin-bottom: 40px;
+  gap:40px;
 }
 
 /* Style pour la colonne de droite */
