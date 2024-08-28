@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroProjet from '../../components/hero__projet/hero__projet';
-import bodachellaHeroImage from '../../assets/projet__hero_bodachella.png'; // Image à droite
+import bodachellaHeroImage from '../../assets/bodachella__hero.png'; // Image à droite
 import bodachellaLogo from '../../assets/projet__logo_bodachella.svg'; // Logo à gauche
 import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
@@ -10,7 +10,7 @@ import Contact from '../../components/contact/contact';
 import bodachellaSection1Image from '../../assets/bodachella__section1.png';
 import bodachellaSection2Image from '../../assets/bodachella__section2.png';
 import bodachellaFocusImage from '../../assets/bodachella__focus.png';
-import DesignChallenge from '../../components/design__challenge/design__challenge'; // Import du composant DesignChallenge
+import DesignChallenge from '../../components/design__challenge/design__challenge';
 
 const Bodachella = () => {
   const brandingText = `
