@@ -1,16 +1,14 @@
 import React from 'react';
 import HeroProjet from '../../components/hero__projet/hero__projet';
 import wenabiHeroImage from '../../assets/wenabi__hero.png';
-import DesignChallenge from '../../components/design__challenge/design__challenge';
 import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
-import SectionLast from '../../components/section__projet/section__last/section__last';
 import Realisations from '../../components/realisations/realisations';
 import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import wenabiSection1Image from '../../assets/wenabi__section1.png';
 import wenabiSection2Image from '../../assets/wenabi__section2.png';
-import wenabiFocusImage from '../../assets/wenabi__focus.png';
+import wenabiSection3Image from '../../assets/wenabi__section3.png';
 
 const Wenabi = () => {
   const acquisitionText = `
@@ -24,13 +22,32 @@ const Wenabi = () => {
     J’ai optimisé la rétention en créant des notifications personnalisées qui maintiennent les utilisateurs engagés. Les nouvelles notifications améliorent la visibilité des programmes et renforcent la participation, transformant les utilisateurs en ambassadeurs actifs.
   `;
 
-  const designSystemText = `
-    <strong>Conception</strong><br/>
-    J'ai contribué à la création d'un design system pour Wenabi. Cela a impliqué l'inventaire des éléments existants, la création d'une bibliothèque de composants réutilisables et la mise en place de guidelines pour garantir une expérience utilisateur homogène et efficace.
-    <br/><br/>
-    <strong>Maintenance</strong><br/>
-    En assurant la mise à jour continue du design system, j’ai permis une adaptabilité rapide aux besoins changeants et une intégration fluide des nouvelles fonctionnalités, augmentant ainsi la vélocité du développement.
+  const section1 = `
+    <ul>
+      <li>Simplification des options de recherche et regroupement par thématiques et compétences, rendant la plateforme moins complexe et plus inspirante.</li>
+      <li>Modernisation de l’interface et refonte des emails pour une meilleure cohérence et adaptabilité mobile, augmentant l'attrait visuel et la praticité.</li>
+    </ul>
   `;
+
+  const section2 = `
+  <ul>
+    <li>Mise en valeur des témoignages sur les réseaux sociaux et amélioration des pages de connexion pour une première impression engageante.</li>
+    <li>Réorganisation des documents et ressources légales pour une meilleure visibilité et accessibilité.</li>
+    <li>Développement de collections dynamiques permettant de déployer des ensembles de missions cohérents en quelques clics, facilitant la gestion et l'engagement des utilisateurs.</li>
+  </ul>
+`;
+
+const section3 = `
+Lors de mon passage chez Wenabi, j'ai participé au développement d'un design system complet, visant à améliorer la cohérence et l'accélération des processus de développement.
+<br />
+<br />
+
+Mes contributions principales ont inclus :
+<ul>
+  <li>Benchmark</li>
+  <li>Actualisation des variables de design pour garantir une uniformité à travers les interfaces</li>
+</ul>
+`;
 
   return (
     <div>
@@ -41,23 +58,29 @@ const Wenabi = () => {
         tags={["Product Design", "Design System"]}
         imageSrc={wenabiHeroImage}
       />
-      <DesignChallenge 
-        title="Ma mission ? Transformer l’expérience utilisateur sur Wenabi en un jeu d’enfant !"
-        description="J’ai rendu la plateforme plus intuitive et engageante, pour que chaque collaborateur puisse interagir facilement et avec plaisir. De l'écoute des besoins utilisateurs à la livraison des solutions, j’ai pris en charge tout le processus, en imaginant des fonctionnalités innovantes et en créant un design system harmonieux pour une plateforme cohérente et efficace."
+      <SectionImgRight 
+        tag="Prototypage"
+        title="Proposer des moyens pour optimiser la pertinence des recommandations et améliorer la navigation sur la plateforme."
+        text={section1}
+        imageSrc={wenabiSection1Image}
+        buttonText="Découvrez comment je transforme les produits"
+        buttonLink="/services/product-design"
       />
       <SectionImgLeft 
-        tag="Product Design"
-        title="Concevoir pour l’impact"
-        text={acquisitionText}
+        text={section2}
         imageSrc={wenabiSection2Image}
+        buttonText="Un projet design ?" 
+        buttonLink="/services/product-design"
       />
       <SectionImgRight 
         tag="Design System"
-        title="La base de la cohérence"
-        text={designSystemText}
-        imageSrc={wenabiSection1Image}
+        title="Développement d'un design system complet"
+        text={section3}
+        imageSrc={wenabiSection3Image}
+        buttonText="Découvrez mon approche en design system"
+        buttonLink="/services/design-system"
+        style={{ background: 'linear-gradient(180deg, #FFF 0%, #F9F6EB 100%)' }} 
       />
-      <SectionLast imageSrc={wenabiFocusImage} />
       <Realisations />
       <Services />
       <Contact />

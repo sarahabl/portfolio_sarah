@@ -3,13 +3,13 @@ import Tag from '../../tags/tags';
 import './section__img-right.css';
 import Button from '../../buttons/buttons';
 
-const SectionImgRight = ({ tag, title, text, imageSrc, buttonText, buttonLink }) => {
+const SectionImgRight = ({ tag, title, text, imageSrc, buttonText, buttonLink, style }) => {
   const handleButtonClick = () => {
     window.location.href = buttonLink;
   };
 
   return (
-    <div className="section-img-right">
+    <div className="section-img-right" style={style}>
       <div className="text-content">
         <Tag content={tag} />
         <h3>{title}</h3>
