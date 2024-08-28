@@ -14,11 +14,13 @@ const SectionImgRight = ({ tag, title, text, imageSrc, buttonText, buttonLink, s
         <Tag content={tag} />
         <h3>{title}</h3>
         <div className="section-text" dangerouslySetInnerHTML={{ __html: text }} />
-        <Button
-          text={buttonText}
-          onClick={handleButtonClick}
-          className="hero-projet-button"
-        />
+        {buttonText && (
+          <Button
+            text={buttonText}
+            onClick={handleButtonClick}
+            className="hero-projet-button"
+          />
+        )} 
       </div>
       <div className="image-content">
         <img src={imageSrc} alt={title} />

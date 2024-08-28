@@ -14,14 +14,16 @@ const SectionImgLeft = ({ tag, title, text, imageSrc, buttonText, buttonLink }) 
         <img src={imageSrc} alt={title} />
       </div>
       <div className="text-content">
-        <Tag content={tag} />
+        {tag && <Tag content={tag} />}
         <h3>{title}</h3>
         <div className="section-text" dangerouslySetInnerHTML={{ __html: text }} />
-        <Button
-          text={buttonText}
-          onClick={handleButtonClick}
-          className="hero-projet-button"
-        />
+        {buttonText && (
+          <Button
+            text={buttonText}
+            onClick={handleButtonClick}
+            className="hero-projet-button"
+          />
+        )} 
       </div>
     </div>
   );

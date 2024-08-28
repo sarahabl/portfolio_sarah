@@ -63,13 +63,11 @@ Mes contributions principales ont inclus :
         title="Proposer des moyens pour optimiser la pertinence des recommandations et améliorer la navigation sur la plateforme."
         text={section1}
         imageSrc={wenabiSection1Image}
-        buttonText="Découvrez comment je transforme les produits"
-        buttonLink="/services/product-design"
       />
       <SectionImgLeft 
         text={section2}
         imageSrc={wenabiSection2Image}
-        buttonText="Un projet design ?" 
+        buttonText="Découvrez comment je transforme les produits"
         buttonLink="/services/product-design"
       />
       <SectionImgRight 
