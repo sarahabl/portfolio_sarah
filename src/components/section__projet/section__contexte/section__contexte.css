@@ -1,0 +1,65 @@
+.section-contexte__container {
+    padding: 4%;
+    background-color: white;
+    border-radius: 1.25rem;
+    gap:20px;
+  }
+  
+  .section-contexte__text {
+    margin-top: 1rem;
+    font-family: "Bricolage Grotesque";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 80%;
+  }
+  
+  .section-contexte__blocs {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .section-contexte__bloc {
+    flex: 1;
+    border-radius: 1.25rem;
+    padding: 20px;
+    background-color: var(--beige, #F9F6EB);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-contexte__bloc-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .section-contexte__icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .section-contexte__bloc-title {
+    color: #00381A;
+    font-family: "Bricolage Grotesque";
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .section-contexte__bloc-content {
+    margin-top: 1rem;
+    font-family: "Bricolage Grotesque";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .section-contexte__blocs {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroProjet from '../../components/hero__projet/hero__projet';
 import ProcessDesign from '../../components/process-design/process-design';
+import SectionContexte from '../../components/section__projet/section__contexte/section__contexte';
 import SectionMonRole from '../../components/section__projet/section__mon-role/section__mon-role';
 import wenabiHeroImage from '../../assets/wenabi__hero.png';
 import wenabiLogo from '../../assets/projet__logo_wenabi.png'
@@ -14,7 +15,29 @@ import wenabiSection2Image from '../../assets/wenabi__section2.png';
 import wenabiSection3Image from '../../assets/wenabi__section3.png';
 
 const Wenabi = () => {
-  const textContent = "Wenabi est une plateforme de bénévolat visant à faciliter la mise en relation entre entreprises et associations. L'objectif principal est d'augmenter l'engagement des employés dans des actions bénévoles en rendant la plateforme plus inspirante et accessible.";
+  const contexteTexte = "Wenabi est une plateforme de bénévolat visant à faciliter la mise en relation entre entreprises et associations. L'objectif principal est d'augmenter l'engagement des employés dans des actions bénévoles en rendant la plateforme plus inspirante et accessible.";
+
+  const problemeTexte = `
+  <ul>
+    <li>Mauvais guidage vers les éléments-clés du programme.</li>
+    <li>Certaines fonctionnalités peu utilisées ou mal comprises.</li>
+    <li>Formats de missions incompris et peu inspirants.</li>
+    <li>Contenu peu accessible et engageant.</li>
+    <li>Interface jugée peu moderne.</li>
+    <li>Pages de connexion peu engageantes.</li>
+    <li>Difficulté d'accès aux documents et ressources légales.</li>
+    <li>Fonctionnalité "collection" non scalable pour les temps forts.</li>
+    <li>Manque de clarté sur la démarche de l'employeur pour 62% des collaborateurs engagés.</li>
+  </ul>
+  `;
+
+  const objectifsTexte = `
+  <ul>
+    <li>Augmenter l'engagement et la participation des collaborateurs.</li>
+    <li>Faciliter la recherche et l'inscription aux missions bénévoles.</li>
+    <li>Améliorer l'expérience utilisateur globale pour rendre la navigation plus intuitive.</li>
+  </ul>
+  `;
 
   const designSteps = [
     { title: "Benchmark", description: "Analyser la concurrence pour comprendre le fonctionnement des applications de rencontre." },
@@ -114,10 +137,14 @@ Mes contributions principales ont inclus :
         imageSrc={wenabiHeroImage}
         leftImageSrc={wenabiLogo}
       />
+      <SectionContexte
+        texteContexte={contexteTexte}
+        problemeTexte={problemeTexte}
+        objectifsTexte={objectifsTexte}
+      />
       <ProcessDesign steps={designSteps} tagContent="Processus de design" />
       <SectionMonRole roleContent={roleContent} />
       <SectionRechercheUX
-        textContent={textContent}
         enseignements={enseignements}
         methode={methode}
         questions={questions}
