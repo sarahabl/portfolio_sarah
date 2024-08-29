@@ -21,8 +21,8 @@ const MethodeE2R = () => {
   return (
     <div>
       <HeroProjet
-        titlePrimary="Méthode"
-        titleSecondary="E2R"
+        titlePrimary="Imaginer l'identité de la"
+        titleSecondary="Méthode E2R"
         description="La méthode E2R, ou Emotion, Régression, Réparation, est une approche révolutionnaire dans le domaine de l’hypnose thérapeutique. Plutôt que de se concentrer uniquement sur les symptômes isolés, cette méthode met l’accent sur le traitement des émotions profondes pour une guérison plus complète. Ma mission était de créer une identité visuelle qui reflète cette approche novatrice tout en véhiculant un sentiment de sérénité et de confiance."
         imageSrc={methodeE2RHeroImage}
         leftImageSrc={E2RLogo}

@@ -24,8 +24,8 @@ const Bodachella = () => {
   return (
     <div>
       <HeroProjet
-        titlePrimary="Box"
-        titleSecondary="Bodachella"
+        titlePrimary="Créer la marque Bodachella"
+        titleSecondary="et son site internet"
         description="Pour Bodachella Box, j’ai créé une identité visuelle unique et un site web personnalisé. Marque dédiée aux coffrets pour enterrements de vie de jeune fille (EVJF), Bodachella souhaitait un style dynamique et coloré pour se démarquer. J’ai mis en œuvre leur vision avec un design moderne et vibrant."
         imageSrc={bodachellaHeroImage}
         leftImageSrc={bodachellaLogo}
