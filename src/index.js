@@ -1,6 +1,6 @@
-import './index.css'; 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importation des styles Bootstrap
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import App from './App';
@@ -22,8 +22,7 @@ import Bodachella from './pages/portfolio/Bodachella';
 import MethodeE2R from './pages/portfolio/MethodeE2R';
 import Talia from './pages/portfolio/Talia';
 import Wenabi from './pages/portfolio/Wenabi';
-
-
+import Happn from './pages/portfolio/Happn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -45,6 +44,7 @@ root.render(
         <Route path="/portfolio/methode-e2r" element={<MethodeE2R />} />
         <Route path="/portfolio/talia" element={<Talia />} />
         <Route path="/portfolio/wenabi" element={<Wenabi />} />
+        <Route path="/portfolio/happn" element={<Happn />} />
       </Route>
     </Routes>
   </BrowserRouter>
