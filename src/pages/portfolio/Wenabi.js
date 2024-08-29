@@ -142,7 +142,9 @@ Mes contributions principales ont inclus :
         problemeTexte={problemeTexte}
         objectifsTexte={objectifsTexte}
       />
-      <ProcessDesign steps={designSteps} tagContent="Processus de design" />
+      <ProcessDesign
+        steps={designSteps}
+        tagContent="Processus de design" />
       <SectionMonRole roleContent={roleContent} />
       <SectionRechercheUX
         enseignements={enseignements}

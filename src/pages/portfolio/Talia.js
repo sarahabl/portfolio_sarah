@@ -1,77 +1,133 @@
 import React from 'react';
 import HeroProjet from '../../components/hero__projet/hero__projet';
-import DesignChallenge from '../../components/design__challenge/design__challenge';
-import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
-import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
-import SectionLast from '../../components/section__projet/section__last/section__last';
-import Realisations from '../../components/realisations/realisations';
-import Services from '../../components/services/services';
-import Contact from '../../components/contact/contact';
+import ProcessDesign from '../../components/process-design/process-design';
+import SectionContexte from '../../components/section__projet/section__contexte/section__contexte';
+import SectionMonRole from '../../components/section__projet/section__mon-role/section__mon-role';
 import taliaHeroImage from '../../assets/talia__hero.png';
+import taliaLogo from '../../assets/projet__logo_graines.png'
+import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
+import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
+import SectionRechercheUX from '../../components/section__projet/section__recherche-ux/section__recherche-ux';
+import Realisations from '../../components/realisations/realisations';
+import Contact from '../../components/contact/contact';
 import taliaSection1Image from '../../assets/talia__section1.png';
-import taliaSection2Image from '../../assets/talia__section2.png';
-import taliaFocusImage from '../../assets/talia__focus.png';
 
 const Talia = () => {
-  const productDesignText = `
-    <strong>Planification et Recherche</strong><br/>
-    J'ai commencé par une analyse approfondie des besoins des utilisateurs et des fonctionnalités attendues. Cela incluait des études de marché, l'analyse des concurrents et la définition des personas pour mieux cerner les attentes des jardiniers et maraîchers.
-    <br/><br/>
-    <strong>Conception des Interfaces</strong><br/>
-    Le design du MVP a été orienté vers une expérience utilisateur fluide et intuitive :
-    <ul>
-      <li><strong>Calendriers de Semis :</strong> Fonctionnalité clé permettant aux utilisateurs de partager et consulter des calendriers géolocalisés.</li>
-      <li><strong>Forum et Partage :</strong> Espaces pour échanger des observations et poser des questions, facilitant l’interaction au sein de la communauté.</li>
-      <li><strong>Recherche et Filtrage :</strong> Outils permettant de trouver facilement des calendriers basés sur la localisation et les spécificités du terrain.</li>
-    </ul>
-    <br/>
-    <strong>Prototypage et Feedback</strong><br/>
-    Des prototypes interactifs ont été créés pour tester les fonctionnalités et recueillir des retours précieux des utilisateurs. Ces retours ont permis d'ajuster le design et de garantir que la plateforme réponde efficacement aux besoins des utilisateurs tout en offrant une expérience agréable.
+  const contexteTexte = "Avec le changement climatique bouleversant les saisons et perturbant les habitudes des jardiniers et maraîchers, il devient crucial d'adapter nos pratiques agricoles. Les semis et plantations ne suivent plus les règles traditionnelles, nécessitant des essais et observations annuels. Graines Sauvages, une jeune société de vente en ligne de semences biologiques, souhaite répondre à ce défi en offrant un service gratuit et collaboratif, permettant le partage d'informations actualisées et pertinentes.";
+
+  const problemeTexte = `
+  <ul>
+    <li>Obsolescence des Calendriers de Semis : Les calendriers de semis traditionnels ne reflètent plus la réalité actuelle.</li>
+    <li>Manque d’Informations Localisées et Fiables : Les jardiniers et maraîchers peinent à trouver des informations précises et pertinentes pour leur localité.</li>
+    <li>Besoin de Partage d'Expériences : Nécessité de partager les observations et pratiques pour s’adapter aux nouvelles conditions climatiques.</li>
+  </ul>
   `;
 
-  const brandingText = `
-    <strong>Définition du Projet</strong><br/>
-    Talia a été imaginée pour répondre aux besoins croissants des jardiniers et maraîchers face aux défis posés par le changement climatique. La plateforme vise à simplifier l’accès à des calendriers de semis personnalisés et à jour, en favorisant le partage d’observations et la création de liens au sein de la communauté.
-    <br/><br/>
-    <strong>Création du Logo</strong><br/>
-    Pour le branding de Talia, j'ai développé un logo qui incarne les valeurs essentielles du projet : partage, biodynamie et nature. Le choix des couleurs et des formes visait à créer une identité visuelle qui soit à la fois chaleureuse et professionnelle.
-    <br/><br/>
-    <strong>Typographie et Style Graphique</strong><br/>
-    La typographie choisie est à la fois moderne et accessible, avec des lettres rondes pour une touche de convivialité. Le style graphique inclut des illustrations flat avec des contours simples, pour une approche épurée et fonctionnelle.
+  const objectifsTexte = `
+  <ul>
+    <li>Augmenter la Visibilité de Graines Sauvages : Attirer plus de visiteurs sur le site marchand.</li>
+    <li>Accroître les Visites et Interactions : Utiliser les articles de blog et placements de produits pour générer du trafic.</li>
+    <li>Offrir un Service Gratuit et Utile : Fournir aux jardiniers un outil pratique et collaboratif.</li>
+    <li>Créer des Interfaces Intuitives : Faciliter l’accès à l’information grâce à une navigation simple et attrayante.</li>
+  </ul>
+  `;
+
+  const designSteps = [
+    { title: "Benchmark", description: "Analyser la concurrence pour comprendre le fonctionnement des applications de rencontre." },
+    { title: "Recherche utilisateur", description: "Examiner les besoins et les motivations des utilisateurs des applications de rencontre pour collecter des données essentielles." },
+    { title: "Définition du problème", description: "Formuler clairement la problématique basée sur les insights obtenus pendant la phase de recherche utilisateur." },
+    { title: "Idéation", description: "Développer et imaginer des pistes de conception créatives pour répondre à la problématique identifiée." },
+    { title: "Prototypage", description: "Prototyper les premières idées de conception et les soumettre à des tests auprès d’utilisateurs des applications de rencontre pour évaluer leur efficacité et recueillir des retours pour des améliorations futures." }
+  ];
+  
+  const roleContent = `
+  <ul>
+    <li>Conduire des recherches utilisateurs pour identifier les points de friction et les opportunités d'amélioration.</li>
+    <li>Définir les problématiques UX à résoudre.</li>
+    <li>Participer à l'idéation et à la création de prototypes.</li>
+    <li>Comment garantir la qualité et la pertinence des informations partagées ?</li>
+    <li>Quels mécanismes mettre en place pour encourager le partage et la collaboration ?</li>
+    <li>Comment adapter la plateforme aux différents niveaux de compétences des utilisateurs ?.</li>
+  </ul>
+  `;
+
+  const enseignements = `
+    <ul>
+      <li>Les jardiniers amateurs et professionnels souhaitent des informations localisées, actualisées et précises.</li>
+      <li>L’aspect communautaire et le partage d’expériences sont primordiaux.</li>
+      <li>Les utilisateurs recherchent des conseils pratiques adaptés à leur contexte spécifique (type de sol, climat local).</li>
+    </ul>
+  `;
+
+  const methode = `
+    <ul>
+      <li>5 entretiens téléphoniques avec des utilisateurs volontaires.</li>
+      <li>4 tests de shadowing avec des utilisateurs volontaires.</li>
+    </ul>
+  `;
+
+  const questions = `
+    <ul>
+      <li>Comment garantir la qualité et la pertinence des informations partagées ?</li>
+      <li>Quels mécanismes mettre en place pour encourager le partage et la collaboration ?</li>
+      <li>Comment adapter la plateforme aux différents niveaux de compétences des utilisateurs ?</li>
+    </ul>
+  `;
+
+  const problematique = "Les jardiniers et maraîchers ont besoin d’un outil fiable et collaboratif pour partager et accéder à des informations actualisées et locales, afin de s’adapter efficacement aux changements climatiques.";
+
+  const metriques = `
+    <ul>
+      <li>Nombre de Visiteurs Uniques</li>
+      <li>Taux de Participation et d’Interaction</li>
+      <li>Nombre de Calendriers de Semis Partagés</li>
+      <li>Satisfaction Utilisateurs</li>
+    </ul>
+  `;
+
+  const section1 = `
+    <ul>
+      <li>Partage de calendriers de semis personnalisés pour permettre aux utilisateurs de créer et de partager leurs propres calendriers, enrichis d'observations locales.</li>
+      <li>Accès à des informations localisées et notées pour que les jardiniers bénéficient de données précises et géolocalisées, validées par la communauté.</li>
+      <li>Plateforme interactive et collaborative pour faciliter l’échange de conseils et d’expériences, renforçant le sentiment de communauté.</li>
+    </ul>
   `;
 
   return (
     <div>
       <HeroProjet
-        titlePrimary="L’app de"
-        titleSecondary="Graines sauvages"
-        description="Talia est une plateforme innovante dédiée aux passionnés de jardinage et aux maraîchers professionnels. Développée pour répondre aux défis du changement climatique, Talia permet aux utilisateurs de partager des calendriers de semis et des observations, tout en offrant un accès à des informations locales et actualisées.
-Mon rôle dans ce projet a été de créer le branding de Talia et de concevoir le design du produit MVP, afin de donner vie à une plateforme à la fois pratique et attrayante."
-        tags={["Branding", "Product Design"]}
+        titlePrimary="Concevoir le MVP"
+        titleSecondary="de Graines Sauvages"
+        description="Dans le cadre de mon projet de fin d'études pour l'obtention de mon diplôme en UX/UI Design à l'École Multimédia, j'ai eu l'occasion de travailler sur un projet répondant aux défis posés par le changement climatique pour les jardiniers et maraîchers."
         imageSrc={taliaHeroImage}
+        leftImageSrc={taliaLogo}
       />
-      <DesignChallenge 
-        title="Faciliter le partage d’informations avec une interface durable et engageante"
-        description="Il s'agissait de créer un produit numérique parfaitement adapté aux besoins des jardiniers, qu'ils soient amateurs ou professionnels, face aux défis d’un climat changeant. L’objectif ? Développer un branding cohérent et un design fonctionnel qui incarnent l’authenticité, la collaboration et l’innovation, au service d’un jardinage durable."
+      <SectionContexte
+        texteContexte={contexteTexte}
+        problemeTexte={problemeTexte}
+        objectifsTexte={objectifsTexte}
+      />
+      <ProcessDesign steps={designSteps} tagContent="Processus de design" />
+      <SectionMonRole roleContent={roleContent} />
+      <SectionRechercheUX
+        enseignements={enseignements}
+        methode={methode}
+        questions={questions}
+        problematique={problematique}
+        metriques={metriques}
       />
       <SectionImgRight 
-        tag="Product Design"
-        title="Conception du MVP"
-        text={productDesignText}
+        tag="Prototypage"
+        title="Créer des prototypes du MVP de l’application web"
+        text={section1}
         imageSrc={taliaSection1Image}
+        buttonText="Découvrez comment je transforme les produits"
+        buttonLink="/services/product-design"
+        style={{ background: 'linear-gradient(180deg, #FFF 0%, #F9F6EB 100%)' }}
       />
-      <SectionImgLeft 
-        tag="Branding"
-        title="Processus et Création"
-        text={brandingText}
-        imageSrc={taliaSection2Image}
-      />
-      <SectionLast imageSrc={taliaFocusImage} />
       <Realisations />
-      <Services />
       <Contact />
     </div>
   );
 };
-
 export default Talia;
