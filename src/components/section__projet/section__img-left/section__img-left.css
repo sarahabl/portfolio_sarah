@@ -42,7 +42,7 @@ h3 {
   .section-img-left {
     flex-direction: column-reverse; /* La colonne de gauche passe en dessous de la colonne de droite */
     gap: 20px; /* Réduit l'écart entre les colonnes */
-    padding: 2%; /* Réduit le padding pour les petits écrans */
+    padding: 4%; /* Réduit le padding pour les petits écrans */
   }
 
   .text-content,

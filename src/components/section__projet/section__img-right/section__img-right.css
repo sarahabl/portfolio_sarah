@@ -43,7 +43,7 @@
   .section-img-right {
     flex-direction: column;
     gap: 20px; /* Réduit l'écart entre les colonnes */
-    padding: 2%; /* Réduit le padding pour les petits écrans */
+    padding: 4%; /* Réduit le padding pour les petits écrans */
   }
 
   .text-content {
