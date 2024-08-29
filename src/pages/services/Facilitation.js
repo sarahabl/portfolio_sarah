@@ -36,7 +36,7 @@ const Facilitation = () => {
         tagText="Facilitation"
         primaryText="Un projet, une idée,"
         secondaryText="un défi ?"
-        paragraphText="Faisons-les éclore ensemble ! En tant que facilitateur freelance, j'accompagne vos équipes avec des sessions de travail dynamiques et productives : design sprint, ateliers d’idéation, focus groups. Je vous guide pas à pas."
+        paragraphText="Faisons-les éclore ensemble ! En tant que facilitatrice, j'accompagne vos équipes avec des sessions de travail dynamiques et productives : design sprint, ateliers d’idéation, focus groups. Je vous guide pas à pas."
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
