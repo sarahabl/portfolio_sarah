@@ -33,6 +33,10 @@ h3 {
   margin-top: 1rem;
 }
 
+.custom-button {
+  font-family: "Bricolage Grotesque", sans-serif !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section-img-left {

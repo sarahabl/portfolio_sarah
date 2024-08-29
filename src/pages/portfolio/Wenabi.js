@@ -16,13 +16,13 @@ const Wenabi = () => {
 
   const enseignements = `
     <ul>
-      <li><strong>Guidage :</strong> Le calendrier, le fil d’actualité et le compteur temps sont sous-utilisés.</li>
-      <li><strong>Recherche de missions :</strong> 54% des collaborateurs préfèrent les missions par thématique, 25% par compétences, et 15% recherchent des défis en équipe.</li>
-      <li><strong>Complexité :</strong> L’offre de missions est trop dense et les options de recherche trop détaillées, rendant la plateforme complexe.</li>
-      <li><strong>Benchmark :</strong> La plateforme est fonctionnelle mais manque de "wow effect". Les emails automatiques sont incohérents et non adaptés au mobile.</li>
-      <li><strong>Témoignages :</strong> 60% des collaborateurs souhaitent des témoignages sur les réseaux sociaux qu'ils utilisent.</li>
-      <li><strong>Pages de connexion :</strong> Les écrans de connexion pour les clients sans vitrine et sans SSO sont peu engageants.</li>
-      <li><strong>Ressources légales :</strong> Peu visibles ou difficiles d'accès.</li>
+      <li><strong>Guidage :</strong> Le calendrier, le fil d’actualité et le compteur temps sont sous-utilisés.</li><br />
+      <li><strong>Recherche de missions :</strong> 54% des collaborateurs préfèrent les missions par thématique, 25% par compétences, et 15% recherchent des défis en équipe.</li><br />
+      <li><strong>Complexité :</strong> L’offre de missions est trop dense et les options de recherche trop détaillées, rendant la plateforme complexe.</li><br />
+      <li><strong>Benchmark :</strong> La plateforme est fonctionnelle mais manque de "wow effect". Les emails automatiques sont incohérents et non adaptés au mobile.</li><br />
+      <li><strong>Témoignages :</strong> 60% des collaborateurs souhaitent des témoignages sur les réseaux sociaux qu'ils utilisent.</li><br />
+      <li><strong>Pages de connexion :</strong> Les écrans de connexion pour les clients sans vitrine et sans SSO sont peu engageants.</li><br />
+      <li><strong>Ressources légales :</strong> Peu visibles ou difficiles d'accès.</li><br />
       <li><strong>Fonctionnalité "collection" :</strong> Doit être dupliquée pour chaque client et langue.</li>
     </ul>
   `;
