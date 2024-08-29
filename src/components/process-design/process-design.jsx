@@ -2,12 +2,12 @@ import React from 'react';
 import './process-design.css';
 import SmallTitle from '../title/small_title/small_title';
 import Tag from '../tags/tags';
+import PropTypes from 'prop-types';
 
-const ProcessDesign = ({ steps, tagContent }) => {
+const ProcessDesign = ({ steps, tagContent, backgroundColor }) => {
   return (
-    <div className="process-design-container">
+    <div className="process-design-container" style={{ backgroundColor: backgroundColor }}>
       {tagContent && <Tag content={tagContent} />}
-      <SmallTitle primaryText="Mon" secondaryText="process" />
       {steps && steps.length > 0 && (
         <div className="process-steps">
           {steps.map((step, index) => (
@@ -21,6 +21,16 @@ const ProcessDesign = ({ steps, tagContent }) => {
       )}
     </div>
   );
+};
+
+ProcessDesign.propTypes = {
+  steps: PropTypes.arrayOf(PropTypes.object).isRequired,
+  tagContent: PropTypes.string,
+  backgroundColor: PropTypes.string, // Ajout de la prop pour la couleur de fond
+};
+
+ProcessDesign.defaultProps = {
+  backgroundColor: '#FFFFFF', // Couleur de fond par défaut (blanc)
 };
 
 export default ProcessDesign;

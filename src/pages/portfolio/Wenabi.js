@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroProjet from '../../components/hero__projet/hero__projet';
+import ProcessDesign from '../../components/process-design/process-design';
 import SectionMonRole from '../../components/section__projet/section__mon-role/section__mon-role';
 import wenabiHeroImage from '../../assets/wenabi__hero.png';
 import wenabiLogo from '../../assets/projet__logo_wenabi.png'
@@ -7,7 +8,6 @@ import SectionImgLeft from '../../components/section__projet/section__img-left/s
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
 import SectionRechercheUX from '../../components/section__projet/section__recherche-ux/section__recherche-ux';
 import Realisations from '../../components/realisations/realisations';
-import Services from '../../components/services/services';
 import Contact from '../../components/contact/contact';
 import wenabiSection1Image from '../../assets/wenabi__section1.png';
 import wenabiSection2Image from '../../assets/wenabi__section2.png';
@@ -16,6 +16,14 @@ import wenabiSection3Image from '../../assets/wenabi__section3.png';
 const Wenabi = () => {
   const textContent = "Wenabi est une plateforme de bénévolat visant à faciliter la mise en relation entre entreprises et associations. L'objectif principal est d'augmenter l'engagement des employés dans des actions bénévoles en rendant la plateforme plus inspirante et accessible.";
 
+  const designSteps = [
+    { title: "Benchmark", description: "Analyser la concurrence pour comprendre le fonctionnement des applications de rencontre." },
+    { title: "Recherche utilisateur", description: "Comprendre les besoins et les motivations des utilisateurs des applications de rencontre pour définir une problématique." },
+    { title: "Idéation", description: "Imaginer des pistes de conception pour répondre à la problématique déterminée." },
+    { title: "Prototypage V1 & tests", description: "Prototyper les premières idées et les tester auprès d’utilisateurs des applications de rencontre." },
+    { title: "Restitution & itérations", description: "Présenter toutes les étapes de conception et les fonctionnalités finales et penser aux améliorations futures." }
+  ];
+  
   const roleContent = `
   <ul>
     <li>Conduire des recherches utilisateurs pour identifier les points de friction et les opportunités d'amélioration.</li>
@@ -106,6 +114,7 @@ Mes contributions principales ont inclus :
         imageSrc={wenabiHeroImage}
         leftImageSrc={wenabiLogo}
       />
+      <ProcessDesign steps={designSteps} tagContent="Processus de design" />
       <SectionMonRole roleContent={roleContent} />
       <SectionRechercheUX
         textContent={textContent}
@@ -137,7 +146,6 @@ Mes contributions principales ont inclus :
         style={{ background: 'linear-gradient(180deg, #FFF 0%, #F9F6EB 100%)' }} 
       />
       <Realisations />
-      <Services />
       <Contact />
     </div>
   );
