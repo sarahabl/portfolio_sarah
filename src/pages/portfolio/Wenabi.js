@@ -16,14 +16,14 @@ const Wenabi = () => {
 
   const enseignements = `
     <ul>
-      <li>Guidage vers les éléments-clés : Les éléments tels que le calendrier, le fil d’actualité et le compteur temps ne sont pas utilisés de manière optimale.</li>
-      <li>Recherches de missions : 54% des collaborateurs veulent retrouver les missions par thématique, 25% veulent des missions correspondant à leurs compétences, et 15% veulent des défis ponctuels réalisables en équipe.</li>
-      <li>Complexité de l’offre : L’offre de missions est trop dense et les options de recherche trop détaillées, rendant la plateforme complexe.</li>
-      <li>Benchmark : La plateforme est pratique mais manque d’effet "wahou". Les emails automatiques sont incohérents et pas adaptés au mobile.</li>
-      <li>Témoignages : 60% des collaborateurs veulent des témoignages de personnes engagées sur les réseaux qu'ils utilisent tous les jours.</li>
-      <li>Pages de connexion : Les clients sans page vitrine et sans SSO ont un écran de connexion peu engageant.</li>
-      <li>Documents et ressources légales : Peu visibles ou inaccessibles.</li>
-      <li>Fonctionnalité "collection" : Doit être dupliquée pour chaque client et chaque langue.</li>
+      <li><strong>Guidage :</strong> Le calendrier, le fil d’actualité et le compteur temps sont sous-utilisés.</li>
+      <li><strong>Recherche de missions :</strong> 54% des collaborateurs préfèrent les missions par thématique, 25% par compétences, et 15% recherchent des défis en équipe.</li>
+      <li><strong>Complexité :</strong> L’offre de missions est trop dense et les options de recherche trop détaillées, rendant la plateforme complexe.</li>
+      <li><strong>Benchmark :</strong> La plateforme est fonctionnelle mais manque de "wow effect". Les emails automatiques sont incohérents et non adaptés au mobile.</li>
+      <li><strong>Témoignages :</strong> 60% des collaborateurs souhaitent des témoignages sur les réseaux sociaux qu'ils utilisent.</li>
+      <li><strong>Pages de connexion :</strong> Les écrans de connexion pour les clients sans vitrine et sans SSO sont peu engageants.</li>
+      <li><strong>Ressources légales :</strong> Peu visibles ou difficiles d'accès.</li>
+      <li><strong>Fonctionnalité "collection" :</strong> Doit être dupliquée pour chaque client et langue.</li>
     </ul>
   `;
 

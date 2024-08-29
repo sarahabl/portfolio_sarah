@@ -6,17 +6,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 20px;
+  padding: 4%;
 }
 
 .section-block-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .section-block {
   border-radius: 1.25rem;
   padding: 20px;
+  background-color: white;
+  height: auto; /* Assure que la hauteur du bloc s'adapte à son contenu */
+  display: flex;
+  flex-direction: column;
 }
 
 .beige-background {
@@ -60,19 +66,45 @@ h3 {
   margin-top: 1rem;
 }
 
-/* Ajout du padding dans les conteneurs de colonnes */
-.row {
+.row-enseignements {
+  display: flex;
+  gap: 20px;
   padding: 0 4%;
+  flex-wrap: nowrap; /* Assure que les colonnes restent côte à côte */
+}
+
+.section-footer {
+  margin-top: 40px;
+  padding: 0 4%;
+}
+
+.problematique-metriques {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.green-background .section-text {
+  color: var(--white, #FFF);
+  font-family: "Roboto Serif";
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 200;
+  line-height: normal;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .row {
+  .row-enseignements {
     flex-direction: column;
-    padding: 0 2%; /* Réduit le padding pour les petits écrans */
+    padding: 0 2%;
   }
 
   .section-block-container {
     gap: 20px;
+  }
+
+  .section-footer {
+    padding: 0 2%;
   }
 }

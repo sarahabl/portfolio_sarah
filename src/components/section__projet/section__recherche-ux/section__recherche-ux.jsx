@@ -9,14 +9,14 @@ import heartIcon from '../../../assets/heart-fill.svg';
 const SectionRechercheUX = ({ textContent, enseignements, methode, questions, problematique, metriques }) => {
   return (
     <div className="section-recherche-ux">
-      <div className="section-header" style={{ gap: '40px', padding: '4%' }}>
+      <div className="section-header">
         <Tag content="Nos enseignements de la recherche utilisateurs" />
         {textContent && <p className="section-text">{textContent}</p>}
       </div>
       
-      <div className="row">
+      <div className="row-enseignements">
         {/* Colonne gauche : Bloc 1 */}
-        <div className="col-md-6 col-lg-6 section-block-container">
+        <div className="section-block-container" style={{ flex: '1 1 50%' }}>
           <div className="section-block beige-background">
             <div className="d-flex align-items-center">
               <img src={graduationCapIcon} alt="Graduation Cap" className="icon" />
@@ -25,9 +25,9 @@ const SectionRechercheUX = ({ textContent, enseignements, methode, questions, pr
             <div className="section-text" dangerouslySetInnerHTML={{ __html: enseignements }} />
           </div>
         </div>
-        {/* Colonne droite : Blocs 2 et 3 en colonne */}
-        <div className="col-md-6 col-lg-6 section-block-container">
-          <div className="section-block pink-background">
+        {/* Colonne droite : Blocs 2 et 3 empilés en colonne */}
+        <div className="section-block-container" style={{ flex: '1 1 50%' }}>
+          <div className="section-block pink-background" style={{ marginBottom: '20px' }}>
             <h3>La méthode suivie</h3>
             <div className="section-text" dangerouslySetInnerHTML={{ __html: methode }} />
           </div>
@@ -41,20 +41,22 @@ const SectionRechercheUX = ({ textContent, enseignements, methode, questions, pr
         </div>
       </div>
       
-      <div className="row section-footer" style={{ gap: '40px', marginTop: '40px' }}>
+      <div className="section-footer">
         <Tag content="Définition de la problématique"/>
-        <div className="col-md-6 section-block-container">
-          <div className="section-block green-background">
-            <p className="section-text white-text">{problematique}</p>
-          </div>
-        </div>
-        <div className="col-md-6 section-block-container">
-          <div className="section-block beige-background">
-            <div className="d-flex align-items-center">
-              <img src={heartIcon} alt="Heart" className="icon" />
-              <h3>Métriques à impacter</h3>
+        <div className="row problematique-metriques">
+          <div className="col-md-6 section-block-container">
+            <div className="section-block green-background">
+              <p className="section-text white-text">{problematique}</p>
             </div>
-            <div className="section-text" dangerouslySetInnerHTML={{ __html: metriques }} />
+          </div>
+          <div className="col-md-6 section-block-container">
+            <div className="section-block beige-background">
+              <div className="d-flex align-items-center">
+                <img src={heartIcon} alt="Heart" className="icon" />
+                <h3>Métriques à impacter</h3>
+              </div>
+              <div className="section-text" dangerouslySetInnerHTML={{ __html: metriques }} />
+            </div>
           </div>
         </div>
       </div>
