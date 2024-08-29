@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroProjet from '../../components/hero__projet/hero__projet';
+import SectionMonRole from '../../components/section__projet/section__mon-role/section__mon-role';
 import wenabiHeroImage from '../../assets/wenabi__hero.png';
 import wenabiLogo from '../../assets/projet__logo_wenabi.png'
 import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
@@ -14,6 +15,16 @@ import wenabiSection3Image from '../../assets/wenabi__section3.png';
 
 const Wenabi = () => {
   const textContent = "Wenabi est une plateforme de bénévolat visant à faciliter la mise en relation entre entreprises et associations. L'objectif principal est d'augmenter l'engagement des employés dans des actions bénévoles en rendant la plateforme plus inspirante et accessible.";
+
+  const roleContent = `
+  <ul>
+    <li>Conduire des recherches utilisateurs pour identifier les points de friction et les opportunités d'amélioration.</li>
+    <li>Définir les problématiques UX à résoudre.</li>
+    <li>Participer à l'idéation et à la création de prototypes.</li>
+    <li>Conduire des tests utilisateurs pour valider les solutions proposées.</li>
+    <li>Collaborer avec les équipes de développement pour implémenter les solutions.</li>
+  </ul>
+  `;
 
   const enseignements = `
     <ul>
@@ -95,6 +106,7 @@ Mes contributions principales ont inclus :
         imageSrc={wenabiHeroImage}
         leftImageSrc={wenabiLogo}
       />
+      <SectionMonRole roleContent={roleContent} />
       <SectionRechercheUX
         textContent={textContent}
         enseignements={enseignements}

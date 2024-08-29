@@ -1,0 +1,40 @@
+.section-mon-role--container {
+    background-color: white;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .section-mon-role__title {
+    font-family: "Roboto Serif";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+    margin: 0;
+    flex: 0 0 auto;
+    background: var(--bleu_vert, linear-gradient(90deg, #5D97E6 0%, #2C6545 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .section-mon-role__content {
+    flex: 1 1 50%;
+    font-family: "Bricolage Grotesque";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 800px;
+  }
+  
+  @media (max-width: 768px) {
+    .section-mon-role--container {
+      flex-direction: column;
+      padding: 2%; /* Réduit le padding pour les petits écrans */
+    }
+  }
+  
