@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroProjet from '../../components/hero__projet/hero__projet';
 import wenabiHeroImage from '../../assets/wenabi__hero.png';
+import wenabiLogo from '../../assets/projet__logo_wenabi.png'
 import SectionImgLeft from '../../components/section__projet/section__img-left/section__img-left';
 import SectionImgRight from '../../components/section__projet/section__img-right/section__img-right';
 import SectionRechercheUX from '../../components/section__projet/section__recherche-ux/section__recherche-ux';
@@ -87,11 +88,12 @@ Mes contributions principales ont inclus :
   return (
     <div>
       <HeroProjet
-        titlePrimary="wenabi"
-        titleSecondary=""
+        titlePrimary="Redéfinir l'engagement collaborateur"
+        titleSecondary="de wenabi"
         description="Wenabi est une plateforme SaaS innovante destinée à faciliter l'engagement collaborateur et les dons associatifs. Mon rôle en tant que Product Designer a été d'optimiser l'expérience utilisateur tout au long du parcours de la plateforme, en intégrant des solutions centrées sur les besoins des utilisateurs et en contribuant à la mise en place d'un design system cohérent."
         tags={["Product Design", "Design System"]}
         imageSrc={wenabiHeroImage}
+        leftImageSrc={wenabiLogo}
       />
       <SectionRechercheUX
         textContent={textContent}
