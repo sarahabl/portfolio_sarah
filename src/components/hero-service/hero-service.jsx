@@ -27,7 +27,7 @@ const HeroService = ({
         <Row className="hero-content-service">
           {/* Colonne gauche avec le tag et le titre */}
           <Col lg={6} md={12} className="hero-left-service">
-            <Tag content={tagText} fontSize="24px" rotation={-8} className="hero-tag-service" />
+            <Tag content={tagText} fontSize="24px" rotation={-4} className="hero-tag-service" />
             <Title primaryText={primaryText} secondaryText={secondaryText} description={description} />
           </Col>
           {/* Colonne droite avec le paragraphe et le bouton */}

@@ -41,24 +41,23 @@
   }
   
   @media (max-width: 768px) {
-    .title-container {
+    .big-title-container {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      font-size: 30px;
+      justify-content: center;
     }
   
     .title-text {
-      align-items: center;
-      margin : 0%;
+      align-items: center; /* Centre le texte à l'intérieur du titre */
+      margin: 0; /* Correction de la syntaxe pour la marge */
     }
   
     .title-highlight {
-      margin-top: 10px;
+      margin-top: 10px; /* Espacement ajouté au-dessus de l'image, si nécessaire */
     }
   
     .title-description {
-      display: none;
+      display: none; /* Cache la description sur les petits écrans, comme déjà défini */
     }
   }
-  

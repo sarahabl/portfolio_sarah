@@ -41,6 +41,9 @@
 @media (max-width: 992px) {
   .hero-content-service {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:4%;
   }
 
   .hero-left,
@@ -51,7 +54,10 @@
   }
 
   .hero-right-service {
-    margin-top: 20px; /* Ajoute de l'espacement entre les sections sur mobile */
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
   }
 
   .hero-paragraph {

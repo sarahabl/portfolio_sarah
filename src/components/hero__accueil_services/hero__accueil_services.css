@@ -28,14 +28,17 @@
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .hero-content {
+    gap: 40px;
+    padding: 8% 4%;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 20px;
-    padding: 4% 4% 4% 4%; /* Ajoute un padding uniforme autour sur petits écrans */
   }
 
   .hero-left, .hero-right {
-    width: 100%; /* Fait en sorte que chaque colonne prenne toute la largeur sur mobile/tablette */
+    width: 100%;
+    text-align: center;
   }
 
   .hero-right {

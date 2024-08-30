@@ -38,6 +38,24 @@
   transform: translateY(0) scale(1) rotate(0deg);
 }
 
+.from-left.in-view {
+  transform: translateX(0) rotate(0deg);
+  opacity: 1;
+}
+
+.from-right.in-view {
+  transform: translateX(0) rotate(0deg);
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-100px) rotate(-10deg);
+}
+
+.from-right {
+  transform: translateX(100px) rotate(10deg);
+}
+
 /* Effet au survol */
 .service-card:hover {
   border-bottom: 1px solid var(--black, #312E28);
