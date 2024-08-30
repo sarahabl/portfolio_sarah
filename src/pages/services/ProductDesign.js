@@ -64,7 +64,7 @@ const ProductDesign = () => {
       <HeroService 
         tagText="Product Design"
         primaryText="Parlez-moi de votre projet et donnons"
-        secondaryText="vie à vos idées !"
+        secondaryText="vie à vos idées"
         paragraphText="Le product design allie esthétique, stratégie et compréhension des utilisateurs. En tant que Product Designer freelance, je transforme vos idées en solutions design élégantes et fonctionnelles. Discutons de votre projet pour concrétiser vos ambitions."
         buttonText="Voir mon portfolio"
       />

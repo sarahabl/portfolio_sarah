@@ -1,5 +1,27 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .section-recherche-ux {
   background-color: white;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
 }
 
 .section-header {
@@ -8,6 +30,8 @@
   align-items: flex-start;
   gap: 20px;
   padding: 4%;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
 
 .section-block-container {
@@ -19,22 +43,16 @@
   border-radius: 1.25rem;
   padding: 20px;
   background-color: white;
-  height: auto; /* Assure que la hauteur du bloc s'adapte à son contenu */
+  height: auto;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.beige-background {
-  background: var(--beige, #F9F6EB);
-}
-
-.pink-background {
-  background: #F7B4F5;
-}
-
-.green-background {
-  background: #2C6545;
-}
+.beige-background { background: var(--beige, #F9F6EB); }
+.pink-background { background: #F7B4F5; }
+.green-background { background: #2C6545; }
 
 .green-background .section-text {
   color: var(--white, #FFF) !important;
@@ -47,6 +65,8 @@
 
 .icon {
   margin-right: 10px;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.4s forwards;
 }
 
 .section-text {
@@ -55,6 +75,8 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.6s forwards;
 }
 
 h3 {
@@ -63,18 +85,31 @@ h3 {
   font-size: 24px;
   font-weight: 400;
   margin-top: 1rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.4s forwards;
 }
 
 .row-enseignements {
   display: flex;
   gap: 20px;
   padding: 0 4%;
-  flex-wrap: nowrap; /* Assure que les colonnes restent côte à côte */
+  flex-wrap: nowrap;
 }
+
+.row-enseignements > * {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.row-enseignements > *:nth-child(1) { animation-delay: 0.2s; }
+.row-enseignements > *:nth-child(2) { animation-delay: 0.4s; }
+.row-enseignements > *:nth-child(3) { animation-delay: 0.6s; }
 
 .section-footer {
   margin-top: 80px;
   padding: 0 4%;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.8s forwards;
 }
 
 .problematique-metriques {
@@ -83,14 +118,15 @@ h3 {
   flex-wrap: wrap;
 }
 
-.green-background .section-text {
-  color: var(--white, #FFF);
-  font-family: "Roboto Serif";
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 200;
-  line-height: normal;
+.problematique-metriques > * {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
 }
+
+.problematique-metriques > *:nth-child(1) { animation-delay: 0.2s; }
+.problematique-metriques > *:nth-child(2) { animation-delay: 0.4s; }
+.problematique-metriques > *:nth-child(3) { animation-delay: 0.6s; }
+.problematique-metriques > *:nth-child(4) { animation-delay: 0.8s; }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -114,7 +150,12 @@ h3 {
   }
 
   .problematique-metriques {
-    gap:20px;
+    gap: 20px;
+  }
+
+  .row-enseignements > *,
+  .problematique-metriques > * {
+    animation-name: fadeInUp;
+    animation-delay: 0.2s;
   }
 }
-

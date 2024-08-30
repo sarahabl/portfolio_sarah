@@ -1,3 +1,17 @@
+/* Ajoutez ces styles à votre fichier CSS existant */
+
+.process-step {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.process-step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Style */
 .process-design-container {
   padding: 4%;
 }
