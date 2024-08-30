@@ -89,7 +89,11 @@ const Happn = () => {
         problemeTexte={problemeTexte}
         objectifsTexte={objectifsTexte}
       />
-      <ProcessDesign steps={designSteps} tagContent="Processus de design" />
+      <ProcessDesign
+        steps={designSteps}
+        tagContent="Processus de design"
+        backgroundColor="#FFF"
+      />
       <SectionMonRole roleContent={roleContent} />
       <SectionRechercheUX
         enseignements={enseignements}
