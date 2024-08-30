@@ -144,7 +144,9 @@ Mes contributions principales ont inclus :
       />
       <ProcessDesign
         steps={designSteps}
-        tagContent="Processus de design" />
+        tagContent="Processus de design"
+        backgroundColor="#FFF"
+      />
       <SectionMonRole roleContent={roleContent} />
       <SectionRechercheUX
         enseignements={enseignements}

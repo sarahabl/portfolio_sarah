@@ -69,7 +69,14 @@ const Branding = () => {
         buttonText="Voir mon portfolio"
       />
       <Bandeau />
-      <ProcessDesign steps={processSteps} />
+      <ProcessDesign 
+        steps={processSteps} 
+        title={{
+          primaryText: "Mon",
+          secondaryText: "process"
+        }}
+        backgroundColor="#F9F6EB"
+      />
       <Inclus items={inclusItems} />
       <Realisations />
       <Services />
