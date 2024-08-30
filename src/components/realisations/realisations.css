@@ -84,4 +84,8 @@
         margin: 0 4%; /* Ajouter un léger padding autour des cartes */
         width: calc(100% - 20px); /* S'assurer que les cartes ne dépassent pas le conteneur */
     }
+
+    .row {
+        padding-bottom: 40px;
+    }
 }

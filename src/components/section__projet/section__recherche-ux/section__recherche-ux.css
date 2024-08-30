@@ -13,7 +13,6 @@
 .section-block-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .section-block {
@@ -96,16 +95,26 @@ h3 {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section-recherche-ux {
-    padding: 2%;
-    gap:40px;
+    padding: 4%;
+    gap: 40px;
   }
 
   .row-enseignements {
     flex-direction: column;
-    padding: 2%;
+    padding: 4%;
   }
 
   .section-footer {
-    padding: 0 2%;
+    padding: 4%;
+  }
+
+  .section-contexte__text {
+    max-width: 100%;
+    padding: 4%;
+  }
+
+  .problematique-metriques {
+    gap:20px;
   }
 }
+

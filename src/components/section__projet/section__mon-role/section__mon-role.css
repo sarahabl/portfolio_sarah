@@ -34,7 +34,7 @@
   @media (max-width: 768px) {
     .section-mon-role--container {
       flex-direction: column;
-      padding: 2%; /* Réduit le padding pour les petits écrans */
+      padding: 8% 4%;
     }
   }
   

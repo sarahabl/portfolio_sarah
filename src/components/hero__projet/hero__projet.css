@@ -68,8 +68,14 @@
     border-radius: 8px;
   }
 
-  hero-projet-left-image {
-    height: 60px;
+  .hero-projet-left-image {
+    height: 80px;
+    width: auto;
+    padding:4%;
+  }
+
+  .title-primary{
+    font-size: 40px;
   }
   
 }

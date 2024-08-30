@@ -41,8 +41,8 @@ h3 {
 @media (max-width: 768px) {
   .section-img-left {
     flex-direction: column-reverse; /* La colonne de gauche passe en dessous de la colonne de droite */
-    gap: 20px; /* Réduit l'écart entre les colonnes */
-    padding: 4%; /* Réduit le padding pour les petits écrans */
+    gap: 80px;
+    padding: 8%;
   }
 
   .text-content,
