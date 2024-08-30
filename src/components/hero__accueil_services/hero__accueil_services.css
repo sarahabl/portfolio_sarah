@@ -100,7 +100,7 @@
   }
 
   .hero-image-top-left {
-    top: 10%;
+    top: 1%;
     left: 5%;
     width: 30%;
     animation-delay: 0.5s;
@@ -108,7 +108,7 @@
   
   .hero-image-top-right {
     top: 10%;
-    right: 5%;
+    right: 0%;
     width: 42%;
     animation-delay: 1s;
   }
