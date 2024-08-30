@@ -16,7 +16,7 @@ const Expertises = () => {
       <Container>
         <Row className="justify-content-center">
           <Col md={6} className="d-flex justify-content-center">
-            <div className="expertise-item">
+            <div className="expertise-item" style={{ '--i': 1 }}>
               <img src={uxDesignImg} alt="UX Design" />
               <h3 className="expertise-title">UX Design</h3>
               <p className="expertise-text">
@@ -25,7 +25,7 @@ const Expertises = () => {
             </div>
           </Col>
           <Col md={6} className="d-flex justify-content-center">
-            <div className="expertise-item">
+            <div className="expertise-item" style={{ '--i': 2 }}>
               <img src={uiDesignImg} alt="UI Design" />
               <h3 className="expertise-title">UI Design</h3>
               <p className="expertise-text">

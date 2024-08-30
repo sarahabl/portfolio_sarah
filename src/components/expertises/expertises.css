@@ -1,6 +1,17 @@
 .expertises-container {
   margin: 2rem 0;
-  gap:2rem;
+  gap: 2rem;
+}
+
+@keyframes slideInFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .expertise-item {
@@ -8,13 +19,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:75%;
+  width: 75%;
   max-width: 38.75rem;
-  padding: 10rem 2.5rem 2.5rem 2.5rem;
+  padding: 10rem 2.5rem 2.5rem;
   background: white;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
   border-radius: 1.25rem;
+  opacity: 0;
+  animation: slideInFloat 1s ease-out forwards, float 5s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.5s);
+}
+
+@keyframes float {
+  50% { transform: translateY(-5px); }
 }
 
 .expertise-item img {
@@ -27,23 +44,16 @@
 
 .expertise-title {
   color: var(--black, #312E28);
-  text-align: left;
-  font-family: "Bricolage Grotesque";
+  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 4rem; /* To account for the image overlap */
+  margin-top: 4rem;
 }
 
 .expertise-text {
   color: var(--black, #312E28);
-  text-align: left;
-  font-family: "Bricolage Grotesque";
+  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   margin-top: 1rem;
 }
 
