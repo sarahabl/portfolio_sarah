@@ -1,29 +1,48 @@
-/* Styles généraux pour hero-content */
-.hero-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Assure l'alignement vertical des éléments */
-  justify-content: space-between;
-  width: calc(100% - 8%); /* Calcule la largeur en déduisant le padding des deux côtés */
+/* Définir les animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* Augmente la distance initiale */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Styles pour la colonne de gauche */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Augmente la distance de flottement */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Styles pour le conteneur hero-right */
+.row {
+  padding: 0 4%;
+}
+
 .hero-left {
-  padding-left: 4%;
-  text-align: left;
-  justify-content: center; /* Centre verticalement le contenu de la colonne gauche */
-  gap: 20px;
-  width: 50%; /* Colonne gauche prend 50% de la largeur */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* Styles pour rendre le conteneur de l'image carré et ajustements pour la colonne de droite */
 .hero-right {
   position: relative;
-  background-size: contain;
+  background-size: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
   background-repeat: no-repeat;
+  background-position: center; /* Centre l'image dans le conteneur */
   height: 50vw; /* Hauteur basée sur la largeur du viewport pour maintenir un aspect carré */
   width: 50%; /* La largeur prend 50% de hero-content */
   padding: 4%;
+  overflow: hidden; /* Pour éviter que les images ne débordent */
 }
 
 /* Styles pour les images supplémentaires */
@@ -31,25 +50,32 @@
 .hero-image-top-right,
 .hero-image-bottom-left {
   position: absolute;
-  width: auto;
+  opacity: 0; /* Initialement invisibles */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .hero-image-top-left {
-  top: -4%;
-  left: -8%;
-  width: 20%;
+  top: 5%;
+  left: 5%;
+  width: 25%;
+  animation: fadeIn 2s ease-in-out forwards, float 6s ease-in-out infinite; /* Animation de flottement continue avec une durée plus longue */
+  animation-delay: 0.5s; /* Délai pour que cette image apparaisse en premier */
 }
 
 .hero-image-top-right {
-  top: 0%;
-  right: 0%;
-  width: 30%;
+  top: 5%;
+  right: 5%;
+  width: 32%;
+  animation: fadeIn 2s ease-in-out forwards, float 6s ease-in-out infinite; /* Animation de flottement continue avec une durée plus longue */
+  animation-delay: 1s; /* Délai pour que cette image apparaisse après la première */
 }
 
 .hero-image-bottom-left {
-  bottom: 20%;
+  bottom: 15%;
   left: 10%;
   width: 25%;
+  animation: fadeIn 2s ease-in-out forwards, float 6s ease-in-out infinite; /* Animation de flottement continue avec une durée plus longue */
+  animation-delay: 1.5s; /* Délai pour que cette image apparaisse en dernier */
 }
 
 /* Responsive adjustments */
@@ -74,20 +100,23 @@
   }
 
   .hero-image-top-left {
-    top: -20%;
-    left: -8%;
+    top: 10%;
+    left: 5%;
     width: 30%;
+    animation-delay: 0.5s;
   }
   
   .hero-image-top-right {
-    top: -10%;
-    right: -4%;
+    top: 10%;
+    right: 5%;
     width: 42%;
+    animation-delay: 1s;
   }
   
   .hero-image-bottom-left {
-    bottom: 0%;
-    left: 10%;
+    bottom: 5%;
+    left: 5%;
     width: 30%;
+    animation-delay: 1.5s;
   }
 }

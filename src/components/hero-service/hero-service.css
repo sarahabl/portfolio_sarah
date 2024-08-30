@@ -1,6 +1,6 @@
 /* Style général pour le container du hero */
 .hero-container-service {
-  padding: 4%; /* Padding autour de la section */
+  padding: 0 4%; /* Padding autour de la section */
   background-color: #f9f6eb; /* Couleur de fond pour le hero */
 }
 
