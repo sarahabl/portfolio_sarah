@@ -23,6 +23,33 @@
   background-repeat: no-repeat;
   height: 50vw; /* Hauteur basée sur la largeur du viewport pour maintenir un aspect carré */
   width: 50%; /* La largeur prend 50% de hero-content */
+  padding: 4%;
+}
+
+/* Styles pour les images supplémentaires */
+.hero-image-top-left,
+.hero-image-top-right,
+.hero-image-bottom-left {
+  position: absolute;
+  width: auto;
+}
+
+.hero-image-top-left {
+  top: -4%;
+  left: -8%;
+  width: 20%;
+}
+
+.hero-image-top-right {
+  top: 0%;
+  right: 0%;
+  width: 30%;
+}
+
+.hero-image-bottom-left {
+  bottom: 20%;
+  left: 10%;
+  width: 25%;
 }
 
 /* Responsive adjustments */
@@ -32,8 +59,8 @@
     padding: 8% 4%;
     width: 100%;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    align-items: flex-end;
   }
 
   .hero-left, .hero-right {
@@ -42,6 +69,25 @@
   }
 
   .hero-right {
-    height: 80vw; /* Ajuste la hauteur pour les petits écrans pour maintenir un aspect carré */
+    width: 80%;
+    margin-top: 10%;
+  }
+
+  .hero-image-top-left {
+    top: -20%;
+    left: -8%;
+    width: 30%;
+  }
+  
+  .hero-image-top-right {
+    top: -10%;
+    right: -4%;
+    width: 42%;
+  }
+  
+  .hero-image-bottom-left {
+    bottom: 0%;
+    left: 10%;
+    width: 30%;
   }
 }

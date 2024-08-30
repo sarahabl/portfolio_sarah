@@ -5,6 +5,11 @@ import Title from '../title/big_title/big_title';
 import Buttons from '../buttons/buttons';
 import { useNavigate } from 'react-router-dom';
 
+// Importer les images
+import image1 from '../../assets/hero-image-branding.svg';
+import image2 from '../../assets/hero-image-integration_web.svg';
+import image3 from '../../assets/hero-image-product_design.svg';
+
 const HeroAccueilServices = ({
   primaryText,
   secondaryText,
@@ -31,6 +36,9 @@ const HeroAccueilServices = ({
           </Col>
           <Col lg={6} md={12} className="hero-right" style={{ backgroundImage: `url(${bgImage})` }}>
             {/* Background image set dynamically */}
+            <img src={image3} alt="Image 3" className="hero-image-top-left" />
+            <img src={image2} alt="Image 2" className="hero-image-top-right" />
+            <img src={image1} alt="Image 1" className="hero-image-bottom-left" />
           </Col>
         </Row>
       </Container>
