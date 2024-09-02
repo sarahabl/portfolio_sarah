@@ -25,7 +25,7 @@
 }
 
 .inclus-container {
-  padding: 4%;
+  padding: 4% 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,22 +49,22 @@
   box-sizing: border-box;
   opacity: 0;
   animation: 
-    fadeInUp 0.4s ease-out forwards,  /* Réduit à 0.4s */
-    float 3s ease-in-out infinite;     /* Réduit à 3s */
+    fadeInUp 0.2s ease-out forwards,
+    float 0.2s ease-in-out infinite;
 }
 
 .inclus-block:nth-child(odd) {
   animation: 
-    fadeInUp 0.4s ease-out forwards,
-    float 3s ease-in-out infinite,
-    rotateLeft 4s ease-in-out infinite; /* Réduit à 4s */
+    fadeInUp 0.2s ease-out forwards,
+    float 0.4s ease-in-out infinite,
+    rotateLeft 1s ease-in-out infinite;
 }
 
 .inclus-block:nth-child(even) {
   animation: 
     fadeInUp 0.4s ease-out forwards,
-    float 3s ease-in-out infinite,
-    rotateRight 4s ease-in-out infinite; /* Réduit à 4s */
+    float 0.4s ease-in-out infinite,
+    rotateRight 1s ease-in-out infinite;
 }
 
 .inclus-block:nth-child(1) { animation-delay: 0.1s, 0.1s, 0.1s; }
