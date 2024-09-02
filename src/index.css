@@ -4,6 +4,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
   background-color: #F9F6EB; /* Couleur de fond */
 }
 
