@@ -7,11 +7,11 @@ const Intro = () => {
   return (
     <div className="container intro">
       <div className="row">
-        <div className="col-12 col-md-2 intro-left d-flex align-items-center">
+        <div className="col-12 col-md-3 intro-left d-flex align-items-center">
           <Avatar />
           <span className="name">Sarah Ablonet</span>
         </div>
-        <div class="col-12 col-md-9 intro-right">
+        <div class="col-12 col-md-8 intro-right">
           <p className="description">
             Je transforme vos idées en produits numériques efficaces et impactants. Passionnée par les design systems et les produits à impact, je combine créativité et technologie pour vos projets. Design systems harmonieux, ateliers de facilitation, sites web sur mesure : je crée des interfaces fluides et élégantes pour une expérience utilisateur optimale.
           </p>
