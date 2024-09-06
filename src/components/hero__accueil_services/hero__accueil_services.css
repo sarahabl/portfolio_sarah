@@ -39,7 +39,7 @@
   background-size: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
   background-repeat: no-repeat;
   background-position: center; /* Centre l'image dans le conteneur */
-  height: 50vw; /* Hauteur basée sur la largeur du viewport pour maintenir un aspect carré */
+  height: 40vw; /* Hauteur basée sur la largeur du viewport pour maintenir un aspect carré */
   width: 50%; /* La largeur prend 50% de hero-content */
   padding: 4%;
   overflow: hidden; /* Pour éviter que les images ne débordent */
@@ -55,17 +55,17 @@
 }
 
 .hero-image-top-left {
-  top: 5%;
-  left: 5%;
-  width: 25%;
+  top: 0%;
+  left: 4%;
+  width: 20%;
   animation: fadeIn 2s ease-in-out forwards, float 6s ease-in-out infinite; /* Animation de flottement continue avec une durée plus longue */
   animation-delay: 0.5s; /* Délai pour que cette image apparaisse en premier */
 }
 
 .hero-image-top-right {
   top: 5%;
-  right: 5%;
-  width: 32%;
+  right: 0%;
+  width: 27%;
   animation: fadeIn 2s ease-in-out forwards, float 6s ease-in-out infinite; /* Animation de flottement continue avec une durée plus longue */
   animation-delay: 1s; /* Délai pour que cette image apparaisse après la première */
 }
@@ -73,7 +73,7 @@
 .hero-image-bottom-left {
   bottom: 15%;
   left: 10%;
-  width: 25%;
+  width: 20%;
   animation: fadeIn 2s ease-in-out forwards, float 6s ease-in-out infinite; /* Animation de flottement continue avec une durée plus longue */
   animation-delay: 1.5s; /* Délai pour que cette image apparaisse en dernier */
 }
