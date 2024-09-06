@@ -18,7 +18,7 @@ const projectData = [
     link: "/portfolio/wenabi"
   },
   {
-    tags: ["Création de site internet", "Branding"],
+    tags: ["Site internet", "Branding"],
     title: "Créer une identité visuelle et un site internet pour Bodachella",
     img: projetBodachella,
     link: "/portfolio/bodachella"
@@ -47,6 +47,8 @@ const Realisations = () => {
   const navigate = useNavigate();
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1100);
   const [isScrollActive, setIsScrollActive] = useState(false);
+  const [isAutoScrollEnabled, setIsAutoScrollEnabled] = useState(false);
+  const autoScrollInterval = useRef(null);
 
   const shuffledProjects = shuffleArray([...projectData]);
 
@@ -94,11 +96,27 @@ const Realisations = () => {
     }
   }, [isMobileView]);
 
+  const startAutoScroll = () => {
+    if (!autoScrollInterval.current) {
+      autoScrollInterval.current = setInterval(() => {
+        if (sliderRef.current) {
+          sliderRef.current.slickNext(); // Passe à la diapo suivante
+        }
+      }, 2000); // Change toutes les 2 secondes
+    }
+  };
+
+  const stopAutoScroll = () => {
+    clearInterval(autoScrollInterval.current);
+    autoScrollInterval.current = null;
+  };
+
   useEffect(() => {
     const handleScroll = (event) => {
       if (sliderRef.current && !isMobileView && isScrollActive) {
         const slider = sliderRef.current.innerSlider.list;
         slider.scrollLeft += event.deltaY;
+        setIsAutoScrollEnabled(true); // Active l'autoscroll après un scroll manuel
       }
     };
 
@@ -106,8 +124,18 @@ const Realisations = () => {
 
     return () => {
       window.removeEventListener('wheel', handleScroll);
+      stopAutoScroll(); // Arrête l'autoscroll à la sortie du composant
     };
   }, [isMobileView, isScrollActive]);
+
+  useEffect(() => {
+    if (isAutoScrollEnabled) {
+      startAutoScroll(); // Démarre l'autoscroll une fois activé
+    }
+    return () => {
+      stopAutoScroll();
+    };
+  }, [isAutoScrollEnabled]);
 
   const handleProjectClick = (link) => {
     navigate(link);
@@ -115,11 +143,14 @@ const Realisations = () => {
   };
 
   const settings = {
-    dots: true,
+    dots: false, // Retirer les points de pagination pour un effet plus "bandeau"
     infinite: true,
-    speed: 250,
-    slidesToShow: 2.5,
+    speed: 1000, // Augmenter la durée de la transition pour plus de fluidité
+    slidesToShow: 3, // Montrer 3 cartes par écran pour que tout soit plus compact
     slidesToScroll: 1,
+    autoplay: true, // Faire défiler automatiquement sans interaction
+    autoplaySpeed: 2000, // Changement toutes les 2 secondes
+    cssEase: 'linear', // Transition fluide
     responsive: [
       {
         breakpoint: 1200,

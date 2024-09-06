@@ -10,12 +10,13 @@
 }
 
 .realisations-slider {
-    margin: 0 0 8% 4%;
+    margin: 4%;
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
-    gap: 40px;
     max-width: 100%;
+    padding-left: 40px; /* Ajoute un padding gauche pour créer de l'espace au début */
+    padding-right: 40px; /* Ajoute un padding droit pour créer de l'espace à la fin */
 }
 
 .realisations-card-wrapper {
@@ -23,6 +24,7 @@
     flex: 1 1 450px;
     max-width: 450px;
     cursor: pointer;
+    padding-right: 40px; /* Ajoute un espacement entre les cartes à l'intérieur du slider */
 }
 
 .realisations-card {
@@ -35,7 +37,7 @@
     padding: 1.25rem;
     box-sizing: border-box;
     width: 100%;
-    height: 450px;
+    height: 350px;
     transition: border 0.1s ease-in-out;
 }
 
@@ -51,7 +53,7 @@
 .realisations-card h3 {
     color: #00381A;
     font-family: "Bricolage Grotesque";
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -60,12 +62,34 @@
 .realisations-image {
     flex-grow: 1;
     width: 100%;
+    height: 200px;
     border-radius: 0.625rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: auto;
 }
+
+/* Personnalisation des flèches slick-prev et slick-next */
+.slick-prev, .slick-next {
+    background-color: #312E28 !important; /* Couleur par défaut des flèches */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation pour l'agrandissement */
+}
+
+/* Couleur de la flèche elle-même (icône) */
+.slick-prev:before, .slick-next:before {
+    color: white !important; /* Assure que l'icône de la flèche soit blanche */
+    font-size: 20px;
+    content: ''; /* Supprime le contenu indésirable généré par défaut */
+}
+
 
 @media (max-width: 1100px) {
     .realisations-container {
@@ -75,17 +99,19 @@
     .realisations-slider {
         margin: 4% 0;
         flex-direction: column;
+        padding-left: 0; /* Pas de padding gauche en version mobile */
+        padding-right: 0; /* Pas de padding droit en version mobile */
     }
 
     .realisations-card-wrapper {
         flex: 1 1 100%;
-        max-width: calc(100% - 20px); /* Pour s'assurer que les cartes prennent presque toute la largeur */
-        margin: 0 auto 4%; /* Centrer les cartes avec une marge auto et un léger espacement en bas */
+        max-width: calc(100% - 40px); /* Espacement en version mobile */
+        margin: 0 auto 40px; /* Espace vertical entre les cartes */
+        padding-right: 0; /* Retire le padding droit en version mobile */
     }
 
     .realisations-card {
-        margin: 0 4%; /* Ajouter un léger padding autour des cartes */
+        margin: 0 2%; /* Padding autour des cartes en version mobile */
         width: calc(100% - 20px); /* S'assurer que les cartes ne dépassent pas le conteneur */
     }
-    
 }
