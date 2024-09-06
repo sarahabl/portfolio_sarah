@@ -3,7 +3,7 @@
   margin: 0; /* Supprime la marge par défaut */
   background: #FFF;
   border-radius: 5rem 5rem 0rem 0rem;
-  padding: 4%;
+  padding: 4% 0%;
   padding-bottom: 8%;
   gap: 16px;
 }
@@ -33,7 +33,7 @@
 .hero-projet-image {
   width: 100%;
   height: auto;
-  border-radius: 1.25rem;
+  border-radius: 2.5rem;
 }
 
 .hero-projet-button {
